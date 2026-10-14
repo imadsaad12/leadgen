@@ -1,0 +1,133 @@
+{% extends "base.html" %}
+{% block title %}New run · LeadGen{% endblock %}
+{% block heading %}New run{% endblock %}
+{% block content %}
+<div class="flex items-center justify-between mb-5 flex-wrap gap-3">
+  <div>
+    <h1>New run</h1>
+    <p class="muted" style="font-size:.82rem; margin-top:3px">Find decision-makers in a location working in your domain, then qualify them against your offer.</p>
+  </div>
+  {% if templates_list %}<div class="muted" style="font-size:.8rem">Templates: {% for t in templates_list %}<a href="/runs/new?spec_id={{ t.id }}">{{ t.name }}</a>{{ ' · ' if not loop.last }}{% endfor %}</div>{% endif %}
+</div>
+<form method="post" action="/runs/new" class="grid grid-cols-1 lg:grid-cols-3 gap-5" id="specform">
+  <div class="lg:col-span-2 space-y-5">
+
+    <div class="card card-p">
+      <div class="step"><span class="n">1</span><div><div class="t">Basics</div><div class="d">Name the run, choose the source and approach, and describe what you sell.</div></div></div>
+      <div class="form-grid">
+        <label>Run name <input name="name" value="{{ spec.name }}" placeholder="e.g. CPaaS buyers — DACH fintech"></label>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div><span class="field-label">Source</span>
+            <div class="seg">
+              <label><input type="radio" name="source" value="linkedin" {{ 'checked' if spec.run.source != 'fake' }}> LinkedIn</label>
+              <label><input type="radio" name="source" value="fake" {{ 'checked' if spec.run.source == 'fake' }}> Fake data</label>
+            </div></div>
+          <div><span class="field-label">Strategy</span>
+            <div class="seg">
+              <label><input type="radio" name="strategy" value="people_first" {{ 'checked' if spec.run.strategy != 'company_first' }}> People-first</label>
+              <label><input type="radio" name="strategy" value="company_first" {{ 'checked' if spec.run.strategy == 'company_first' }}> Company-first</label>
+            </div></div>
+        </div>
+        <label>What are you selling? <span class="faint">(the offer)</span>
+          <textarea name="offer" rows="3" placeholder="e.g. A CPaaS platform: SMS, voice and WhatsApp APIs for high-volume customer notifications. Ideal buyers own messaging, engineering, product or customer experience.">{{ spec.offer }}</textarea>
+          <span class="faint" style="font-size:.72rem">Set this and Claude scores every lead's fit after the run, excluding poor matches.</span></label>
+      </div>
+    </div>
+
+    <div class="card card-p">
+      <div class="step"><span class="n">2</span><div><div class="t">Companies</div><div class="d">Which companies to target. Industry, HQ and size are verified on each About page.</div></div></div>
+      <div class="form-grid">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <label>Industries / sectors <input name="industries" value="{{ spec.company.industries|join(', ') }}" placeholder="fintech, logistics, saas"></label>
+          <label>Keywords <input name="keywords" value="{{ spec.company.keywords|join(', ') }}" placeholder="b2b, marketplace"></label>
+        </div>
+        <label>HQ countries <span class="faint">(hold ⌘/Ctrl for several; empty = anywhere)</span>
+          <select name="locations" multiple size="6">{% for c in countries %}<option value="{{ c }}" {{ 'selected' if c in spec.company.locations }}>{{ c }}</option>{% endfor %}</select></label>
+        <div><span class="field-label">Company size</span>
+          <div class="pills">{% for b in size_buckets %}<label class="pill"><input type="checkbox" name="employee_size" value="{{ b }}" {{ 'checked' if b in spec.company.employee_size }}> {{ b }}</label>{% endfor %}</div></div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <label>Founded from <input name="founded_min" value="{{ spec.company.founded_year.min or '' }}"></label>
+          <label>Founded to <input name="founded_max" value="{{ spec.company.founded_year.max or '' }}"></label>
+          <label>Company types <input name="company_types" value="{{ spec.company.company_types|join(', ') }}" placeholder="Privately Held"></label>
+          <label>Max companies <input name="max_companies" type="number" value="{{ spec.company.max_companies }}"></label>
+        </div>
+        <label>Seed companies <span class="faint">(slugs or URLs; skips discovery)</span>
+          <input name="seed_companies" value="{{ spec.company.seed_companies|join(', ') }}" placeholder="northwind-pay, https://www.linkedin.com/company/acme/"></label>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <label>Exclude companies <input name="exclude_companies" value="{{ spec.company.exclude_companies|join(', ') }}"></label>
+          <label>Exclude keywords <input name="exclude_keywords" value="{{ spec.company.exclude_keywords|join(', ') }}"></label>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-end">
+          <label class="check" style="height:38px"><input type="checkbox" name="discover_via_jobs" {{ 'checked' if spec.company.discover_via_jobs }}> also discover via jobs</label>
+          <label>Max search queries <input name="max_company_queries" type="number" value="{{ spec.company.max_company_queries }}"></label>
+          <label>Pages per query <input name="max_search_pages_per_query" type="number" value="{{ spec.company.max_search_pages_per_query }}"></label>
+        </div>
+      </div>
+    </div>
+
+    <div class="card card-p">
+      <div class="step"><span class="n">3</span><div><div class="t">People</div><div class="d">Who to look for inside those companies.</div></div></div>
+      <div class="form-grid">
+        <label>Target titles <span class="faint">(searched first)</span>
+          <input name="titles" value="{{ spec.people.titles|join(', ') }}" placeholder="Head of Sales, VP Marketing, CTO"></label>
+        <div><span class="field-label">Departments <span class="faint">(empty = sweep all)</span></span>
+          <div class="pills">{% for d in departments %}<label class="pill"><input type="checkbox" name="departments" value="{{ d.value }}" {{ 'checked' if d in spec.people.departments }}> {{ department_label(d) }}</label>{% endfor %}</div></div>
+        <div><span class="field-label">Seniorities <span class="faint">(matching + facets)</span></span>
+          <div class="pills">{% for s in seniorities %}<label class="pill"><input type="checkbox" name="seniorities" value="{{ s.value }}" {{ 'checked' if s in spec.people.seniorities }}> {{ s.value }}</label>{% endfor %}</div></div>
+        <div><span class="field-label">Connection degree</span>
+          <div class="pills">{% for n, lbl in [('F','1st'),('S','2nd'),('O','3rd+')] %}<label class="pill"><input type="checkbox" name="network" value="{{ n }}" {{ 'checked' if n in spec.people.network }}> {{ lbl }}</label>{% endfor %}</div></div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <label>People countries <select name="people_locations" multiple size="4">{% for c in countries %}<option value="{{ c }}" {{ 'selected' if c in spec.people.locations }}>{{ c }}</option>{% endfor %}</select></label>
+          <div class="form-grid">
+            <label>Skill / keyword facets <input name="people_keywords" value="{{ spec.people.keywords|join(', ') }}"></label>
+            <label>Exclude titles containing <input name="exclude_titles" value="{{ spec.people.exclude_titles|join(', ') }}" placeholder="intern, student"></label>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 items-end">
+          <label>Max people / company <input name="max_per_company" type="number" value="{{ spec.people.max_per_company }}"></label>
+          <label>Max pages / facet <input name="max_pages_per_facet" type="number" value="{{ spec.people.max_pages_per_facet }}"></label>
+          <label>Enrich max / company <input name="enrich_max" type="number" value="{{ spec.people.enrich.max_per_company }}"></label>
+          <label class="check" style="height:38px"><input type="checkbox" name="enrich_enabled" {{ 'checked' if spec.people.enrich.enabled }}> enrich matched</label>
+        </div>
+        <div class="pills">
+          <label class="pill"><input type="checkbox" name="broad_sweep" {{ 'checked' if spec.people.broad_sweep }}> broad sweep after facets</label>
+          <label class="pill"><input type="checkbox" name="include_anonymized" {{ 'checked' if spec.people.include_anonymized }}> keep "LinkedIn Member"</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="space-y-5">
+    <div class="sticky-panel space-y-5">
+      <div class="card card-p">
+        <div class="step" style="margin-bottom:12px"><span class="n">4</span><div><div class="t">Budget &amp; pacing</div></div></div>
+        <div class="grid grid-cols-2 gap-3">
+          <label>Daily page loads <input name="daily_budget" type="number" value="{{ spec.run.daily_budget }}"></label>
+          <label>Monthly search cap <input name="monthly_search_cap" type="number" value="{{ spec.run.monthly_search_cap }}"></label>
+          <label>Min delay (s) <input name="min_delay_s" value="{{ spec.run.min_delay_s }}"></label>
+          <label>Max delay (s) <input name="max_delay_s" value="{{ spec.run.max_delay_s }}"></label>
+          <label>Break every N <input name="break_every" type="number" value="{{ spec.run.break_every }}"></label>
+          <label>Break (s) min–max <div class="flex gap-1"><input name="break_min_s" value="{{ spec.run.break_min_s }}"><input name="break_max_s" value="{{ spec.run.break_max_s }}"></div></label>
+          <label>Run hours <div class="flex gap-1"><input name="run_hours_start" placeholder="08:00" value="{{ spec.run.run_hours[0] if spec.run.run_hours else '' }}"><input name="run_hours_end" placeholder="20:00" value="{{ spec.run.run_hours[1] if spec.run.run_hours else '' }}"></div></label>
+          <label>LLM assist <select name="llm_assist">
+            <option value="auto" {{ 'selected' if spec.run.llm_assist is none }}>auto</option>
+            <option value="on" {{ 'selected' if spec.run.llm_assist }}>on</option>
+            <option value="off" {{ 'selected' if spec.run.llm_assist is sameas false }}>off</option>
+          </select></label>
+        </div>
+      </div>
+      {% if not acknowledged %}
+      <label class="note note-warn check" style="display:flex; align-items:flex-start; font-size:.78rem"><input type="checkbox" name="acknowledge" value="1" style="margin-top:2px"> I understand automated access breaches LinkedIn's User Agreement, my account may be restricted, and the data must be handled under GDPR/CCPA.</label>
+      {% endif %}
+      <div class="card card-p space-y-2">
+        <button type="button" class="btn btn-block" hx-post="/runs/plan" hx-include="#specform" hx-target="#plan">Dry run — estimate page loads</button>
+        <div id="plan"></div>
+        <div class="flex gap-2">
+          <button name="action" value="save" class="btn" style="flex:1">Save template</button>
+          <button name="action" value="start" class="btn btn-primary" style="flex:2">Start run</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+{% endblock %}

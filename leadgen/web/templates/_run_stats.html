@@ -1,0 +1,11 @@
+<div class="flex flex-wrap items-center gap-2">
+  <span class="badge dot badge-{{ run.status }}">{{ run.status }}</span>
+  <span class="chip">companies <b>{{ run.stats.companies_enumerated }}/{{ run.stats.companies_passed }}</b> of {{ run.stats.companies_discovered }}</span>
+  <span class="chip">people <b>{{ run.stats.people_found }}</b></span>
+  <span class="chip">classified <b>{{ run.stats.people_classified }}</b></span>
+  <span class="chip">unclassified <b>{{ run.stats.people_unclassified }}</b></span>
+  <span class="chip">page loads <b>{{ run.stats.page_loads }}</b></span>
+  <span class="chip">cache hits <b>{{ run.stats.cache_hits }}</b></span>
+  <span class="chip">claude calls <b>{{ run.stats.llm_calls }}</b></span>
+  {% if run.message %}<span class="muted" style="font-size:.78rem">{{ run.message }}</span>{% endif %}
+</div>

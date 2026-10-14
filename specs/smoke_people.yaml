@@ -1,0 +1,19 @@
+# People-first smoke test: decision-makers in a country working in a domain.
+name: smoke-people-first
+offer: >-
+  A CPaaS messaging API (SMS/voice/WhatsApp) for engineering and product leaders at fintechs.
+company:
+  industries: [fintech]
+  locations: [Germany]
+  max_companies: 10
+  max_company_queries: 3
+people:
+  titles: ["Head of Engineering", "CTO"]
+  seniorities: [director, vp, cxo, founder]
+  max_pages_per_facet: 1
+run:
+  source: linkedin
+  strategy: people_first
+  daily_budget: 40
+  min_delay_s: 8
+  max_delay_s: 15

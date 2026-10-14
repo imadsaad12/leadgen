@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% block title %}Leads · {{ run.spec.name }}{% endblock %}
+{% block heading %}<a class="muted" href="/runs/{{ run.id }}">{{ run.spec.name }}</a> <span class="faint">/</span> Leads{% endblock %}
+{% block content %}
+<div class="flex items-center justify-between gap-4 mb-5 flex-wrap">
+  <div>
+    <h1>Leads <span class="faint" style="font-weight:600">({{ total }})</span></h1>
+    {% if scored %}<div class="muted" style="font-size:.78rem; margin-top:4px">relevance to offer: <b style="color:var(--green)">{{ relevance.get('relevant', 0) }}</b> relevant · {{ relevance.get('excluded', 0) }} excluded{% if relevance.get('unscored') %} · {{ relevance.unscored }} unscored{% endif %}</div>{% endif %}
+  </div>
+  <div class="flex gap-2 flex-wrap">
+    <a href="/runs/{{ run.id }}/export?format=xlsx" class="btn btn-sm btn-success">XLSX</a>
+    <a href="/runs/{{ run.id }}/export?format=csv" class="btn btn-sm">CSV</a>
+    <a href="/runs/{{ run.id }}/export?format=jsonl" class="btn btn-sm">JSONL</a>
+    <a href="/titles?run_id={{ run.id }}" class="btn btn-sm">Fix titles</a>
+  </div>
+</div>
+
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-4">
+  <div class="card card-p lg:col-span-2 table-wrap">
+    <div class="section-title">Department × seniority <span class="faint" style="font-weight:400; font-size:.78rem">click a cell to filter</span></div>
+    <table class="tbl" style="font-size:.78rem">
+      <thead><tr><th>Department</th>{% for c in pivot.columns %}<th class="num">{{ c }}</th>{% endfor %}<th class="num">Total</th></tr></thead>
+      <tbody>{% for r in pivot.rows %}<tr><td><a href="?department={{ r.key }}">{{ r.key }}</a></td>
+        {% for v in r.cells %}<td class="num">{% if v %}<a href="?department={{ r.key }}&seniority={{ pivot.columns[loop.index0] }}">{{ v }}</a>{% else %}<span class="faint">·</span>{% endif %}</td>{% endfor %}
+        <td class="num" style="font-weight:700">{{ r.total }}</td></tr>{% endfor %}</tbody>
+    </table>
+  </div>
+  <div class="card card-p">
+    <div class="flex items-center justify-between mb-2"><h2>Groups</h2>
+      <span style="font-size:.74rem"><a class="{{ '' if filters.group != 'department_seniority' }}" style="{{ 'font-weight:700' if filters.group == 'department_seniority' }}" href="?group=department_seniority">dept×level</a> · <a style="{{ 'font-weight:700' if filters.group == 'canonical_title' }}" href="?group=canonical_title">by title</a></span></div>
+    <div style="max-height:18rem; overflow-y:auto">
+      {% for g in groups %}<div class="flex justify-between items-center" style="padding:5px 0; border-bottom:1px solid var(--border); font-size:.8rem">
+        <span>{{ g.canonical_title or g.group_key }}{% if g.top_raw_titles and filters.group != 'canonical_title' %} <span class="faint">({{ g.top_raw_titles[0][0] }}…)</span>{% endif %}</span><b>{{ g.count }}</b></div>{% endfor %}
+    </div>
+  </div>
+</div>
+
+<form method="get" class="card card-p mb-4 flex flex-wrap gap-3 items-end" style="padding:14px 18px">
+  <input type="hidden" name="group" value="{{ filters.group }}">
+  <label>Company <select name="company"><option value="">all</option>{% for k, c in companies.items() %}<option value="{{ k }}" {{ 'selected' if filters.company == k }}>{{ c.name }}</option>{% endfor %}</select></label>
+  <label>Department <select name="department"><option value="">all</option>{% for d in departments %}<option value="{{ d.value }}" {{ 'selected' if filters.department == d.value }}>{{ department_label(d) }}</option>{% endfor %}<option value="unclassified" {{ 'selected' if filters.department == 'unclassified' }}>unclassified</option></select></label>
+  <label>Seniority <select name="seniority"><option value="">all</option>{% for s in seniorities %}<option value="{{ s.value }}" {{ 'selected' if filters.seniority == s.value }}>{{ s.value }}</option>{% endfor %}</select></label>
+  <label>Search <input name="q" value="{{ filters.q }}" placeholder="title or name"></label>
+  {% if scored %}<label>Relevance <select name="relevant"><option value="" {{ 'selected' if filters.relevant == '' }}>relevant only</option><option value="0" {{ 'selected' if filters.relevant == '0' }}>excluded</option><option value="1" {{ 'selected' if filters.relevant == '1' }}>relevant (explicit)</option></select></label>{% endif %}
+  <label class="check" style="margin-bottom:8px"><input type="checkbox" name="review" value="1" {{ 'checked' if filters.review == '1' }}> needs review</label>
+  <button class="btn btn-sm btn-primary" style="margin-bottom:4px">Filter</button>
+  <a href="/runs/{{ run.id }}/leads" class="btn btn-sm" style="margin-bottom:4px">Reset</a>
+</form>
+
+<div class="card table-wrap">
+<table class="tbl">
+  <thead><tr><th>Name</th><th>Title</th><th>Department</th><th>Level</th><th>Company</th><th>Location</th><th class="num">Fit</th><th>Match</th><th>Via</th></tr></thead>
+  <tbody>
+  {% for person, cls in rows %}
+  <tr class="{{ 'row-review' if person.needs_review }}">
+    <td><div class="who"><span class="avatar" style="background:hsl({{ (person.full_name|length * 47) % 360 }} 55% 45%)">{{ person.full_name[:1]|upper }}</span>
+      <span><a class="nm" href="{{ person.profile_url }}" target="_blank" rel="noopener">{{ person.full_name }}</a>{% if person.degree %} <span class="faint" style="font-size:.7rem">{{ person.degree }}</span>{% endif %}</span></div></td>
+    <td>{{ person.raw_title or '' }}{% if cls and cls.canonical_title and cls.canonical_title|lower != (person.raw_title or '')|lower %}<div class="faint" style="font-size:.72rem">{{ cls.canonical_title }}</div>{% endif %}</td>
+    <td><span class="muted">{{ cls.department.value if cls else '' }}</span></td>
+    <td><span class="muted">{{ cls.seniority.value if cls else '' }}</span></td>
+    <td class="muted">{{ companies[person.company_key].name if person.company_key in companies else person.company_name }}</td>
+    <td class="muted" style="font-size:.76rem">{{ person.location or '' }}</td>
+    <td class="num">{% if person.fit_score is not none %}<span class="fit {{ 'fit-hi' if person.relevant else ('fit-mid' if person.fit_score >= 40 else 'fit-lo') }}" title="{{ person.relevance_reason }}">{{ person.fit_score }}</span>{% endif %}</td>
+    <td>{% if matches_spec(cls, run.spec) %}<span style="color:var(--green); font-weight:700">✓</span>{% endif %}</td>
+    <td class="faint" style="font-size:.72rem">{{ person.found_via[0] if person.found_via else '' }}{% if cls and cls.method in ('llm','manual','override') %} · {{ cls.method }}{% endif %}</td>
+  </tr>
+  {% else %}<tr><td class="empty" colspan="9">No people match these filters.</td></tr>{% endfor %}
+  </tbody>
+</table>
+</div>
+{% if total > per_page %}
+<div class="flex gap-3 items-center mt-4" style="font-size:.82rem">
+  {% if page > 1 %}<a class="btn btn-sm" href="?company={{ filters.company }}&department={{ filters.department }}&seniority={{ filters.seniority }}&q={{ filters.q }}&review={{ filters.review }}&group={{ filters.group }}&page={{ page - 1 }}">← Previous</a>{% endif %}
+  <span class="muted">page {{ page }} of {{ (total + per_page - 1) // per_page }}</span>
+  {% if page * per_page < total %}<a class="btn btn-sm" href="?company={{ filters.company }}&department={{ filters.department }}&seniority={{ filters.seniority }}&q={{ filters.q }}&review={{ filters.review }}&group={{ filters.group }}&page={{ page + 1 }}">Next →</a>{% endif %}
+</div>
+{% endif %}
+{% endblock %}

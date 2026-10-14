@@ -1,0 +1,223 @@
+# Maps user-typed industry / sector words to (a) search keywords for building
+# LinkedIn keyword queries and (b) LinkedIn industry names defined in
+# linkedin_industries.yaml. Keys are lowercase; match them case-insensitively.
+synonyms:
+  # ------------------------------------------------------------- technology
+  fintech: { keywords: ["fintech", "financial technology", "payments", "neobank", "digital banking"], industries: ["Financial Services", "Banking", "Software Development"] }
+  payments: { keywords: ["payments", "payment processing", "payment gateway", "acquiring", "payment platform"], industries: ["Financial Services", "Software Development", "Banking"] }
+  saas: { keywords: ["saas", "software as a service", "b2b software", "cloud software", "subscription software"], industries: ["Software Development", "IT Services and IT Consulting"] }
+  software: { keywords: ["software", "software development", "software company", "software vendor"], industries: ["Software Development", "IT System Custom Software Development", "Technology, Information and Internet"] }
+  ai: { keywords: ["artificial intelligence", "ai", "machine learning", "deep learning", "generative ai", "llm"], industries: ["Software Development", "Data Infrastructure and Analytics", "Technology, Information and Internet"] }
+  machine learning: { keywords: ["machine learning", "ml", "deep learning", "computer vision", "nlp", "ai models"], industries: ["Software Development", "Data Infrastructure and Analytics", "Research Services"] }
+  cybersecurity: { keywords: ["cybersecurity", "cyber security", "information security", "infosec", "security software", "threat detection"], industries: ["Computer and Network Security", "IT Services and IT Consulting", "Software Development"] }
+  cloud: { keywords: ["cloud", "cloud computing", "cloud infrastructure", "iaas", "paas", "cloud services"], industries: ["IT Services and IT Consulting", "Software Development", "Data Infrastructure and Analytics"] }
+  devtools: { keywords: ["developer tools", "devtools", "devops", "api platform", "ci/cd", "developer platform"], industries: ["Software Development", "Data Infrastructure and Analytics"] }
+  it services: { keywords: ["it services", "managed services", "msp", "it consulting", "systems integrator", "it outsourcing"], industries: ["IT Services and IT Consulting", "IT System Custom Software Development"] }
+  software agency: { keywords: ["software agency", "software house", "custom software", "dev shop", "software outsourcing", "nearshore development"], industries: ["IT System Custom Software Development", "Software Development", "IT Services and IT Consulting"] }
+  app development: { keywords: ["app development", "mobile apps", "mobile app", "app developer", "ios", "android"], industries: ["Mobile Computing Software Products", "Software Development", "IT System Custom Software Development"] }
+  qa: { keywords: ["qa", "software testing", "quality assurance", "test automation", "testing services"], industries: ["IT System Testing and Evaluation", "IT Services and IT Consulting", "Software Development"] }
+  internet: { keywords: ["internet", "internet company", "web platform", "online service", "digital platform"], industries: ["Technology, Information and Internet", "Software Development", "Internet Marketplace Platforms"] }
+  ecommerce: { keywords: ["ecommerce", "e-commerce", "online retail", "online store", "d2c", "dtc"], industries: ["Online and Mail Order Retail", "Retail", "Internet Marketplace Platforms"] }
+  marketplace: { keywords: ["marketplace", "online marketplace", "platform", "two-sided marketplace", "b2b marketplace"], industries: ["Internet Marketplace Platforms", "Technology, Information and Internet", "Online and Mail Order Retail"] }
+  social media: { keywords: ["social media", "social network", "social platform", "community platform", "creator economy", "influencer"], industries: ["Social Networking Platforms", "Online Audio and Video Media", "Advertising Services"] }
+  martech: { keywords: ["martech", "marketing technology", "marketing software", "marketing automation", "crm", "adtech"], industries: ["Software Development", "Advertising Services", "Marketing Services"] }
+  regtech: { keywords: ["regtech", "compliance", "regulatory technology", "kyc", "aml", "risk management"], industries: ["Software Development", "Financial Services", "Business Consulting and Services"] }
+  govtech: { keywords: ["govtech", "government technology", "civic tech", "public sector software"], industries: ["Software Development", "Government Administration", "IT Services and IT Consulting"] }
+  data: { keywords: ["data", "data platform", "data infrastructure", "database", "data engineering", "data provider"], industries: ["Data Infrastructure and Analytics", "Software Development", "Information Services"] }
+  analytics: { keywords: ["analytics", "business intelligence", "bi", "data analytics", "data science", "insights"], industries: ["Data Infrastructure and Analytics", "Software Development", "Market Research"] }
+  information services: { keywords: ["information services", "data provider", "market data", "credit bureau", "business information"], industries: ["Information Services", "Data Infrastructure and Analytics", "Market Research"] }
+  blockchain: { keywords: ["blockchain", "distributed ledger", "dlt", "smart contracts", "web3"], industries: ["Blockchain Services", "Software Development", "Financial Services"] }
+  crypto: { keywords: ["crypto", "cryptocurrency", "bitcoin", "digital assets", "crypto exchange", "defi"], industries: ["Blockchain Services", "Financial Services", "Capital Markets"] }
+  web3: { keywords: ["web3", "decentralized", "dao", "nft", "defi", "dapp"], industries: ["Blockchain Services", "Software Development"] }
+  iot: { keywords: ["iot", "internet of things", "connected devices", "smart devices", "industrial iot", "iiot"], industries: ["Software Development", "Computer Hardware Manufacturing", "Computers and Electronics Manufacturing", "Automation Machinery Manufacturing"] }
+  robotics: { keywords: ["robotics", "robots", "robotic automation", "autonomous systems", "cobots"], industries: ["Robotics Engineering", "Automation Machinery Manufacturing", "Machinery Manufacturing"] }
+  drones: { keywords: ["drones", "uav", "unmanned aerial", "drone services", "uas"], industries: ["Aviation and Aerospace Component Manufacturing", "Robotics Engineering", "Defense and Space Manufacturing"] }
+  semiconductors: { keywords: ["semiconductors", "semiconductor", "chips", "chip design", "fabless", "foundry"], industries: ["Semiconductor Manufacturing", "Computer Hardware Manufacturing"] }
+  hardware: { keywords: ["hardware", "hardware company", "electronics manufacturer", "devices", "computer hardware"], industries: ["Computer Hardware Manufacturing", "Computers and Electronics Manufacturing", "Electrical Equipment Manufacturing"] }
+  electronics: { keywords: ["electronics", "electronic components", "consumer electronics", "electronics manufacturing", "ems", "pcb"], industries: ["Computers and Electronics Manufacturing", "Electrical Equipment Manufacturing", "Semiconductor Manufacturing"] }
+  networking: { keywords: ["networking", "network equipment", "network infrastructure", "sd-wan", "network security"], industries: ["Computer Networking Products", "Telecommunications", "Computer and Network Security"] }
+  telecom: { keywords: ["telecom", "telecommunications", "telco", "carrier", "isp", "mobile operator"], industries: ["Telecommunications", "Wireless Services"] }
+  space: { keywords: ["space", "spacetech", "satellite", "new space", "launch", "space technology"], industries: ["Space Research and Technology", "Defense and Space Manufacturing", "Aviation and Aerospace Component Manufacturing"] }
+  gaming: { keywords: ["gaming", "video games", "game studio", "game development", "games"], industries: ["Computer Games", "Entertainment Providers", "Software Development"] }
+  esports: { keywords: ["esports", "e-sports", "competitive gaming", "esports team", "esports organization"], industries: ["Computer Games", "Spectator Sports", "Entertainment Providers"] }
+
+  # ---------------------------------------------------------------- finance
+  banking: { keywords: ["bank", "banking", "banks", "retail bank", "commercial bank", "neobank"], industries: ["Banking", "Financial Services", "Credit Intermediation"] }
+  lending: { keywords: ["lending", "loans", "credit", "mortgage", "consumer finance", "lender"], industries: ["Credit Intermediation", "Loan Brokers", "Banking", "Financial Services"] }
+  insurance: { keywords: ["insurance", "insurer", "insurance broker", "reinsurance", "underwriting"], industries: ["Insurance", "Insurance Agencies and Brokerages"] }
+  insurtech: { keywords: ["insurtech", "insurance technology", "digital insurance", "insurance software"], industries: ["Insurance", "Software Development", "Insurance Agencies and Brokerages"] }
+  wealth management: { keywords: ["wealth management", "asset management", "financial advisor", "private banking", "family office"], industries: ["Investment Advice", "Investment Management", "Financial Services"] }
+  family office: { keywords: ["family office", "estate planning", "trust company", "private wealth"], industries: ["Investment Advice", "Investment Management", "Legal Services"] }
+  investment: { keywords: ["investment", "investors", "venture capital", "private equity", "vc", "asset manager"], industries: ["Venture Capital and Private Equity Principals", "Investment Management", "Investment Banking", "Capital Markets"] }
+  venture capital: { keywords: ["venture capital", "vc", "vc firm", "seed fund", "startup investor", "venture fund"], industries: ["Venture Capital and Private Equity Principals", "Investment Management"] }
+  private equity: { keywords: ["private equity", "pe", "pe firm", "buyout", "growth equity", "portfolio company"], industries: ["Venture Capital and Private Equity Principals", "Investment Management", "Investment Banking"] }
+  investment banking: { keywords: ["investment banking", "m&a", "corporate finance", "capital markets", "advisory"], industries: ["Investment Banking", "Capital Markets", "Financial Services"] }
+  trading: { keywords: ["trading", "brokerage", "broker-dealer", "securities", "forex", "prop trading"], industries: ["Capital Markets", "Financial Services", "Investment Management"] }
+  accounting: { keywords: ["accounting", "accountancy", "bookkeeping", "audit", "tax", "cpa"], industries: ["Accounting", "Financial Services", "Business Consulting and Services"] }
+  fundraising: { keywords: ["fundraising", "capital raising", "donor", "grant", "crowdfunding"], industries: ["Fundraising", "Non-profit Organizations", "Financial Services"] }
+  holding: { keywords: ["holding company", "holding", "conglomerate", "group company", "investment holding"], industries: ["Executive Offices", "Investment Management", "Business Consulting and Services"] }
+
+  # ------------------------------------------------------------- healthcare
+  healthcare: { keywords: ["healthcare", "health care", "medical", "health services", "clinic"], industries: ["Hospitals and Health Care", "Medical Practices", "Wellness and Fitness Services", "Home Health Care Services"] }
+  healthtech: { keywords: ["healthtech", "health tech", "digital health", "telehealth", "telemedicine", "health software"], industries: ["Hospitals and Health Care", "Software Development", "Medical Practices"] }
+  medtech: { keywords: ["medtech", "medical devices", "medical device", "medical technology", "medical equipment"], industries: ["Medical Equipment Manufacturing", "Hospitals and Health Care"] }
+  biotech: { keywords: ["biotech", "biotechnology", "life sciences", "biopharma", "genomics"], industries: ["Biotechnology Research", "Pharmaceutical Manufacturing", "Research Services"] }
+  pharma: { keywords: ["pharma", "pharmaceutical", "pharmaceuticals", "drug development", "cro", "generics"], industries: ["Pharmaceutical Manufacturing", "Biotechnology Research", "Research Services"] }
+  hospital: { keywords: ["hospital", "hospitals", "health system", "clinic", "medical center"], industries: ["Hospitals and Health Care", "Medical Practices"] }
+  clinic: { keywords: ["clinic", "medical practice", "physician practice", "doctors", "outpatient", "gp"], industries: ["Medical Practices", "Hospitals and Health Care"] }
+  diagnostics: { keywords: ["diagnostics", "laboratory", "clinical lab", "pathology", "diagnostic imaging", "lab testing"], industries: ["Medical and Diagnostic Laboratories", "Hospitals and Health Care", "Medical Equipment Manufacturing"] }
+  fitness: { keywords: ["fitness", "gym", "fitness studio", "health club", "personal training", "fitness app"], industries: ["Wellness and Fitness Services", "Recreational Facilities", "Sporting Goods Manufacturing"] }
+  wellness: { keywords: ["wellness", "wellbeing", "well-being", "spa", "holistic health", "nutrition"], industries: ["Wellness and Fitness Services", "Consumer Services", "Personal Care Product Manufacturing"] }
+  mental health: { keywords: ["mental health", "behavioral health", "therapy", "psychology", "counseling", "psychiatry"], industries: ["Mental Health Care", "Hospitals and Health Care", "Wellness and Fitness Services"] }
+  dental: { keywords: ["dental", "dentist", "dentistry", "dental clinic", "orthodontics", "dental practice"], industries: ["Dentists", "Medical Practices", "Hospitals and Health Care"] }
+  veterinary: { keywords: ["veterinary", "vet", "vet clinic", "animal health", "veterinarian", "animal hospital"], industries: ["Veterinary Services", "Pet Services"] }
+  pet: { keywords: ["pet", "pets", "pet care", "pet food", "pet products", "pet industry"], industries: ["Pet Services", "Veterinary Services", "Retail", "Manufacturing"] }
+  childcare: { keywords: ["childcare", "child care", "daycare", "nursery", "early childhood education", "preschool"], industries: ["Child Day Care Services", "Primary and Secondary Education", "Individual and Family Services"] }
+  senior care: { keywords: ["senior care", "elder care", "aged care", "assisted living", "nursing home", "care home"], industries: ["Nursing Homes and Residential Care Facilities", "Home Health Care Services", "Hospitals and Health Care"] }
+  home care: { keywords: ["home care", "home health", "domiciliary care", "in-home care", "caregivers"], industries: ["Home Health Care Services", "Nursing Homes and Residential Care Facilities", "Individual and Family Services"] }
+
+  # ------------------------------------------------------------- industrial
+  manufacturing: { keywords: ["manufacturing", "manufacturer", "industrial", "factory", "production"], industries: ["Manufacturing", "Machinery Manufacturing", "Automation Machinery Manufacturing"] }
+  machinery: { keywords: ["machinery", "industrial machinery", "equipment manufacturer", "capital equipment", "mechanical engineering"], industries: ["Machinery Manufacturing", "Automation Machinery Manufacturing", "Manufacturing"] }
+  automation: { keywords: ["automation", "industrial automation", "factory automation", "process automation", "plc", "robotics"], industries: ["Automation Machinery Manufacturing", "Robotics Engineering", "Software Development"] }
+  automotive: { keywords: ["automotive", "automotive supplier", "car manufacturer", "oem", "auto parts"], industries: ["Motor Vehicle Manufacturing", "Motor Vehicle Parts Manufacturing", "Retail Motor Vehicles"] }
+  ev: { keywords: ["electric vehicles", "ev", "ev charging", "electric mobility", "battery", "e-mobility"], industries: ["Motor Vehicle Manufacturing", "Renewable Energy Semiconductor Manufacturing", "Utilities"] }
+  car dealership: { keywords: ["car dealership", "car dealer", "auto dealer", "dealership", "used cars", "vehicle sales"], industries: ["Retail Motor Vehicles", "Motor Vehicle Manufacturing", "Retail"] }
+  aerospace: { keywords: ["aerospace", "aviation", "aircraft", "space", "aerospace manufacturing"], industries: ["Aviation and Aerospace Component Manufacturing", "Defense and Space Manufacturing", "Airlines and Aviation", "Space Research and Technology"] }
+  defense: { keywords: ["defense", "defence", "military", "defense contractor", "security and defense"], industries: ["Defense and Space Manufacturing", "Armed Forces", "Aviation and Aerospace Component Manufacturing"] }
+  chemicals: { keywords: ["chemicals", "chemical company", "specialty chemicals", "petrochemicals", "coatings"], industries: ["Chemical Manufacturing", "Plastics Manufacturing", "Manufacturing"] }
+  plastics: { keywords: ["plastics", "polymers", "injection molding", "rubber", "composites"], industries: ["Plastics Manufacturing", "Chemical Manufacturing", "Manufacturing"] }
+  packaging: { keywords: ["packaging", "packaging solutions", "containers", "labels", "flexible packaging"], industries: ["Packaging and Containers Manufacturing", "Paper and Forest Product Manufacturing", "Plastics Manufacturing"] }
+  paper: { keywords: ["paper", "pulp and paper", "forest products", "forestry", "tissue"], industries: ["Paper and Forest Product Manufacturing", "Packaging and Containers Manufacturing"] }
+  printing: { keywords: ["printing", "print", "commercial printing", "print services", "print shop", "labels"], industries: ["Printing Services", "Packaging and Containers Manufacturing"] }
+  3d printing: { keywords: ["3d printing", "additive manufacturing", "rapid prototyping", "3d printer"], industries: ["Printing Services", "Machinery Manufacturing", "Manufacturing"] }
+  textiles: { keywords: ["textiles", "textile", "fabrics", "yarn", "weaving", "technical textiles"], industries: ["Textile Manufacturing", "Apparel Manufacturing", "Retail Apparel and Fashion"] }
+  furniture: { keywords: ["furniture", "home furnishings", "office furniture", "furniture manufacturer"], industries: ["Furniture and Home Furnishings Manufacturing", "Retail", "Interior Design"] }
+  steel: { keywords: ["steel", "metals", "metal fabrication", "foundry", "aluminium"], industries: ["Primary Metal Manufacturing", "Mining", "Manufacturing"] }
+  mining: { keywords: ["mining", "metals", "minerals", "mining company", "quarrying"], industries: ["Mining", "Primary Metal Manufacturing"] }
+  electrical: { keywords: ["electrical", "electrical equipment", "electrical contractor", "switchgear", "power electronics"], industries: ["Electrical Equipment Manufacturing", "Construction", "Manufacturing"] }
+  construction: { keywords: ["construction", "contractor", "general contractor", "building company", "civil works"], industries: ["Construction", "Civil Engineering", "Architecture and Planning"] }
+  engineering: { keywords: ["engineering", "engineering firm", "engineering consultancy", "epc"], industries: ["Civil Engineering", "Machinery Manufacturing", "Construction"] }
+  architecture: { keywords: ["architecture", "architects", "architecture firm", "urban planning"], industries: ["Architecture and Planning", "Interior Design", "Construction"] }
+  building materials: { keywords: ["building materials", "construction materials", "cement", "concrete", "glass", "building products"], industries: ["Glass, Ceramics and Concrete Manufacturing", "Construction", "Wholesale"] }
+  hvac: { keywords: ["hvac", "heating", "air conditioning", "ventilation", "mechanical contractor", "refrigeration"], industries: ["Water, Waste, Steam, and Air Conditioning Services", "Construction", "Machinery Manufacturing"] }
+  agriculture: { keywords: ["agriculture", "farming", "agribusiness", "farm", "crop", "livestock"], industries: ["Farming", "Food and Beverage Manufacturing", "Wholesale"] }
+  agritech: { keywords: ["agritech", "agtech", "agricultural technology", "precision agriculture", "vertical farming", "foodtech"], industries: ["Farming", "Software Development", "Food and Beverage Manufacturing"] }
+  foodtech: { keywords: ["foodtech", "food technology", "food delivery", "alternative protein", "food innovation"], industries: ["Food and Beverage Manufacturing", "Software Development", "Internet Marketplace Platforms"] }
+  wholesale: { keywords: ["wholesale", "distribution", "distributor", "wholesaler", "trading company", "import export"], industries: ["Wholesale", "Transportation, Logistics, Supply Chain and Storage"] }
+  import export: { keywords: ["import export", "import/export", "importer", "exporter", "international trade", "trading house"], industries: ["Wholesale", "International Trade and Development", "Transportation, Logistics, Supply Chain and Storage"] }
+
+  # ---------------------------------------------------- logistics / mobility
+  logistics: { keywords: ["logistics", "3pl", "freight forwarding", "transport", "logistics company"], industries: ["Transportation, Logistics, Supply Chain and Storage", "Truck Transportation", "Freight and Package Transportation", "Warehousing and Storage"] }
+  supply chain: { keywords: ["supply chain", "procurement", "supply chain management", "scm"], industries: ["Transportation, Logistics, Supply Chain and Storage", "Warehousing and Storage", "Wholesale"] }
+  warehousing: { keywords: ["warehousing", "warehouse", "fulfillment", "fulfilment", "storage", "distribution center"], industries: ["Warehousing and Storage", "Transportation, Logistics, Supply Chain and Storage", "Online and Mail Order Retail"] }
+  freight: { keywords: ["freight", "freight forwarding", "trucking", "haulage", "cargo", "freight broker"], industries: ["Truck Transportation", "Freight and Package Transportation", "Transportation, Logistics, Supply Chain and Storage"] }
+  trucking: { keywords: ["trucking", "haulage", "road freight", "truck fleet", "carrier"], industries: ["Truck Transportation", "Transportation, Logistics, Supply Chain and Storage"] }
+  shipping: { keywords: ["shipping", "shipping company", "ocean freight", "container shipping", "cargo"], industries: ["Maritime Transportation", "Freight and Package Transportation", "Transportation, Logistics, Supply Chain and Storage"] }
+  maritime: { keywords: ["maritime", "marine", "ports", "shipping line", "vessel", "offshore marine"], industries: ["Maritime Transportation", "Transportation, Logistics, Supply Chain and Storage"] }
+  aviation: { keywords: ["aviation", "airline", "airport", "air cargo", "aircraft", "mro"], industries: ["Airlines and Aviation", "Aviation and Aerospace Component Manufacturing"] }
+  airlines: { keywords: ["airline", "airlines", "air carrier", "low-cost carrier", "air travel"], industries: ["Airlines and Aviation", "Travel Arrangements"] }
+  rail: { keywords: ["rail", "railway", "railroad", "train", "rolling stock", "rail infrastructure"], industries: ["Rail Transportation", "Transportation, Logistics, Supply Chain and Storage", "Civil Engineering"] }
+  mobility: { keywords: ["mobility", "urban mobility", "micromobility", "shared mobility", "transportation", "mobility services"], industries: ["Ground Passenger Transportation", "Motor Vehicle Manufacturing", "Software Development"] }
+  ride sharing: { keywords: ["ride sharing", "ridesharing", "ride hailing", "taxi app", "carpooling"], industries: ["Ground Passenger Transportation", "Technology, Information and Internet", "Software Development"] }
+  public transport: { keywords: ["public transport", "public transit", "bus operator", "transit agency", "passenger transport"], industries: ["Ground Passenger Transportation", "Government Administration", "Rail Transportation"] }
+  delivery: { keywords: ["delivery", "on-demand delivery", "food delivery", "courier", "parcel delivery", "quick commerce"], industries: ["Freight and Package Transportation", "Online and Mail Order Retail", "Internet Marketplace Platforms"] }
+  last mile: { keywords: ["last mile", "last-mile delivery", "final mile", "parcel delivery", "courier"], industries: ["Freight and Package Transportation", "Transportation, Logistics, Supply Chain and Storage"] }
+
+  # ------------------------------------------------------------------ energy
+  energy: { keywords: ["energy", "power", "electricity", "energy company", "utility"], industries: ["Utilities", "Oil and Gas", "Renewable Energy Semiconductor Manufacturing", "Electric Power Transmission, Control, and Distribution"] }
+  utilities: { keywords: ["utilities", "utility", "power company", "electricity", "grid", "water utility"], industries: ["Utilities", "Electric Power Transmission, Control, and Distribution", "Water, Waste, Steam, and Air Conditioning Services"] }
+  renewables: { keywords: ["renewable energy", "renewables", "clean energy", "green energy"], industries: ["Renewable Energy Semiconductor Manufacturing", "Renewable Energy Power Generation", "Solar Electric Power Generation", "Wind Electric Power Generation"] }
+  solar: { keywords: ["solar", "solar energy", "photovoltaic", "pv", "solar installer"], industries: ["Solar Electric Power Generation", "Renewable Energy Semiconductor Manufacturing", "Services for Renewable Energy"] }
+  wind: { keywords: ["wind energy", "wind power", "offshore wind", "wind farm"], industries: ["Wind Electric Power Generation", "Renewable Energy Power Generation", "Services for Renewable Energy"] }
+  nuclear: { keywords: ["nuclear", "nuclear energy", "nuclear power", "nuclear technology"], industries: ["Nuclear Electric Power Generation", "Utilities", "Research Services"] }
+  oil and gas: { keywords: ["oil and gas", "oil & gas", "petroleum", "upstream", "oilfield services", "lng"], industries: ["Oil and Gas", "Utilities"] }
+  cleantech: { keywords: ["cleantech", "clean technology", "climate tech", "sustainability", "green tech", "decarbonization"], industries: ["Renewable Energy Semiconductor Manufacturing", "Environmental Services", "Software Development"] }
+  climate: { keywords: ["climate", "climate tech", "carbon", "net zero", "sustainability", "esg"], industries: ["Environmental Services", "Renewable Energy Semiconductor Manufacturing", "Business Consulting and Services"] }
+  water: { keywords: ["water", "water treatment", "water technology", "wastewater", "water utility", "desalination"], industries: ["Water, Waste, Steam, and Air Conditioning Services", "Environmental Services", "Utilities"] }
+  waste: { keywords: ["waste management", "waste", "recycling", "circular economy", "waste disposal"], industries: ["Environmental Services", "Water, Waste, Steam, and Air Conditioning Services"] }
+
+  # ------------------------------------------------------------- real estate
+  real estate: { keywords: ["real estate", "property", "property developer", "real estate agency", "realtor"], industries: ["Real Estate", "Real Estate Agents and Brokers", "Leasing Real Estate", "Leasing Non-residential Real Estate"] }
+  proptech: { keywords: ["proptech", "property technology", "real estate software", "real estate tech"], industries: ["Real Estate", "Software Development", "Internet Marketplace Platforms"] }
+  commercial real estate: { keywords: ["commercial real estate", "cre", "office space", "industrial property"], industries: ["Leasing Non-residential Real Estate", "Real Estate"] }
+  housing: { keywords: ["housing", "affordable housing", "housing association", "social housing", "community development"], industries: ["Housing and Community Development", "Real Estate", "Non-profit Organizations"] }
+  coworking: { keywords: ["coworking", "co-working", "flexible workspace", "shared office", "serviced office", "flex space"], industries: ["Real Estate", "Leasing Non-residential Real Estate", "Hospitality"] }
+  facility management: { keywords: ["facility management", "facilities management", "fm", "building services", "property services", "hard services"], industries: ["Facilities Services", "Real Estate", "Construction"] }
+
+  # ---------------------------------------------------------------- consumer
+  retail: { keywords: ["retail", "retailer", "stores", "retail chain", "shop", "merchant"], industries: ["Retail", "Online and Mail Order Retail", "Retail Groceries", "Retail Apparel and Fashion"] }
+  grocery: { keywords: ["grocery", "supermarket", "grocer", "grocery chain", "food retail"], industries: ["Retail Groceries", "Retail", "Food and Beverage Services"] }
+  fashion: { keywords: ["fashion", "apparel", "clothing", "fashion brand", "footwear", "textiles"], industries: ["Retail Apparel and Fashion", "Apparel Manufacturing", "Textile Manufacturing", "Retail Luxury Goods and Jewelry"] }
+  beauty: { keywords: ["beauty", "cosmetics", "skincare", "personal care", "beauty brand", "fragrance"], industries: ["Personal Care Product Manufacturing", "Retail", "Consumer Services"] }
+  luxury: { keywords: ["luxury", "luxury goods", "jewelry", "jewellery", "watches", "high-end"], industries: ["Retail Luxury Goods and Jewelry", "Retail Apparel and Fashion"] }
+  jewelry: { keywords: ["jewelry", "jewellery", "jeweler", "watches", "fine jewelry"], industries: ["Retail Luxury Goods and Jewelry", "Retail"] }
+  consumer goods: { keywords: ["consumer goods", "cpg", "fmcg", "consumer products", "household products", "consumer brand"], industries: ["Manufacturing", "Retail", "Food and Beverage Manufacturing", "Personal Care Product Manufacturing"] }
+  sporting goods: { keywords: ["sporting goods", "sports equipment", "sportswear", "athletic apparel", "outdoor gear"], industries: ["Sporting Goods Manufacturing", "Retail Apparel and Fashion", "Retail"] }
+  food: { keywords: ["food", "food & beverage", "f&b", "food production", "food brand", "food company"], industries: ["Food and Beverage Manufacturing", "Food and Beverage Services", "Restaurants", "Retail Groceries"] }
+  beverage: { keywords: ["beverage", "beverages", "drinks", "brewery", "soft drinks", "wine"], industries: ["Food and Beverage Manufacturing", "Wine and Spirits", "Food and Beverage Services"] }
+  restaurants: { keywords: ["restaurant", "restaurants", "food service", "qsr", "dining", "cafe"], industries: ["Restaurants", "Food and Beverage Services", "Hospitality"] }
+  hospitality: { keywords: ["hospitality", "hotel", "hotels", "resorts", "accommodation", "hotel group"], industries: ["Hospitality", "Travel Arrangements", "Restaurants"] }
+  hotel: { keywords: ["hotel", "hotels", "hotel group", "resort", "lodging", "accommodation"], industries: ["Hospitality", "Travel Arrangements"] }
+  travel: { keywords: ["travel", "tourism", "travel agency", "tour operator", "online travel", "ota"], industries: ["Travel Arrangements", "Hospitality", "Airlines and Aviation"] }
+  leisure: { keywords: ["leisure", "recreation", "theme park", "amusement", "attractions", "entertainment venue"], industries: ["Recreational Facilities", "Entertainment Providers", "Travel Arrangements"] }
+  casino: { keywords: ["casino", "gambling", "igaming", "betting", "sportsbook", "lottery"], industries: ["Gambling Facilities and Casinos", "Entertainment Providers", "Software Development"] }
+  sports: { keywords: ["sports", "sports club", "sports team", "sports organization", "athletics", "league"], industries: ["Spectator Sports", "Sporting Goods Manufacturing", "Recreational Facilities"] }
+
+  # ---------------------------------------------------------------- services
+  consulting: { keywords: ["consulting", "consultancy", "management consulting", "advisory", "strategy consulting"], industries: ["Business Consulting and Services", "IT Services and IT Consulting"] }
+  outsourcing: { keywords: ["outsourcing", "bpo", "offshoring", "nearshoring", "outsourced services"], industries: ["Outsourcing and Offshoring Consulting", "IT Services and IT Consulting", "Staffing and Recruiting"] }
+  bpo: { keywords: ["bpo", "business process outsourcing", "back office", "kpo"], industries: ["Outsourcing and Offshoring Consulting", "IT Services and IT Consulting"] }
+  call center: { keywords: ["call center", "contact center", "customer service outsourcing", "customer support", "bpo"], industries: ["Outsourcing and Offshoring Consulting", "Telecommunications"] }
+  hr: { keywords: ["hr", "human resources", "hr services", "payroll", "peo", "hr consulting"], industries: ["Human Resources Services", "Staffing and Recruiting", "Business Consulting and Services"] }
+  hr tech: { keywords: ["hr tech", "hrtech", "hr software", "people analytics", "payroll software", "talent management"], industries: ["Human Resources Services", "Software Development", "Staffing and Recruiting"] }
+  recruiting: { keywords: ["recruiting", "recruitment", "headhunting", "executive search", "talent acquisition"], industries: ["Staffing and Recruiting", "Human Resources Services"] }
+  staffing: { keywords: ["staffing", "staffing agency", "temp agency", "workforce solutions", "contract staffing"], industries: ["Staffing and Recruiting", "Human Resources Services", "Outsourcing and Offshoring Consulting"] }
+  marketing agency: { keywords: ["marketing agency", "digital agency", "digital marketing", "performance marketing", "growth agency", "seo agency"], industries: ["Advertising Services", "Marketing Services", "Public Relations and Communications Services"] }
+  advertising: { keywords: ["advertising", "ad agency", "adtech", "media buying", "creative agency", "ads"], industries: ["Advertising Services", "Marketing Services", "Media Production"] }
+  pr: { keywords: ["public relations", "pr", "communications", "pr agency", "corporate communications"], industries: ["Public Relations and Communications Services", "Advertising Services"] }
+  market research: { keywords: ["market research", "consumer insights", "research agency", "surveys", "polling"], industries: ["Market Research", "Research Services", "Advertising Services"] }
+  design: { keywords: ["design", "design agency", "ux", "product design", "branding", "creative studio"], industries: ["Design Services", "Advertising Services", "Interior Design"] }
+  interior design: { keywords: ["interior design", "interiors", "fit-out", "interior architecture", "furniture"], industries: ["Interior Design", "Architecture and Planning", "Furniture and Home Furnishings Manufacturing"] }
+  events: { keywords: ["events", "event management", "event planning", "conferences", "exhibitions", "trade shows"], industries: ["Events Services", "Advertising Services", "Hospitality"] }
+  legal: { keywords: ["legal", "law firm", "lawyers", "attorneys", "solicitors", "legal services"], industries: ["Legal Services", "Law Practice", "Alternative Dispute Resolution"] }
+  legaltech: { keywords: ["legaltech", "legal tech", "legal technology", "legal software", "contract management"], industries: ["Legal Services", "Software Development", "Law Practice"] }
+  dispute resolution: { keywords: ["arbitration", "mediation", "dispute resolution", "adr"], industries: ["Alternative Dispute Resolution", "Legal Services", "Law Practice"] }
+  translation: { keywords: ["translation", "localization", "localisation", "language services", "interpreting", "lsp"], industries: ["Translation and Localization", "Outsourcing and Offshoring Consulting"] }
+  security services: { keywords: ["security services", "security guards", "manned guarding", "private security", "security company", "surveillance"], industries: ["Security and Investigations", "Facilities Services"] }
+  cleaning: { keywords: ["cleaning", "cleaning services", "janitorial", "commercial cleaning", "housekeeping"], industries: ["Facilities Services", "Consumer Services"] }
+  research: { keywords: ["research", "r&d", "research institute", "scientific research", "laboratory"], industries: ["Research Services", "Think Tanks", "Higher Education"] }
+  nanotech: { keywords: ["nanotechnology", "nanotech", "advanced materials", "materials science"], industries: ["Nanotechnology Research", "Research Services", "Chemical Manufacturing"] }
+  nonprofit: { keywords: ["nonprofit", "non-profit", "ngo", "charity", "foundation", "social enterprise"], industries: ["Non-profit Organizations", "Civic and Social Organizations", "Fundraising"] }
+  association: { keywords: ["association", "trade association", "industry association", "chamber of commerce", "membership organization", "professional body"], industries: ["Industry Associations", "Civic and Social Organizations", "Non-profit Organizations"] }
+  think tank: { keywords: ["think tank", "policy institute", "policy research", "public policy"], industries: ["Think Tanks", "Public Policy Offices", "Research Services"] }
+  religious: { keywords: ["church", "religious organization", "faith-based", "ministry", "mosque"], industries: ["Religious Institutions", "Non-profit Organizations"] }
+  international organizations: { keywords: ["international organization", "intergovernmental", "un agency", "diplomacy", "foreign affairs", "development cooperation"], industries: ["International Affairs", "Non-profit Organizations", "Government Administration"] }
+
+  # ------------------------------------------------------------------ public
+  government: { keywords: ["government", "public sector", "municipality", "ministry", "public administration", "govtech"], industries: ["Government Administration", "Public Policy Offices", "Government Relations Services"] }
+  government relations: { keywords: ["government relations", "public affairs", "lobbying", "lobbyist", "policy advocacy"], industries: ["Government Relations Services", "Public Policy Offices", "Political Organizations"] }
+  political: { keywords: ["political", "political party", "campaign", "advocacy group", "political consulting"], industries: ["Political Organizations", "Government Relations Services", "Public Policy Offices"] }
+  public safety: { keywords: ["public safety", "emergency services", "fire department", "police", "law enforcement"], industries: ["Public Safety", "Law Enforcement", "Government Administration"] }
+  economic development: { keywords: ["economic development", "investment promotion", "development agency", "trade promotion"], industries: ["Economic Programs", "Government Administration", "International Trade and Development"] }
+
+  # --------------------------------------------------------------- education
+  education: { keywords: ["education", "school", "university", "college", "training", "academy"], industries: ["Education Administration Programs", "Higher Education", "Primary and Secondary Education", "Professional Training and Coaching"] }
+  edtech: { keywords: ["edtech", "education technology", "e-learning", "online learning", "learning platform", "lms"], industries: ["E-Learning Providers", "Software Development", "Education Administration Programs"] }
+  university: { keywords: ["university", "higher education", "college", "academic", "business school"], industries: ["Higher Education", "Education Administration Programs", "Research Services"] }
+  school: { keywords: ["school", "k-12", "primary school", "secondary school", "international school", "private school"], industries: ["Primary and Secondary Education", "Education Administration Programs"] }
+  training: { keywords: ["training", "corporate training", "coaching", "l&d", "professional development", "upskilling"], industries: ["Professional Training and Coaching", "Technical and Vocational Training", "E-Learning Providers"] }
+  vocational training: { keywords: ["vocational training", "trade school", "apprenticeship", "technical training", "bootcamp", "coding bootcamp"], industries: ["Technical and Vocational Training", "Professional Training and Coaching", "E-Learning Providers"] }
+  language school: { keywords: ["language school", "language learning", "english school", "language courses", "language training"], industries: ["Language Schools", "E-Learning Providers", "Professional Training and Coaching"] }
+  museum: { keywords: ["museum", "gallery", "zoo", "heritage", "cultural institution", "arts organization"], industries: ["Museums, Historical Sites, and Zoos", "Artists and Writers", "Non-profit Organizations"] }
+
+  # ------------------------------------------------------------------- media
+  media: { keywords: ["media", "media company", "publishing", "broadcasting", "digital media", "news"], industries: ["Media Production", "Online Audio and Video Media", "Broadcast Media Production and Distribution", "Newspaper Publishing", "Book and Periodical Publishing"] }
+  entertainment: { keywords: ["entertainment", "film", "music", "streaming", "live entertainment"], industries: ["Entertainment Providers", "Movies, Videos, and Sound", "Musicians", "Online Audio and Video Media"] }
+  publishing: { keywords: ["publishing", "publisher", "books", "magazines", "digital publishing"], industries: ["Book and Periodical Publishing", "Newspaper Publishing", "Internet Publishing"] }
+  news: { keywords: ["news", "newspaper", "journalism", "news media", "news publisher"], industries: ["Newspaper Publishing", "Online Audio and Video Media", "Media Production"] }
+  broadcasting: { keywords: ["broadcasting", "tv", "television", "radio", "broadcaster", "tv network"], industries: ["Broadcast Media Production and Distribution", "Media Production", "Entertainment Providers"] }
+  streaming: { keywords: ["streaming", "podcast", "video platform", "ott", "online video", "creator"], industries: ["Online Audio and Video Media", "Entertainment Providers", "Media Production"] }
+  film: { keywords: ["film", "film production", "video production", "motion pictures", "animation", "vfx"], industries: ["Movies, Videos, and Sound", "Animation and Post-production", "Media Production"] }
+  music: { keywords: ["music", "record label", "music industry", "music production", "artist management"], industries: ["Musicians", "Entertainment Providers", "Media Production"] }
+  performing arts: { keywords: ["performing arts", "theatre", "theater", "dance", "opera", "live performance"], industries: ["Performing Arts", "Entertainment Providers", "Artists and Writers"] }

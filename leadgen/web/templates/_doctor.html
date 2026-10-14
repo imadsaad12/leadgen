@@ -1,0 +1,3 @@
+<table class="tbl" style="font-size:.82rem"><tbody>
+{% for c in checks %}<tr><td style="width:28px">{{ '✅' if c.ok else '❌' }}</td><td style="font-weight:600">{{ c.check }}</td><td class="muted" style="font-size:.76rem">{{ c.detail }}</td></tr>{% endfor %}
+</tbody></table>

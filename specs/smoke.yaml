@@ -1,0 +1,16 @@
+# Smallest live test: decision-makers at one company, targeted roles only.
+name: smoke-cpaas-buyers
+company:
+  seed_companies: [docker]
+  max_companies: 1
+people:
+  titles: ["VP Engineering", "Head of Engineering", "CTO", "Head of Product", "Head of Developer Relations", "Developer Advocate"]
+  seniorities: [director, vp, cxo, founder]
+  max_per_company: 15
+  max_pages_per_facet: 2
+  broad_sweep: false
+run:
+  source: linkedin
+  daily_budget: 40
+  min_delay_s: 8
+  max_delay_s: 15

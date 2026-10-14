@@ -1,0 +1,280 @@
+# Title taxonomy for rule-based classification. Edit freely; `leadgen reclassify` re-applies it offline.
+# Matching runs on the lower-cased, abbreviation-expanded title. Patterns are Python regexes.
+version: 1
+
+# Segments: the first segment is the primary title, the rest become function tags.
+separators: [" || ", " | ", "|", " • ", "•", " · ", "·", " – ", " — ", " - ", ";", ",", " / ", "/"]
+
+# Removed before classification.
+noise_patterns:
+  - "\\([^)]*\\)"
+  - "\\[[^\\]]*\\]"
+  - "\\b(mba|phd|ph\\.d\\.?|cpa|cfa|pmp|cissp|cism|cisa|frm|acca|aca|cma|msc|bsc|m\\.sc\\.?|b\\.sc\\.?|b\\.eng\\.?|m\\.eng\\.?|dipl\\.?-?ing\\.?|dr\\.?|prof\\.?|ir\\.?|eng\\.?|ms|ba|bba|llm|jd)\\b"
+  - "\\b(ex-[a-z0-9&.]+)\\b"
+  - "\\b(he/him|she/her|they/them|he/his|she/hers|him/his|her/hers)\\b"
+  - "[\"'“”‘’`]"
+  - "\\b(hiring|we're hiring|we are hiring|open to work|opentowork|looking for|seeking)\\b.*$"
+  - "\\b(?:to|für|pour|para|of) (?:the |der |dem |des |la |le |el )?(?:ceo|cfo|coo|cto|cmo|cio|chief [a-z ]+officer|board(?: of directors)?|founders?|managing director|executive team|leadership team|management team|general manager|vice president[a-z ]*|vp[a-z ]*|president|director[a-z ]*|head of [a-z ]+|geschäftsführ\\w+|gf)\\s*$"
+
+# Whole-word replacements applied after lower-casing (longest keys first).
+abbreviations:
+  "svp": "senior vice president"
+  "evp": "executive vice president"
+  "avp": "assistant vice president"
+  "vp": "vice president"
+  "v.p.": "vice president"
+  "vice-president": "vice president"
+  "ceo": "chief executive officer"
+  "cfo": "chief financial officer"
+  "coo": "chief operating officer"
+  "cto": "chief technology officer"
+  "cmo": "chief marketing officer"
+  "cio": "chief information officer"
+  "cpo": "chief product officer"
+  "chro": "chief human resources officer"
+  "cro": "chief revenue officer"
+  "cso": "chief strategy officer"
+  "cco": "chief commercial officer"
+  "cdo": "chief data officer"
+  "ciso": "chief information security officer"
+  "cbo": "chief business officer"
+  "cgo": "chief growth officer"
+  "clo": "chief legal officer"
+  "cao": "chief administrative officer"
+  "cxo": "chief experience officer"
+  "md": "managing director"
+  "gm": "general manager"
+  "swe": "software engineer"
+  "sde": "software development engineer"
+  "sre": "site reliability engineer"
+  "qa": "quality assurance"
+  "ux": "user experience"
+  "ui": "user interface"
+  "ae": "account executive"
+  "sdr": "sales development representative"
+  "bdr": "business development representative"
+  "bdm": "business development manager"
+  "biz dev": "business development"
+  "bizdev": "business development"
+  "csm": "customer success manager"
+  "cs": "customer success"
+  "cx": "customer experience"
+  "hr": "human resources"
+  "hrbp": "human resources business partner"
+  "ta": "talent acquisition"
+  "l&d": "learning and development"
+  "fp&a": "financial planning and analysis"
+  "r&d": "research and development"
+  "it": "information technology"
+  "ml": "machine learning"
+  "ai": "artificial intelligence"
+  "nlp": "natural language processing"
+  "bi": "business intelligence"
+  "pr": "public relations"
+  "seo": "search engine optimization"
+  "sem": "search engine marketing"
+  "ppc": "pay per click"
+  "crm": "customer relationship management"
+  "erp": "enterprise resource planning"
+  "qc": "quality control"
+  "ehs": "environment health and safety"
+  "hse": "health safety and environment"
+  "gtm": "go to market"
+  "rev ops": "revenue operations"
+  "revops": "revenue operations"
+  "salesops": "sales operations"
+  "mlops": "machine learning operations"
+  "secops": "security operations"
+  "finops": "financial operations"
+  "peopleops": "people operations"
+  "devops": "devops"
+  "mgr": "manager"
+  "sr": "senior"
+  "sr.": "senior"
+  "snr": "senior"
+  "jr": "junior"
+  "jr.": "junior"
+  "asst": "assistant"
+  "assoc": "associate"
+  "dir": "director"
+  "exec": "executive"
+  "mgmt": "management"
+  "ops": "operations"
+  "tech": "technology"
+  "dev": "developer"
+  "acct": "account"
+  "mktg": "marketing"
+  "rep": "representative"
+  "spec": "specialist"
+  "coord": "coordinator"
+  "admin": "administrator"
+  "intl": "international"
+  "eng": "engineering"
+  "engg": "engineering"
+  "e-commerce": "ecommerce"
+  "e commerce": "ecommerce"
+  "fullstack": "full stack"
+  "full-stack": "full stack"
+  "front-end": "frontend"
+  "front end": "frontend"
+  "back-end": "backend"
+  "back end": "backend"
+  "co-founder": "cofounder"
+  "co founder": "cofounder"
+  "mudir tanfidhi": "chief executive officer"
+  "mudir": "manager"
+  "muhandis": "engineer"
+  "barmajiyat": "software"
+  "mabiaat": "sales"
+  "muhasib": "accountant"
+  "mawarid bashariya": "human resources"
+
+# Ordered: the first level whose pattern matches wins. No match -> mid.
+seniority:
+  - level: founder
+    patterns:
+      - "\\b(cofounders?|founders?|(?<!product )(?<!process )owners?|proprietor|oprichter|medeoprichter|mede-oprichter|gründer(in)?|mitgründer(in)?|fondateur|fondatrice|fundador(a)?|founding partner|entrepreneur)\\b"
+  - level: cxo
+    patterns:
+      - "\\bchief\\b"
+      - "(?<!vice )(?<!assistant )(?<!associate )(?<!deputy )\\bpresident\\b"
+      - "\\b(managing director|geschäftsführer(in)?|geschaftsfuhrer|directeur général|directrice générale|director general|gerente general|amministratore delegato|managing partner|senior partner|equity partner|general partner|executive director|board member|chairman|chairwoman|chairperson|vorstand|executive officer|algemeen directeur)\\b"
+      - "(?<!associate )(?<!assistant )(?<!deputy )\\bgeneral counsel\\b"
+      - "^(?:(?:managing|senior|equity|general|founding|junior|salary|tax|audit|advisory|consulting|investment|venture|operating|name|law) )?partner\\b"
+  - level: vp
+    patterns:
+      - "\\b(senior vice president|executive vice president|vice president)\\b"
+  - level: director
+    patterns:
+      - "\\b(director|directors|directeur|directrice|direttore|direttrice|direktor(in)?|head of|head|heads|leiter(in)?|bereichsleiter(in)?|abteilungsleiter(in)?|assistant vice president|general manager|country manager|site lead|regional director|group lead|department lead)\\b"
+      - "\\b(vertriebs|marketing|personal|finanz|bereichs|abteilungs|betriebs|werks|produktions|entwicklungs|einkaufs|logistik|niederlassungs|standort|regional)leiter(in)?\\b"
+  - level: manager
+    patterns:
+      - "\\b(manager|managerin|product owner|supervisor|team lead(er)?|teamleiter(in)?|teamlead|responsable|gerente|chef de (projet|produit|service|secteur)|leitung|superintendent|foreman|store manager|branch manager|projektleiter(in)?|gruppenleiter(in)?|responsabile)\\b"
+  - level: intern
+    patterns:
+      - "\\b(intern|interns|internship|werkstudent(in)?|working student|trainee|apprentice|apprenticeship|auszubildende[r]?|azubi|stagiaire|praktikant(in)?|praktikum|student|students|co-?op|graduate program(me)?|dual student|duales studium|thesis)\\b"
+  - level: lead
+    patterns:
+      - "\\b(lead|leader|principal|staff|distinguished|fellow|architect|expert|evangelist|advocate|tech lead|technical lead)\\b"
+  - level: senior
+    patterns:
+      - "\\b(senior|sênior|sénior|experienced|seasoned|iii|iv|level 3|level 4|l5|l6)\\b"
+  - level: entry
+    patterns:
+      - "\\b(junior|associate|assistant|assistante|assistenz|assistente|asistente|graduate|entry level|entry-level|trainee|fresher|apprentice|level 1|l1|l2)\\b"
+
+# Department scoring: sum of weights over all matching patterns; highest score wins.
+departments:
+  engineering:
+    label: Engineering
+    patterns:
+      - [3, "\\b(software|backend|frontend|full stack|devops|site reliability|platform engineer|mobile (developer|engineer)|ios|android|embedded|firmware|quality assurance|test automation|automation engineer|cloud engineer|infrastructure engineer|solutions? architect|software architect|systems? engineer|web developer|game developer|blockchain developer|smart contract|security engineer|chief technology officer|engineering manager|vice president engineering|head of engineering|technical lead|tech lead|release engineer|build engineer)\\b"]
+      - [2, "\\b(\\w*entwickl\\w*|\\w*softwar\\w*|\\w*informatik\\w*|\\w*programmier\\w*)\\b"]
+      - [2, "\\b(engineer|engineers|engineering|developer|developers|programmer|développeur|developpeur|entwickler(in)?|entwicklung|ingenieur(in)?|ingénieur(e)?|ingeniero|ingeniera|programador(a)?|desarrollador(a)?|desenvolvedor(a)?|sviluppatore|sviluppatrice|ontwikkelaar|programmeur|architect|coder|technologist|technician)\\b"]
+  data:
+    label: Data & AI
+    patterns:
+      - [6, "\\b(research scientist|applied scientist|machine learning scientist|artificial intelligence scientist|data scientist)\\b"]
+      - [3, "\\b(data scientist|data engineer|data analyst|machine learning|artificial intelligence|deep learning|natural language processing|computer vision|analytics engineer|business intelligence|data science|machine learning operations|data platform|chief data officer|head of data|data architect|data governance|research scientist|applied scientist|quantitative analyst|quant)\\b"]
+      - [1, "\\b(data|analytics|analyst|analystin|analista|analyste|statistician|insights|datos|dados|données|daten)\\b"]
+  product:
+    label: Product
+    patterns:
+      - [3, "\\b(product manager|product owner|product management|product lead|head of product|chief product officer|vice president product|group product|technical product|product operations|product analyst|product strategy)\\b"]
+      - [2, "\\bproduct\\b"]
+  design:
+    label: Design
+    patterns:
+      - [3, "\\b(user experience|user interface|product designer|graphic designer|visual designer|interaction designer|design lead|head of design|creative director|art director|motion designer|brand designer|design system|ux research(er)?|user research(er)?|service designer|industrial designer|illustrator|animator|3d artist|video editor|photographer)\\b"]
+      - [2, "\\b(designer|design|creative|artist)\\b"]
+  sales:
+    label: Sales
+    patterns:
+      - [3, "\\b(account executive|sales development|business development|account manager|key account|sales manager|sales director|head of sales|vice president sales|chief revenue officer|chief commercial officer|revenue|inside sales|field sales|enterprise sales|sales engineer|solutions? consultant|solutions? engineer|pre-?sales|presales|partnerships?|channel|territory|regional sales|vertrieb|vertriebs[a-z]*|ventas|ventes|commercial|commerciale|comercial|comerciales|vendas|vendite|verkoop|kundenberater(in)?|account director|sales representative|sales executive|sales associate|sales consultant|sales operations|sales enablement|alliances|strategic accounts|client director|client executive|new business|outbound|quota)\\b"]
+      - [2, "\\b(sales|selling|seller|commerce|dealer|broker|distributor)\\b"]
+      - [1, "\\bgrowth\\b"]
+  marketing:
+    label: Marketing
+    patterns:
+      - [3, "\\b(marketing|digital marketing|content marketing|growth marketing|demand generation|demand gen|performance marketing|product marketing|brand manager|chief marketing officer|communications|public relations|search engine optimization|search engine marketing|pay per click|social media|community manager|content (writer|creator|strategist|manager|lead|specialist)|copywriter|events? (manager|coordinator|specialist|lead)|campaign|email marketing|marketing operations|field marketing|chief growth officer|lifecycle|affiliate|influencer|advertising|media buyer|paid media|paid social|brand)\\b"]
+      - [3, "\\bmarketing\\w+\\b"]
+      - [2, "\\b(content|communications|comms|media|editorial|writer|journalist|editor|growth)\\b"]
+  customer_success:
+    label: Customer Success
+    patterns:
+      - [3, "\\b(customer success|client success|customer experience|chief experience officer|account management|onboarding|implementation (manager|specialist|consultant|lead)|customer engagement|renewals?|client services|client partner|customer marketing|customer operations|customer advocacy|relationship manager|client relationship)\\b"]
+  support:
+    label: Support
+    patterns:
+      - [3, "\\b(customer support|technical support|support engineer|support specialist|support analyst|help ?desk|service desk|customer service|customer care|call center|contact center|support agent|technical account manager|support lead|support manager|support team)\\b"]
+      - [3, "\\btechnical account manager\\b"]
+      - [3, "\\b(kundenservice|kundenbetreuung|kundendienst|service client|service clientèle|servicio al cliente|atención al cliente|atendimento ao cliente|klantenservice|assistenza clienti)\\b"]
+      - [2, "\\bsupport\\b"]
+  operations:
+    label: Operations
+    patterns:
+      - [3, "\\b(operations|operational|chief operating officer|supply chain|logistics|procurement|purchasing|warehouse|fulfillment|fulfilment|manufacturing|production manager|production planner|plant manager|quality manager|quality control|process improvement|continuous improvement|lean|six sigma|revenue operations|business operations|bizops|program manager|programme manager|project manager|project management|project lead|project coordinator|pmo|chef de projet|projektleiter(in)?|projektmanager(in)?|delivery manager|delivery lead|scrum master|agile coach|facilities|fleet|dispatcher|planner|scheduling|strategy and operations|chief of staff|environment health and safety|health safety and environment|safety manager|maintenance|field service|service delivery|transformation|change management|business analyst|process manager)\\b"]
+      - [3, "\\b(agile|operaciones|opérations|operações|operazioni|logistique|logística|logistik|einkauf|beschaffung|achats|compras|approvisionnement|lieferkette|betriebsleitung|produktionsplanung)\\b"]
+      - [1, "\\b(program|programme|project|delivery|planning|coordinator|strategy|transformation)\\b"]
+  finance:
+    label: Finance
+    patterns:
+      - [3, "\\b(finance|financial|accounting|accountant|controller|controlling|financial planning and analysis|financial planning|treasury|tax|audit|auditor|payroll|billing|accounts payable|accounts receivable|bookkeeper|bookkeeping|chief financial officer|investor relations|corporate development|m&a|mergers and acquisitions|pricing|revenue accounting|buchhaltung|buchhalter(in)?|finanzen|finanzas|finanças|financier|financière|financiero|financeiro|finanziario|comptabilité|contabilidad|contabilidade|contabilità|comptable|contador(a)?|contabile|ragioniere|credit analyst|underwriter|underwriting|actuary|actuarial|portfolio manager|fund manager|investment analyst|financial analyst|equity research|wealth manager|asset management|private equity|venture capital)\\b"]
+      - [1, "\\b(investment|banking|banker|credit|risk|trader|trading)\\b"]
+  hr:
+    label: HR & Recruiting
+    patterns:
+      - [3, "\\b(human resources|people operations|people partner|people team|people lead|people manager|people director|people and culture|talent acquisition|talent partner|talent manager|recruiter|recruiting|recruitment|hiring manager|headhunter|sourcer|technical recruiter|human resources business partner|chief people officer|chief human resources officer|compensation|benefits|total rewards|learning and development|training manager|training specialist|organizational development|employee experience|employee relations|workforce|staffing|personalwesen|personalreferent(in)?|personalleiter(in)?|ressources humaines|recursos humanos|risorse umane|personeelszaken|personalabteilung|personalentwicklung|talent)\\b"]
+      - [2, "\\b(people|culture|recruiting|onboarding specialist|payroll specialist)\\b"]
+  legal:
+    label: Legal & Compliance
+    patterns:
+      - [3, "\\b(legal|lawyer|attorney|counsel|general counsel|paralegal|compliance|regulatory|privacy officer|data protection officer|contracts? manager|contract specialist|solicitor|barrister|jurist(in)?|juriste|giurista|avvocato|advogado(a)?|avocat(e)?|abogado|abogada|notaire|jurídico|juridique|rechtsanwalt|rechtsanwältin|chief legal officer|governance|risk and compliance|grc|anti money laundering|know your customer|aml|kyc|legal counsel|legal operations|notary|patent)\\b"]
+  it:
+    label: IT & Security
+    patterns:
+      - [3, "\\binformation technology (support|specialist|administrator|manager|director|analyst|technician|consultant|engineer|services?|operations|lead|coordinator)\\b"]
+      - [3, "\\b(information technology|system administrator|systems administrator|systemadministrator(in)?|systemadministration|netzwerkadministrator(in)?|sysadmin|network (engineer|administrator|architect)|information security|cybersecurity|cyber security|infosec|security analyst|security engineer|security operations|soc analyst|penetration tester|chief information security officer|chief information officer|it operations|it infrastructure|desktop support|enterprise resource planning|sap (consultant|specialist|basis|developer|architect)|salesforce (administrator|consultant|developer|architect)|workday|servicenow|it consultant|it project|it manager|it support|it specialist|it administrator|it director|service management|itil|database administrator|dba|cloud architect|identity and access|endpoint|infrastructure manager|technical consultant|solutions? delivery)\\b"]
+      - [2, "\\b(security|infrastructure|network|systems|technology|technical|technician)\\b"]
+  executive:
+    label: Executive & General Management
+    patterns:
+      - [3, "\\b(chief executive officer|chief strategy officer|chief business officer|chief administrative officer|managing director|geschäftsführer(in)?|geschaftsfuhrer|founder|cofounder|owner|chairman|chairwoman|chairperson|board member|executive director|general manager|country manager|managing partner|senior partner|equity partner|general partner|entrepreneur|director general|directeur général|gerente general|administrador(a)?|vorstand|executive officer|oprichter|medeoprichter|algemeen directeur|business owner|proprietor|investor|angel investor)\\b"]
+      - [3, "(?<!vice )(?<!assistant )(?<!associate )(?<!deputy )\\bpresident\\b"]
+      - [3, "^(?:(?:managing|senior|equity|general|founding|junior|salary|tax|audit|advisory|consulting|investment|venture|operating|name|law) )?partner\\b"]
+      - [1, "\\b(executive|management|leadership)\\b"]
+  research:
+    label: Research & Science
+    patterns:
+      - [3, "\\b(research engineer|scientist|postdoc|post-doctoral|postdoctoral|professor|lecturer|clinical research|biologist|chemist|physicist|economist|research fellow|research and development|laboratory|lab manager|lab technician|clinical|pharmacist|medical director|physician|doctor|nurse|dentist|veterinarian|psychologist|therapist|surgeon|epidemiologist|bioinformatician)\\b"]
+      - [2, "\\b(research|researcher|science|scientific|academic|phd candidate|wissenschaftl\\w*|forscher(in)?|forschung|chercheur|chercheuse|recherche|investigador(a)?|investigación|pesquisador(a)?|pesquisa|ricercatore|ricercatrice|ricerca|onderzoeker|onderzoek)\\b"]
+  consulting:
+    label: Consulting & Advisory
+    patterns:
+      - [3, "\\b(management consultant|strategy consultant|advisory|advisor|adviser|freelance|freelancer|independent consultant|berater(in)?|unternehmensberater(in)?|consulting partner|engagement manager|engagement lead|engagement director|senior consultant|principal consultant|associate consultant|coach|mentor|trainer|speaker|author)\\b"]
+      - [2, "\\b(consultant|consulting|consultor(a)?|conseil|contractor|self-employed|self employed)\\b"]
+  admin:
+    label: Administrative
+    patterns:
+      - [3, "\\b(executive assistant|personal assistant|administrative assistant|office administrator|office manager|receptionist|secretary|admin assistant|team assistant|front desk|assistant to|office coordinator|administration|administrative|office assistant|clerk|data entry|virtual assistant|assistenz|assistante|assistente|asistente|sekretär(in)?|sekretariat|secrétaire|secretari[ao]|segretari[ao]|empfang|recepcionista|réceptionniste|receptioniste|office management|bürokauffrau|bürokaufmann)\\b"]
+      - [1, "\\b(assistant|administrator)\\b"]
+  other:
+    label: Other
+    patterns:
+      - [3, "\\b(teacher|educator|tutor|lehrer(in)?|enseignant(e)?|profesor(a)?|real estate|realtor|estate agent|immobilienmakler(in)?|truck driver|delivery driver|bus driver|taxi driver|lkw-fahrer|flight attendant|cabin crew|airline pilot|electrician|elektriker(in)?|plumber|carpenter|mechanic|welder|chef de cuisine|sous chef|head chef|executive chef|pastry chef|cook|barista|bartender|waiter|waitress|cashier|security guard|firefighter|police officer|farmer|athlete|musician|actor|actress|hairdresser|beautician)\\b"]
+
+# Optional manual canonical titles: normalized title regex -> canonical label (first match wins).
+canonical_titles:
+  - ["^(senior |junior |staff |principal |lead )?(software|backend|frontend|full stack) (engineer|developer)$", "Software Engineer"]
+  - ["^(senior |junior )?account executive$", "Account Executive"]
+  - ["^(senior |junior )?(sales|business) development representative$", "Sales Development Representative"]
+  - ["^(senior |junior |group |principal )?product manager$", "Product Manager"]
+  - ["^(senior |junior )?customer success manager$", "Customer Success Manager"]
+  - ["^(senior |junior )?data (scientist|engineer|analyst)$", "Data Specialist"]
+  - ["^chief executive officer$", "CEO"]
+  - ["^chief technology officer$", "CTO"]
+  - ["^chief financial officer$", "CFO"]
+  - ["^chief operating officer$", "COO"]
+  - ["^chief marketing officer$", "CMO"]
+  - ["^(cofounder|founder)( and | & )?(chief executive officer)?$", "Founder"]

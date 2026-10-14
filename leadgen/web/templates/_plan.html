@@ -1,0 +1,13 @@
+<div class="note note-info space-y-2">
+  <div style="font-weight:650">Estimated LinkedIn page loads: {{ plan.estimate.total }}</div>
+  {% if plan.strategy == 'people_first' %}
+  <div style="font-size:.76rem">people-first · {{ plan.lead_queries|length }} searches × up to {{ spec.people.max_pages_per_facet }} pages</div>
+  <details style="font-size:.76rem"><summary>Lead searches ({{ plan.lead_queries|length }})</summary><ul style="margin:.4rem 0 0 1rem; list-style:disc">{% for q in plan.lead_queries %}<li><code>{{ q.keywords }}</code>{% if q.country %} in {{ q.country }}{% endif %}</li>{% endfor %}</ul></details>
+  {% else %}
+  <div style="font-size:.76rem">company-first · discovery {{ plan.estimate.discovery_pages }} · profiles {{ plan.estimate.profile_pages }} · people {{ plan.estimate.people_pages }}</div>
+  <details style="font-size:.76rem"><summary>Company queries ({{ plan.company_queries|length }})</summary><ul style="margin:.4rem 0 0 1rem; list-style:disc">{% for q in plan.company_queries %}<li>{{ q }}</li>{% endfor %}</ul></details>
+  <details style="font-size:.76rem"><summary>People facets ({{ plan.facets|length }})</summary><ul style="margin:.4rem 0 0 1rem; list-style:disc">{% for f in plan.facets %}<li>{{ f.label }}: <code>{{ f.keywords or '(all)' }}</code></li>{% endfor %}</ul></details>
+  {% endif %}
+  {% if plan.estimate.total > spec.run.daily_budget %}<div style="font-size:.76rem; color:var(--amber)">More than the daily budget of {{ spec.run.daily_budget }}; the run will pause and resume on later days.</div>{% endif %}
+  <details style="font-size:.76rem"><summary>What LinkedIn can filter natively</summary><ul style="margin:.4rem 0 0 1rem">{% for k, v in plan.capabilities.items() %}<li><b>{{ k }}</b>: {{ v }}</li>{% endfor %}</ul></details>
+</div>

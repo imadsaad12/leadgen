@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block title %}Profile · LeadGen{% endblock %}
+{% block heading %}<a class="muted" href="/tools">Tools</a> <span class="faint">/</span> Profile{% endblock %}
+{% block content %}
+<a href="/tools" class="btn btn-sm mb-4" style="display:inline-flex">← Back to Tools</a>
+{% if error %}
+<div class="note note-warn">Could not read the profile: {{ error }}</div>
+{% else %}
+<div class="flex items-center gap-4 mb-5">
+  <span class="avatar" style="width:52px; height:52px; font-size:1.1rem; border-radius:12px; background:hsl({{ (data.name|length * 47) % 360 }} 55% 45%)">{{ data.name[:1]|upper }}</span>
+  <div>
+    <h1>{{ data.name }}</h1>
+    {% if data.headline %}<div class="muted">{{ data.headline }}</div>{% endif %}
+    {% if data.location %}<div class="faint" style="font-size:.8rem">{{ data.location }}</div>{% endif %}
+    <a style="font-size:.8rem" href="{{ data.url }}" target="_blank" rel="noopener">{{ data.url }}</a>
+  </div>
+</div>
+
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+  <div class="card card-p">
+    <div class="section-title">Contact info</div>
+    {% if data.contacts.available %}
+      <ul class="space-y-2" style="font-size:.86rem">
+        {% for e in data.contacts.emails %}<li>✉️ <a href="mailto:{{ e }}">{{ e }}</a></li>{% endfor %}
+        {% for ph in data.contacts.phones %}<li>📱 {{ ph }}</li>{% endfor %}
+        {% for w in data.contacts.websites %}<li>🔗 <a href="{{ w }}" target="_blank" rel="noopener">{{ w }}</a></li>{% endfor %}
+      </ul>
+    {% else %}
+      <p class="muted" style="font-size:.82rem">LinkedIn did not share email or phone for this profile. Contact info is
+        normally visible only for your 1st-degree connections or when the person made it public.</p>
+    {% endif %}
+  </div>
+
+  <div class="lg:col-span-2 space-y-5">
+    {% if data.experience %}
+    <div class="card card-p">
+      <div class="section-title">Experience</div>
+      <ul class="space-y-2" style="font-size:.86rem">
+        {% for e in data.experience %}<li class="flex gap-2"><span style="color:var(--brand)">•</span><span><b>{{ e.title or '' }}</b>{% if e.company %} — {{ e.company }}{% endif %}{% if e.dates %} <span class="faint">({{ e.dates }})</span>{% endif %}{% if e.location %} <span class="faint">· {{ e.location }}</span>{% endif %}</span></li>{% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+    {% for name, text in data.sections.items() %}
+    {% if name not in ('main_profile','main','contact_info','experience') %}
+    <div class="card card-p">
+      <div class="section-title" style="text-transform:capitalize">{{ name }}</div>
+      <pre style="white-space:pre-wrap">{{ text[:4000] }}</pre>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+</div>
+{% if data.section_errors %}<div class="muted mt-4" style="font-size:.76rem; color:var(--amber)">Some sections were rate-limited: {{ data.section_errors.keys()|list }}</div>{% endif %}
+{% endif %}
+{% endblock %}

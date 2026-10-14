@@ -1,0 +1,264 @@
+--- a/linkedin_mcp_server/scraping/search_urls.py
++++ b/linkedin_mcp_server/scraping/search_urls.py
+@@ -124,9 +124,14 @@
+     location: str | None = None,
+     network: list[str] | None = None,
+     current_company: str | None = None,
++    page: int | None = None,
++    geo_urn: str | None = None,
+ ) -> str:
+     """Build a LinkedIn people search URL, refusing filters LinkedIn ignores.
+ 
++    ``page`` selects a results page (1-based). Page 1 and ``None`` produce the
++    same URL LinkedIn shows by default, so existing callers are unchanged.
++
+     Both refusals happen before a URL exists, so a workflow calling this can
+     never navigate on a filter LinkedIn would swallow. An unknown ``network``
+     token and a plain-text ``currentCompany`` are each accepted by the URL and
+@@ -141,6 +146,10 @@
+                 f"{invalid!r}; expected any of {list(NETWORK_TOKENS)!r}"
+             )
+ 
++    if geo_urn and not re.fullmatch(r"[0-9]+", str(geo_urn)):
++        raise FilterValidationError(
++            f"geo_urn must be a numeric LinkedIn geo id (e.g. '101282230' for Germany); got {geo_urn!r}."
++        )
+     if current_company and not re.fullmatch(r"[0-9]+", current_company):
+         raise FilterValidationError(
+             f"current_company must be a numeric LinkedIn company URN id "
+@@ -156,22 +165,31 @@
+         params += f"&network={_encode_list_facet(network)}"
+     if current_company:
+         params += f"&currentCompany={_encode_list_facet([current_company])}"
++    if geo_urn:
++        params += f"&geoUrn={_encode_list_facet([geo_urn])}"
++    if page is not None and page > 1:
++        params += f"&page={int(page)}"
+ 
+     return f"https://www.linkedin.com/search/results/people/?{params}"
+ 
+ 
+-def build_company_search_url(keywords: str) -> str:
++def build_company_search_url(keywords: str, page: int | None = None) -> str:
+     """Build a LinkedIn company search URL.
+ 
++    ``page`` selects a results page (1-based); ``None`` or ``1`` is the default page.
++
+     One parameter today, and a function anyway: every search URL this server
+     navigates to is then written in one place, so the next caller has nothing
+     to assemble by hand and no second spelling of the host and route to keep
+     in step with the other three.
+     """
+-    return (
++    url = (
+         "https://www.linkedin.com/search/results/companies/"
+         f"?keywords={quote_plus(keywords)}"
+     )
++    if page is not None and page > 1:
++        url += f"&page={int(page)}"
++    return url
+ 
+ 
+ def build_content_search_url(
+--- a/linkedin_mcp_server/scraping/person.py
++++ b/linkedin_mcp_server/scraping/person.py
+@@ -472,6 +472,8 @@
+         location: str | None = None,
+         network: list[str] | None = None,
+         current_company: str | None = None,
++        page: int | None = None,
++        geo_urn: str | None = None,
+     ) -> dict[str, Any]:
+         """Search for people and extract the results page.
+ 
+@@ -502,6 +504,8 @@
+             location=location,
+             network=network,
+             current_company=current_company,
++            page=page,
++            geo_urn=geo_urn,
+         )
+         extracted = await self._capture.capture(
+             url,
+--- a/linkedin_mcp_server/scraping/company.py
++++ b/linkedin_mcp_server/scraping/company.py
+@@ -182,13 +182,14 @@
+     async def search_companies(
+         self,
+         keywords: str,
++        page: int | None = None,
+     ) -> dict[str, Any]:
+         """Search for companies and extract the results page.
+ 
+         Returns:
+             {url, sections: {search_results: text}}
+         """
+-        url = build_company_search_url(keywords)
++        url = build_company_search_url(keywords, page=page)
+         extracted = await self._capture.capture(
+             url,
+             "search_results",
+--- a/linkedin_mcp_server/scraping/extractor.py
++++ b/linkedin_mcp_server/scraping/extractor.py
+@@ -194,6 +194,8 @@
+         location: str | None = None,
+         network: list[str] | None = None,
+         current_company: str | None = None,
++        page: int | None = None,
++        geo_urn: str | None = None,
+     ) -> dict[str, Any]:
+         """Search for people and extract the results page."""
+         return await self._person.search_people(
+@@ -201,11 +203,13 @@
+             location=location,
+             network=network,
+             current_company=current_company,
++            page=page,
++            geo_urn=geo_urn,
+         )
+ 
+-    async def search_companies(self, keywords: str) -> dict[str, Any]:
++    async def search_companies(self, keywords: str, page: int | None = None) -> dict[str, Any]:
+         """Search for companies and extract the results page."""
+-        return await self._company.search_companies(keywords)
++        return await self._company.search_companies(keywords, page=page)
+ 
+     async def search_posts(
+         self,
+--- a/linkedin_mcp_server/tools/person.py
++++ b/linkedin_mcp_server/tools/person.py
+@@ -149,6 +149,8 @@
+         location: str | None = None,
+         network: StrList | None = None,
+         current_company: str | None = None,
++        page: Annotated[int, Field(ge=1, le=100)] | None = None,
++        geo_urn: str | None = None,
+     ) -> dict[str, Any]:
+         """
+         Search for people on LinkedIn.
+@@ -170,6 +172,8 @@
+                 exposed under references["about"]. For company-wide employee
+                 demographics (location/education/function breakdown) plus a
+                 slug-based lookup, use get_company_employees instead.
++            page: Optional results page number (1-100). Each page holds about
++                ten results; omit or pass 1 for the first page.
+ 
+         Returns:
+             Dict with url, sections (name -> raw text), and optional references.
+@@ -184,6 +188,8 @@
+                 location=location,
+                 network=network,
+                 current_company=current_company,
++                page=page,
++                geo_urn=geo_urn,
+             )
+         except FilterValidationError as e:
+             raise ToolError(str(e)) from e
+@@ -208,6 +214,8 @@
+                     location,
+                     network=network,
+                     current_company=current_company,
++                    page=page,
++                    geo_urn=geo_urn,
+                 )
+             except FilterValidationError as e:
+                 # Validation messages carry actionable detail; surface
+--- a/linkedin_mcp_server/tools/company.py
++++ b/linkedin_mcp_server/tools/company.py
+@@ -178,6 +178,7 @@
+     async def search_companies(
+         keywords: str,
+         ctx: Context,
++        page: Annotated[int, Field(ge=1, le=100)] | None = None,
+     ) -> dict[str, Any]:
+         """
+         Search for companies on LinkedIn.
+@@ -185,6 +186,7 @@
+         Args:
+             keywords: Search keywords (e.g., "fintech", "anthropic", "electric vehicles")
+             ctx: FastMCP context for progress reporting
++            page: Optional results page number (1-100); omit or pass 1 for the first page.
+ 
+         Returns:
+             Dict with url, sections (search_results -> raw text), and optional references.
+@@ -198,7 +200,7 @@
+                 progress=0, total=100, message="Starting company search"
+             )
+ 
+-            result = await extractor.search_companies(keywords)
++            result = await extractor.search_companies(keywords, page=page)
+ 
+             await ctx.report_progress(progress=100, total=100, message="Complete")
+ 
+--- a/tests/fixtures/tool-contract/tools.json
++++ b/tests/fixtures/tool-contract/tools.json
+@@ -217,7 +217,7 @@
+     "annotations": {
+       "openWorldHint": true
+     },
+-    "description": "Read a specific messaging conversation.\n\nProvide either linkedin_username or thread_id to identify the conversation.\n\nWhen looked up by linkedin_username, resolution searches the messaging\ninbox for the participant's display name and click-visits every\nmatching row to capture its thread ID — LinkedIn's sidebar has no\nanchor hrefs or thread-id attributes, so this is the only available\npath. Each visit selects the row in the LinkedIn UI and may mark it\nas read. Pass thread_id directly to skip this enumeration.\n\nUsername resolution scans matching rows from a requested compose page\nfirst. Its indexable sequence ends before the first unresolved click,\nmissing matching click target, or admitted row that fails the existing\nexact display-name check. An index outside that verified prefix is\nrefused with its reason. Search is a fallback only when the inbox scan\nhas no observed matching result and no such barrier; it never\nsubstitutes a result after a stopped or gapped inbox scan. Pass a known\nthread_id to bypass username/index resolution.",
++    "description": "Read a specific messaging conversation.\n\nProvide either linkedin_username or thread_id to identify the conversation.\n\nWhen looked up by linkedin_username, resolution searches the messaging\ninbox for the participant's display name and click-visits every\nmatching row to capture its thread ID \u2014 LinkedIn's sidebar has no\nanchor hrefs or thread-id attributes, so this is the only available\npath. Each visit selects the row in the LinkedIn UI and may mark it\nas read. Pass thread_id directly to skip this enumeration.\n\nUsername resolution scans matching rows from a requested compose page\nfirst. Its indexable sequence ends before the first unresolved click,\nmissing matching click target, or admitted row that fails the existing\nexact display-name check. An index outside that verified prefix is\nrefused with its reason. Search is a fallback only when the inbox scan\nhas no observed matching result and no such barrier; it never\nsubstitutes a result after a stopped or gapped inbox scan. Pass a known\nthread_id to bypass username/index resolution.",
+     "inputSchema": {
+       "additionalProperties": false,
+       "properties": {
+@@ -557,6 +557,20 @@
+         "keywords": {
+           "description": "Search keywords (e.g., \"fintech\", \"anthropic\", \"electric vehicles\")",
+           "type": "string"
++        },
++        "page": {
++          "anyOf": [
++            {
++              "maximum": 100,
++              "minimum": 1,
++              "type": "integer"
++            },
++            {
++              "type": "null"
++            }
++          ],
++          "default": null,
++          "description": "Optional results page number (1-100); omit or pass 1 for the first page."
+         }
+       },
+       "required": [
+@@ -757,6 +771,18 @@
+           ],
+           "default": null,
+           "description": "Optional current-employer filter. LinkedIn's\ncurrentCompany facet only filters on the numeric company URN id\n(e.g. \"1115\" for SAP); plain company names are accepted by the\nURL but ignored by LinkedIn and return the unfiltered result\nset. Look up a company's URN via get_company_profile -- it is\nexposed under references[\"about\"]. For company-wide employee\ndemographics (location/education/function breakdown) plus a\nslug-based lookup, use get_company_employees instead."
++        },
++        "geo_urn": {
++          "anyOf": [
++            {
++              "type": "string"
++            },
++            {
++              "type": "null"
++            }
++          ],
++          "default": null,
++          "description": "Optional LinkedIn geo id to filter people by location (e.g. '101282230' for Germany)."
+         },
+         "keywords": {
+           "description": "Search keywords (e.g., \"software engineer\", \"recruiter at Google\")",
+@@ -788,6 +814,20 @@
+           ],
+           "default": null,
+           "description": "Optional connection-degree filter. Each element is one of\n\"F\" (1st-degree), \"S\" (2nd-degree), \"O\" (3rd-degree and beyond).\nExample: [\"F\"] to only return 1st-degree connections. A single\ntoken (\"F\") or a comma-separated string (\"F,S\") is also\naccepted, for clients that cannot transmit an array."
++        },
++        "page": {
++          "anyOf": [
++            {
++              "maximum": 100,
++              "minimum": 1,
++              "type": "integer"
++            },
++            {
++              "type": "null"
++            }
++          ],
++          "default": null,
++          "description": "Optional results page number (1-100). Each page holds about\nten results; omit or pass 1 for the first page."
+         }
+       },
+       "required": [

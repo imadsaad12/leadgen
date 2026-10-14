@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% block heading %}Dashboard{% endblock %}
+{% block content %}
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+  <div class="stat">
+    <span class="ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></span>
+    <div class="label">Sidecar</div>
+    <div class="value">{% if sidecar and healthy %}<span style="color:var(--green)">Running</span>{% elif sidecar %}<span style="color:var(--amber)">Starting</span>{% else %}<span class="faint">Stopped</span>{% endif %}</div>
+    <a class="sub" href="/settings">manage →</a>
+  </div>
+  <div class="stat">
+    <span class="ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4v16h16"/><path d="M8 14l3-3 2 2 4-5"/></svg></span>
+    <div class="label">Page loads today</div>
+    <div class="value">{{ budget.today_page_loads }}<span class="faint" style="font-size:1rem"> / {{ budget.daily_budget }}</span></div>
+    <div class="sub">daily budget</div>
+  </div>
+  <div class="stat">
+    <span class="ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg></span>
+    <div class="label">Searches this month</div>
+    <div class="value {% if budget.month_searches >= 0.8 * budget.monthly_search_cap %}" style="color:var(--red)"{% else %}"{% endif %}>{{ budget.month_searches }}<span class="faint" style="font-size:1rem"> / {{ budget.monthly_search_cap }}</span></div>
+    <div class="sub">free-account limit ≈ 300</div>
+  </div>
+  <div class="stat">
+    <span class="ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z"/><path d="M12 12l8-4.5M12 12v9M12 12L4 7.5"/></svg></span>
+    <div class="label">Cache · LLM assist</div>
+    <div class="value">{{ cache.total }}<span class="faint" style="font-size:1rem"> pages</span></div>
+    <div class="sub">assist {{ 'on' if llm_on else 'off' }}</div>
+  </div>
+</div>
+
+{% if not acknowledged %}
+<div class="note note-warn mb-6">
+  <b>Before your first LinkedIn run:</b> automated access breaches LinkedIn's User Agreement and the account can be restricted.
+  Use a dedicated account, keep budgets low, and acknowledge the notice on the <a class="underline" href="/runs/new">New run</a> page.
+</div>
+{% endif %}
+
+<div class="flex items-center justify-between mb-3">
+  <h1>Runs</h1>
+  <a href="/runs/new" class="btn btn-primary"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg> New run</a>
+</div>
+<div class="card table-wrap">
+<table class="tbl">
+  <thead><tr>
+    <th>Run</th><th>Status</th><th>Source</th><th class="num">Companies</th>
+    <th class="num">People</th><th class="num">Page loads</th><th>Started</th><th>Message</th>
+  </tr></thead>
+  <tbody>
+  {% for r in runs %}
+  <tr>
+    <td><a href="/runs/{{ r.id }}" style="font-weight:600">{{ r.spec.name }}</a><div class="faint" style="font-size:.72rem">{{ r.id }}</div></td>
+    <td><span class="badge dot badge-{{ r.status }}">{{ r.status }}</span></td>
+    <td><span class="muted">{{ r.spec.run.source }}</span></td>
+    <td class="num">{{ r.stats.companies_enumerated }} / {{ r.stats.companies_discovered }}</td>
+    <td class="num" style="font-weight:600">{{ r.stats.people_found }}</td>
+    <td class="num">{{ r.stats.page_loads }}</td>
+    <td class="muted" style="font-size:.78rem">{{ r.started_at.strftime('%b %d, %H:%M') if r.started_at else '—' }}</td>
+    <td class="muted" style="font-size:.78rem">{{ (r.message or '')[:70] }}</td>
+  </tr>
+  {% else %}
+  <tr><td class="empty" colspan="8">No runs yet. Try a <a href="/runs/new">fake-source run</a> first to see the flow without touching LinkedIn.</td></tr>
+  {% endfor %}
+  </tbody>
+</table>
+</div>
+{% endblock %}

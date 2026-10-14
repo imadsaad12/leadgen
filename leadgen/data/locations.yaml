@@ -1,0 +1,5352 @@
+# Country gazetteer: names, ISO-3166 alpha-2, aliases, and (for business-relevant countries) regions and
+# major cities, so LinkedIn HQ strings such as 'Berlin, Berlin' or 'Dubai, Dubai' resolve to a country.
+countries:
+- name: Afghanistan
+  iso2: AF
+  aliases:
+  - af
+  - afghan
+  - afghanistan
+  regions: []
+  cities: []
+- name: Albania
+  iso2: AL
+  aliases:
+  - shqipëri
+  - shqiperi
+  - shqipëria
+  - al
+  - albanian
+  - republic of albania
+  - albania
+  regions:
+  - Tirana County
+  - Qarku i Tiranës
+  - Durrës County
+  - Qarku i Durrësit
+  - Vlorë County
+  - Qarku i Vlorës
+  - Shkodër County
+  - Qarku i Shkodrës
+  - Elbasan County
+  - Qarku i Elbasanit
+  - Fier County
+  - Qarku i Fierit
+  - Korçë County
+  - Qarku i Korçës
+  - Berat County
+  - Qarku i Beratit
+  - Lezhë County
+  - Qarku i Lezhës
+  - Dibër County
+  - Qarku i Dibrës
+  - Gjirokastër County
+  - Qarku i Gjirokastrës
+  - Kukës County
+  - Qarku i Kukësit
+  cities:
+  - Tirana
+  - Tiranë
+  - Tirane
+  - Durrës
+  - Durres
+  - Vlorë
+  - Vlore
+  - Vlora
+  - Shkodër
+  - Shkoder
+  - Shkodra
+  - Elbasan
+  - Fier
+  - Korçë
+  - Korce
+  - Korca
+  - Berat
+  - Lushnjë
+  - Pogradec
+  - Gjirokastër
+  - Sarandë
+  - Saranda
+- name: Algeria
+  iso2: DZ
+  aliases:
+  - algeria
+  - algérie
+  - dz
+  - algerian
+  regions: []
+  cities:
+  - Algiers
+  - Alger
+  - Oran
+  - Constantine
+  - Annaba
+- name: Andorra
+  iso2: AD
+  aliases:
+  - principat d'andorra
+  - principality of andorra
+  - ad
+  - andorran
+  - andorra
+  regions:
+  - Andorra la Vella
+  - Escaldes-Engordany
+  - Encamp
+  - Sant Julià de Lòria
+  - La Massana
+  - Ordino
+  - Canillo
+  cities:
+  - Andorra la Vella
+  - Escaldes-Engordany
+  - Encamp
+  - Sant Julià de Lòria
+  - La Massana
+  - Ordino
+  - Canillo
+  - Pas de la Casa
+  - Santa Coloma
+- name: Angola
+  iso2: AO
+  aliases:
+  - ao
+  - angolan
+  - angola
+  regions: []
+  cities: []
+- name: Antigua and Barbuda
+  iso2: AG
+  aliases:
+  - antigua
+  - ag
+  - antigua and barbuda
+  regions: []
+  cities: []
+- name: Argentina
+  iso2: AR
+  aliases:
+  - argentina
+  - ar
+  - argentine
+  - argentinian
+  regions:
+  - Buenos Aires
+  - Córdoba
+  - Cordoba
+  - Santa Fe
+  - Mendoza
+  cities:
+  - Buenos Aires
+  - Córdoba
+  - Cordoba
+  - Rosario
+  - Mendoza
+  - La Plata
+- name: Armenia
+  iso2: AM
+  aliases:
+  - հայաստան
+  - hayastan
+  - am
+  - armenian
+  - republic of armenia
+  - armenia
+  regions:
+  - Yerevan
+  - Երևան
+  - Kotayk
+  - Shirak
+  - Lori
+  - Armavir
+  - Ararat
+  - Syunik
+  - Gegharkunik
+  - Aragatsotn
+  - Tavush
+  - Vayots Dzor
+  cities:
+  - Yerevan
+  - Erevan
+  - Երևան
+  - Gyumri
+  - Vanadzor
+  - Vagharshapat
+  - Etchmiadzin
+  - Ejmiatsin
+  - Hrazdan
+  - Abovyan
+  - Kapan
+  - Armavir
+  - Gavar
+  - Artashat
+  - Ijevan
+  - Charentsavan
+  - Sevan
+  - Masis
+  - Ashtarak
+  - Dilijan
+  - Goris
+  - Spitak
+  - Vedi
+  - Alaverdi
+  - Stepanavan
+  - Martuni
+  - Vardenis
+  - Metsamor
+  - Nor Hachn
+  - Byureghavan
+  - Yeghvard
+  - Tsaghkadzor
+  - Jermuk
+  - Yeghegnadzor
+  - Sisian
+  - Meghri
+  - Kajaran
+  - Agarak
+  - Berd
+  - Noyemberyan
+  - Ayrum
+  - Tashir
+  - Akhtala
+  - Tumanyan
+  - Shamlugh
+  - Maralik
+  - Artik
+  - Talin
+  - Aparan
+  - Ararat
+  - Vayk
+  - Chambarak
+  - Tsovagyugh
+  - Noratus
+  - Lchashen
+  - Gagarin
+  - Nor Geghi
+  - Arzni
+  - Bjni
+  - Garni
+  - Geghard
+  - Khor Virap
+  - Noravank
+  - Tatev
+  - Shikahogh
+  - Zorats Karer
+  - Amberd
+  - Saghmosavank
+  - Hovhannavank
+  - Haghpat
+  - Sanahin
+  - Odzun
+  - Akhtala Monastery
+  - Goshavank
+  - Haghartsin
+  - Makaravank
+  - Kirants
+  - Jukhtak Vank
+  - Matosavank
+- name: Australia
+  iso2: AU
+  aliases:
+  - australia
+  - au
+  - australian
+  - aus
+  regions:
+  - New South Wales
+  - NSW
+  - Victoria
+  - VIC
+  - Queensland
+  - QLD
+  - Western Australia
+  - WA
+  - South Australia
+  - SA
+  - Tasmania
+  - TAS
+  - Australian Capital Territory
+  - ACT
+  - Northern Territory
+  - NT
+  cities:
+  - Sydney
+  - Melbourne
+  - Brisbane
+  - Perth
+  - Adelaide
+  - Canberra
+  - Gold Coast
+  - Hobart
+  - Newcastle
+  - Wollongong
+  - Darwin
+  - Geelong
+  - Sunshine Coast
+  - Greater Sydney Area
+  - Greater Melbourne Area
+- name: Austria
+  iso2: AT
+  aliases:
+  - österreich
+  - oesterreich
+  - osterreich
+  - at
+  - austrian
+  - republic of austria
+  - austria
+  regions:
+  - Vienna
+  - Wien
+  - Lower Austria
+  - Niederösterreich
+  - Niederoesterreich
+  - Upper Austria
+  - Oberösterreich
+  - Oberoesterreich
+  - Styria
+  - Steiermark
+  - Tyrol
+  - Tirol
+  - Salzburg
+  - Carinthia
+  - Kärnten
+  - Kaernten
+  - Vorarlberg
+  - Burgenland
+  cities:
+  - Vienna
+  - Wien
+  - Graz
+  - Linz
+  - Salzburg
+  - Innsbruck
+  - Klagenfurt
+  - Villach
+  - Wels
+  - St. Pölten
+  - Sankt Pölten
+  - Dornbirn
+  - Wiener Neustadt
+  - Steyr
+  - Feldkirch
+  - Bregenz
+  - Leoben
+  - Krems
+  - Vösendorf
+  - Schwechat
+  - Wiener Neudorf
+  - Brunn am Gebirge
+- name: Azerbaijan
+  iso2: AZ
+  aliases:
+  - azərbaycan
+  - azerbaycan
+  - az
+  - azerbaijani
+  - azeri
+  - republic of azerbaijan
+  - azerbaijan
+  regions:
+  - Baku
+  - Bakı
+  - Absheron
+  - Abşeron
+  - Ganja-Gazakh
+  - Sumgayit
+  - Sumqayıt
+  - Nakhchivan
+  - Naxçıvan
+  - Lankaran
+  - Lənkəran
+  - Shaki-Zagatala
+  - Guba-Khachmaz
+  - Aran
+  - Karabakh
+  - Qarabağ
+  - Mountainous Shirvan
+  - Upper Karabakh
+  - Kalbajar-Lachin
+  cities:
+  - Baku
+  - Bakı
+  - Ganja
+  - Gəncə
+  - Gyandja
+  - Sumgayit
+  - Sumqayıt
+  - Mingachevir
+  - Mingəçevir
+  - Lankaran
+  - Lənkəran
+  - Shirvan
+  - Şirvan
+  - Nakhchivan
+  - Naxçıvan
+  - Shaki
+  - Şəki
+  - Yevlakh
+  - Yevlax
+  - Khirdalan
+  - Xırdalan
+  - Khankendi
+  - Xankəndi
+  - Stepanakert
+  - Shamakhi
+  - Şamaxı
+  - Quba
+  - Guba
+  - Qusar
+  - Gusar
+  - Xaçmaz
+  - Khachmaz
+  - Zaqatala
+  - Zagatala
+  - Qəbələ
+  - Gabala
+  - Ismayilli
+  - İsmayıllı
+  - Göyçay
+  - Goychay
+  - Ağdaş
+  - Aghdash
+  - Bərdə
+  - Barda
+  - Ağcabədi
+  - Aghjabadi
+  - Beyləqan
+  - Beylagan
+  - İmişli
+  - Imishli
+  - Saatlı
+  - Saatli
+  - Sabirabad
+  - Salyan
+  - Neftçala
+  - Neftchala
+  - Masallı
+  - Masalli
+  - Astara
+  - Lerik
+  - Yardımlı
+  - Yardimli
+  - Cəlilabad
+  - Jalilabad
+  - Biləsuvar
+  - Bilasuvar
+  - Hacıqabul
+  - Hajigabul
+  - Kürdəmir
+  - Kurdamir
+  - Ucar
+  - Ujar
+  - Zərdab
+  - Zardab
+  - Göygöl
+  - Goygol
+  - Daşkəsən
+  - Dashkasan
+  - Gədəbəy
+  - Gadabay
+  - Tovuz
+  - Qazax
+  - Gazakh
+  - Ağstafa
+  - Aghstafa
+  - Şəmkir
+  - Shamkir
+  - Samux
+  - Samukh
+  - Goranboy
+  - Naftalan
+  - Tərtər
+  - Tartar
+  - Ağdam
+  - Aghdam
+  - Xocalı
+  - Khojaly
+  - Şuşa
+  - Shusha
+  - Xocavənd
+  - Khojavend
+  - Füzuli
+  - Fuzuli
+  - Cəbrayıl
+  - Jabrayil
+  - Zəngilan
+  - Zangilan
+  - Qubadlı
+  - Gubadli
+  - Laçın
+  - Lachin
+  - Kəlbəcər
+  - Kalbajar
+  - Şərur
+  - Sharur
+  - Babək
+  - Babek
+  - Ordubad
+  - Culfa
+  - Julfa
+  - Şahbuz
+  - Shahbuz
+  - Kəngərli
+  - Kangarli
+  - Sədərək
+  - Sadarak
+  - Oğuz
+  - Oghuz
+  - Qax
+  - Gakh
+  - Balakən
+  - Balakan
+  - Siyəzən
+  - Siyazan
+  - Şabran
+  - Shabran
+  - Xızı
+  - Khizi
+  - Ağsu
+  - Aghsu
+  - Qobustan
+  - Gobustan
+- name: Bahamas
+  iso2: BS
+  aliases:
+  - the bahamas
+  - bs
+  - bahamian
+  - bahamas
+  regions: []
+  cities: []
+- name: Bahrain
+  iso2: BH
+  aliases:
+  - bahrain
+  - bh
+  - bahraini
+  regions: []
+  cities:
+  - Manama
+  - Riffa
+  - Muharraq
+  - Seef
+- name: Bangladesh
+  iso2: BD
+  aliases:
+  - bangladesh
+  - bd
+  - bangladeshi
+  regions:
+  - Dhaka Division
+  - Chattogram Division
+  cities:
+  - Dhaka
+  - Chittagong
+  - Chattogram
+  - Sylhet
+  - Khulna
+- name: Barbados
+  iso2: BB
+  aliases:
+  - bb
+  - barbadian
+  - barbados
+  regions: []
+  cities: []
+- name: Belarus
+  iso2: BY
+  aliases:
+  - беларусь
+  - belarus
+  - byelorussia
+  - belorussia
+  - by
+  - belarusian
+  regions:
+  - Minsk
+  - Мінск
+  - Minsk Region
+  - Minsk Oblast
+  - Brest Region
+  - Gomel Region
+  - Homiel Region
+  - Grodno Region
+  - Hrodna Region
+  - Mogilev Region
+  - Mahilioŭ Region
+  - Vitebsk Region
+  - Viciebsk Region
+  cities:
+  - Minsk
+  - Мінск
+  - Минск
+  - Gomel
+  - Homiel
+  - Mogilev
+  - Mahilioŭ
+  - Vitebsk
+  - Viciebsk
+  - Grodno
+  - Hrodna
+  - Brest
+  - Bobruisk
+  - Babruysk
+  - Baranovichi
+  - Baranavichy
+  - Borisov
+  - Barysaw
+  - Pinsk
+  - Orsha
+  - Mozyr
+  - Soligorsk
+  - Salihorsk
+  - Novopolotsk
+  - Lida
+  - Molodechno
+  - Polotsk
+  - Zhlobin
+  - Svetlogorsk
+  - Rechitsa
+  - Slutsk
+  - Zhodino
+  - Kobrin
+  - Slonim
+  - Volkovysk
+  - Kalinkovichi
+  - Smorgon
+  - Rogachev
+  - Osipovichi
+  - Gorki
+  - Novogrudok
+  - Vileyka
+  - Krichev
+  - Bykhov
+  - Luninets
+  - Ivatsevichi
+  - Dzerzhinsk
+  - Beryoza
+  - Kostyukovichi
+  - Glubokoye
+  - Lepel
+  - Postavy
+  - Dobrush
+  - Klimovichi
+  - Khoiniki
+  - Stolbtsy
+  - Zaslavl
+  - Marina Gorka
+  - Fanipol
+  - Shklov
+  - Oshmyany
+  - Ivanovo
+  - Pruzhany
+  - Mosty
+  - Shchuchin
+  - Zhitkovichi
+  - Starye Dorogi
+  - Cherven
+  - Bereza
+  - Drogichin
+  - Zhabinka
+  - Malorita
+  - Kamenets
+  - Gantsevichi
+  - Stolin
+  - Lyakhovichi
+  - Ivye
+  - Dyatlovo
+  - Zelva
+  - Svisloch
+  - Berestovitsa
+  - Voronovo
+  - Radun
+  - Ostrovets
+  - Astravyets
+  - Myadel
+  - Logoysk
+  - Smolevichi
+  - Uzda
+  - Kopyl
+  - Nesvizh
+  - Kletsk
+  - Lyuban
+  - Krupki
+  - Berezino
+  - Belynichi
+  - Klichev
+  - Kirovsk
+  - Chausy
+  - Cherikov
+  - Slavgorod
+  - Krasnopolye
+  - Khotimsk
+  - Mstislavl
+  - Dribin
+  - Kruglое
+  - Chashniki
+  - Senno
+  - Tolochin
+  - Beshenkovichi
+  - Ushachi
+  - Dokshitsy
+  - Sharkovshchina
+  - Braslav
+  - Verkhnedvinsk
+  - Rossony
+  - Gorodok
+  - Shumilino
+  - Liozno
+  - Dubrovno
+  - Miory
+- name: Belgium
+  iso2: BE
+  aliases:
+  - belgië
+  - belgie
+  - belgique
+  - belgien
+  - be
+  - belgian
+  - kingdom of belgium
+  - belgium
+  regions:
+  - Flanders
+  - Vlaanderen
+  - Flemish Region
+  - Wallonia
+  - Wallonie
+  - Walloon Region
+  - Brussels-Capital Region
+  - Brussels Region
+  - Région de Bruxelles-Capitale
+  - Brussels Hoofdstedelijk Gewest
+  - Antwerp Province
+  - Provincie Antwerpen
+  - East Flanders
+  - Oost-Vlaanderen
+  - West Flanders
+  - West-Vlaanderen
+  - Flemish Brabant
+  - Vlaams-Brabant
+  - Walloon Brabant
+  - Brabant Wallon
+  - Limburg
+  - Liège
+  - Liege
+  - Hainaut
+  - Namur
+  - Luxembourg Province
+  cities:
+  - Brussels
+  - Bruxelles
+  - Brussel
+  - Antwerp
+  - Antwerpen
+  - Anvers
+  - Ghent
+  - Gent
+  - Gand
+  - Leuven
+  - Louvain
+  - Liège
+  - Liege
+  - Luik
+  - Bruges
+  - Brugge
+  - Charleroi
+  - Namur
+  - Namen
+  - Mechelen
+  - Malines
+  - Hasselt
+  - Zaventem
+  - Mons
+  - Bergen
+  - Kortrijk
+  - Courtrai
+  - Aalst
+  - Diegem
+  - Machelen
+  - Vilvoorde
+  - Louvain-la-Neuve
+  - Ottignies-Louvain-la-Neuve
+  - Wavre
+  - Waterloo
+  - Genk
+  - Roeselare
+  - Ixelles
+  - Elsene
+  - Etterbeek
+  - Uccle
+  - Anderlecht
+  - Schaerbeek
+  - Woluwe
+  - Evere
+- name: Belize
+  iso2: BZ
+  aliases:
+  - bz
+  - belizean
+  - belize
+  regions: []
+  cities: []
+- name: Benin
+  iso2: BJ
+  aliases:
+  - bj
+  - beninese
+  - benin
+  regions: []
+  cities: []
+- name: Bhutan
+  iso2: BT
+  aliases:
+  - bt
+  - bhutanese
+  - bhutan
+  regions: []
+  cities: []
+- name: Bolivia
+  iso2: BO
+  aliases:
+  - bo
+  - bolivian
+  - estado plurinacional de bolivia
+  - bolivia
+  regions: []
+  cities: []
+- name: Bosnia and Herzegovina
+  iso2: BA
+  aliases:
+  - bosnia
+  - bosna i hercegovina
+  - bih
+  - ba
+  - bosnian
+  - herzegovina
+  - bosnia and herzegovina
+  regions:
+  - Federation of Bosnia and Herzegovina
+  - FBiH
+  - Republika Srpska
+  - RS
+  - Brčko District
+  - Sarajevo Canton
+  - Tuzla Canton
+  - Zenica-Doboj Canton
+  - Herzegovina-Neretva Canton
+  - Una-Sana Canton
+  - Central Bosnia Canton
+  - West Herzegovina Canton
+  - Posavina Canton
+  - Bosnian Podrinje Canton
+  - Canton 10
+  cities:
+  - Sarajevo
+  - Banja Luka
+  - Tuzla
+  - Zenica
+  - Mostar
+  - Bijeljina
+  - Brčko
+  - Brcko
+  - Prijedor
+  - Doboj
+  - Trebinje
+  - Bihać
+  - Bihac
+  - Travnik
+  - Ilidža
+  - East Sarajevo
+- name: Botswana
+  iso2: BW
+  aliases:
+  - bw
+  - botswanan
+  - botswana
+  regions: []
+  cities: []
+- name: Brazil
+  iso2: BR
+  aliases:
+  - brasil
+  - br
+  - brazilian
+  - brazil
+  regions:
+  - São Paulo
+  - Sao Paulo
+  - Rio de Janeiro
+  - Minas Gerais
+  - Paraná
+  - Parana
+  - Santa Catarina
+  - Rio Grande do Sul
+  - Bahia
+  - Pernambuco
+  - Distrito Federal
+  - Ceará
+  cities:
+  - São Paulo
+  - Sao Paulo
+  - Rio de Janeiro
+  - Belo Horizonte
+  - Curitiba
+  - Florianópolis
+  - Florianopolis
+  - Porto Alegre
+  - Brasília
+  - Brasilia
+  - Campinas
+  - Recife
+  - Salvador
+  - Fortaleza
+- name: Brunei
+  iso2: BN
+  aliases:
+  - bn
+  - brunei darussalam
+  - brunei
+  regions: []
+  cities: []
+- name: Bulgaria
+  iso2: BG
+  aliases:
+  - българия
+  - balgariya
+  - bg
+  - bulgarian
+  - republic of bulgaria
+  - bulgaria
+  regions:
+  - Sofia City
+  - Sofia-grad
+  - Sofia Province
+  - Plovdiv Province
+  - Varna Province
+  - Burgas Province
+  - Stara Zagora Province
+  - Ruse Province
+  - Pleven Province
+  - Veliko Tarnovo Province
+  - Blagoevgrad Province
+  cities:
+  - Sofia
+  - София
+  - Plovdiv
+  - Varna
+  - Burgas
+  - Ruse
+  - Stara Zagora
+  - Pleven
+  - Veliko Tarnovo
+  - Blagoevgrad
+  - Sliven
+  - Dobrich
+  - Shumen
+  - Pernik
+  - Haskovo
+  - Gabrovo
+- name: Burkina Faso
+  iso2: BF
+  aliases:
+  - bf
+  - burkinabe
+  - burkina faso
+  regions: []
+  cities: []
+- name: Burundi
+  iso2: BI
+  aliases:
+  - bi
+  - burundian
+  - burundi
+  regions: []
+  cities: []
+- name: Cambodia
+  iso2: KH
+  aliases:
+  - kh
+  - cambodian
+  - kampuchea
+  - cambodia
+  regions: []
+  cities: []
+- name: Cameroon
+  iso2: CM
+  aliases:
+  - cm
+  - cameroonian
+  - cameroun
+  - cameroon
+  regions: []
+  cities: []
+- name: Canada
+  iso2: CA
+  aliases:
+  - canada
+  - ca
+  - canadian
+  regions:
+  - Ontario
+  - Quebec
+  - Québec
+  - British Columbia
+  - Alberta
+  - Manitoba
+  - Saskatchewan
+  - Nova Scotia
+  - New Brunswick
+  - Newfoundland and Labrador
+  - Prince Edward Island
+  cities:
+  - Toronto
+  - Montreal
+  - Montréal
+  - Vancouver
+  - Calgary
+  - Ottawa
+  - Edmonton
+  - Waterloo
+  - Kitchener
+  - Quebec City
+  - Winnipeg
+  - Halifax
+  - Victoria
+  - Mississauga
+  - Greater Toronto Area
+- name: Cape Verde
+  iso2: CV
+  aliases:
+  - cv
+  - cabo verde
+  - cape verdean
+  - cape verde
+  regions: []
+  cities: []
+- name: Central African Republic
+  iso2: CF
+  aliases:
+  - cf
+  - car
+  - central african republic
+  regions: []
+  cities: []
+- name: Chad
+  iso2: TD
+  aliases:
+  - td
+  - chadian
+  - tchad
+  - chad
+  regions: []
+  cities: []
+- name: Chile
+  iso2: CL
+  aliases:
+  - chile
+  - cl
+  - chilean
+  regions:
+  - Santiago Metropolitan
+  - Región Metropolitana
+  - Valparaíso
+  cities:
+  - Santiago
+  - Valparaíso
+  - Valparaiso
+  - Viña del Mar
+  - Concepción
+  - Concepcion
+- name: China
+  iso2: CN
+  aliases:
+  - china
+  - prc
+  - people's republic of china
+  - cn
+  - chinese
+  - mainland china
+  regions:
+  - Beijing
+  - Shanghai
+  - Guangdong
+  - Zhejiang
+  - Jiangsu
+  - Sichuan
+  - Hubei
+  - Shandong
+  - Fujian
+  - Tianjin
+  - Chongqing
+  - Shaanxi
+  - Hunan
+  - Henan
+  cities:
+  - Beijing
+  - Shanghai
+  - Shenzhen
+  - Guangzhou
+  - Hangzhou
+  - Chengdu
+  - Nanjing
+  - Wuhan
+  - Suzhou
+  - Xi'an
+  - Xian
+  - Tianjin
+  - Chongqing
+  - Dongguan
+  - Qingdao
+  - Xiamen
+  - Changsha
+  - Zhengzhou
+  - Ningbo
+  - Hefei
+  - Foshan
+  - Dalian
+  - Jinan
+  - Shenyang
+  - Pudong
+  - Haidian
+  - Chaoyang
+- name: Colombia
+  iso2: CO
+  aliases:
+  - colombia
+  - co
+  - colombian
+  regions:
+  - Bogotá
+  - Bogota
+  - Cundinamarca
+  - Antioquia
+  - Valle del Cauca
+  - Atlántico
+  cities:
+  - Bogotá
+  - Bogota
+  - Medellín
+  - Medellin
+  - Cali
+  - Barranquilla
+  - Cartagena
+- name: Comoros
+  iso2: KM
+  aliases:
+  - km
+  - comorian
+  - comoros
+  regions: []
+  cities: []
+- name: Costa Rica
+  iso2: CR
+  aliases:
+  - cr
+  - costa rican
+  - costa rica
+  regions: []
+  cities: []
+- name: Croatia
+  iso2: HR
+  aliases:
+  - hrvatska
+  - hr
+  - croatian
+  - republic of croatia
+  - croatia
+  regions:
+  - Zagreb
+  - City of Zagreb
+  - Grad Zagreb
+  - Zagreb County
+  - Split-Dalmatia
+  - Splitsko-dalmatinska
+  - Primorje-Gorski Kotar
+  - Osijek-Baranja
+  - Istria
+  - Istra
+  - Dalmatia
+  - Dalmacija
+  - Slavonia
+  - Slavonija
+  - Zadar County
+  - Varaždin County
+  - Dubrovnik-Neretva
+  - Međimurje
+  - Sisak-Moslavina
+  - Karlovac County
+  cities:
+  - Zagreb
+  - Split
+  - Rijeka
+  - Osijek
+  - Zadar
+  - Pula
+  - Varaždin
+  - Varazdin
+  - Dubrovnik
+  - Šibenik
+  - Sibenik
+  - Slavonski Brod
+  - Karlovac
+  - Sisak
+  - Velika Gorica
+  - Čakovec
+  - Cakovec
+  - Samobor
+  - Sveta Nedelja
+  - Zaprešić
+- name: Cuba
+  iso2: CU
+  aliases:
+  - cu
+  - cuban
+  - cuba
+  regions: []
+  cities: []
+- name: Cyprus
+  iso2: CY
+  aliases:
+  - κύπρος
+  - kypros
+  - kıbrıs
+  - cy
+  - cypriot
+  - republic of cyprus
+  - cyprus
+  regions:
+  - Nicosia District
+  - Limassol District
+  - Larnaca District
+  - Paphos District
+  - Famagusta District
+  - Kyrenia District
+  cities:
+  - Nicosia
+  - Lefkosia
+  - Lefkoşa
+  - Limassol
+  - Lemesos
+  - Larnaca
+  - Larnaka
+  - Paphos
+  - Pafos
+  - Famagusta
+  - Ammochostos
+  - Paralimni
+  - Ayia Napa
+  - Kyrenia
+  - Girne
+  - Strovolos
+  - Lakatamia
+  - Aglantzia
+  - Engomi
+  - Latsia
+  - Germasogeia
+  - Mesa Geitonia
+  - Aradippou
+- name: Czechia
+  iso2: CZ
+  aliases:
+  - czech republic
+  - česko
+  - cesko
+  - česká republika
+  - ceska republika
+  - cz
+  - czech
+  - czechia
+  regions:
+  - Prague
+  - Praha
+  - Hlavní město Praha
+  - Central Bohemian
+  - Středočeský kraj
+  - Stredocesky
+  - Central Bohemia
+  - South Moravian
+  - Jihomoravský kraj
+  - Jihomoravsky
+  - South Moravia
+  - Moravian-Silesian
+  - Moravskoslezský kraj
+  - Moravskoslezsky
+  - Bohemia
+  - Čechy
+  - Moravia
+  - Morava
+  - Silesia
+  - Slezsko
+  - Plzeň Region
+  - Plzeňský kraj
+  - Pilsen Region
+  - South Bohemian
+  - Jihočeský kraj
+  - Jihocesky
+  - Ústí nad Labem Region
+  - Ústecký kraj
+  - Ustecky
+  - Olomouc Region
+  - Olomoucký kraj
+  - Olomoucky
+  - Hradec Králové Region
+  - Královéhradecký kraj
+  - Kralovehradecky
+  - Zlín Region
+  - Zlínský kraj
+  - Zlinsky
+  - Pardubice Region
+  - Pardubický kraj
+  - Pardubicky
+  - Liberec Region
+  - Liberecký kraj
+  - Liberecky
+  - Vysočina
+  - Vysocina
+  - Karlovy Vary Region
+  - Karlovarský kraj
+  - Karlovarsky
+  cities:
+  - Prague
+  - Praha
+  - Brno
+  - Ostrava
+  - Plzeň
+  - Plzen
+  - Pilsen
+  - Olomouc
+  - Liberec
+  - České Budějovice
+  - Ceske Budejovice
+  - Hradec Králové
+  - Hradec Kralove
+  - Pardubice
+  - Zlín
+  - Zlin
+  - Ústí nad Labem
+  - Usti nad Labem
+  - Jihlava
+  - Mladá Boleslav
+  - Mlada Boleslav
+  - Karlovy Vary
+  - Kladno
+  - Opava
+  - Frýdek-Místek
+- name: Côte d'Ivoire
+  iso2: CI
+  aliases:
+  - cote d'ivoire
+  - côte d'ivoire
+  - ivory coast
+  - ci
+  - ivorian
+  regions:
+  - Abidjan
+  cities:
+  - Abidjan
+  - Yamoussoukro
+  - Bouaké
+  - San-Pédro
+- name: Democratic Republic of the Congo
+  iso2: CD
+  aliases:
+  - cd
+  - drc
+  - dr congo
+  - congo-kinshasa
+  - congo kinshasa
+  - rdc
+  - democratic republic of the congo
+  regions: []
+  cities: []
+- name: Denmark
+  iso2: DK
+  aliases:
+  - danmark
+  - dk
+  - danish
+  - kingdom of denmark
+  - denmark
+  regions:
+  - Capital Region of Denmark
+  - Region Hovedstaden
+  - Hovedstaden
+  - Central Denmark Region
+  - Region Midtjylland
+  - Midtjylland
+  - Region of Southern Denmark
+  - Region Syddanmark
+  - Syddanmark
+  - Zealand Region
+  - Region Sjælland
+  - Region Sjaelland
+  - Sjælland
+  - North Denmark Region
+  - Region Nordjylland
+  - Nordjylland
+  - Jutland
+  - Jylland
+  - Zealand
+  - Funen
+  - Fyn
+  - Greater Copenhagen
+  - Copenhagen Metropolitan Area
+  - Hovedstadsområdet
+  cities:
+  - Copenhagen
+  - København
+  - Kobenhavn
+  - Aarhus
+  - Århus
+  - Odense
+  - Aalborg
+  - Ålborg
+  - Esbjerg
+  - Lyngby
+  - Kongens Lyngby
+  - Ballerup
+  - Herlev
+  - Vejle
+  - Kolding
+  - Horsens
+  - Randers
+  - Roskilde
+  - Herning
+  - Silkeborg
+  - Fredericia
+  - Frederiksberg
+  - Gentofte
+  - Hellerup
+  - Gladsaxe
+  - Søborg
+  - Glostrup
+  - Brøndby
+  - Hvidovre
+  - Hørsholm
+  - Birkerød
+  - Allerød
+  - Hillerød
+  - Taastrup
+  - Høje-Taastrup
+  - Albertslund
+  - Ishøj
+  - Greve
+  - Køge
+  - Nørresundby
+  - Viby
+  - Skanderborg
+  - Billund
+  - Sønderborg
+  - Næstved
+  - Helsingør
+  - Holbæk
+  - Slagelse
+  - Svendborg
+  - Nordhavn
+  - Ørestad
+  - Islands Brygge
+- name: Djibouti
+  iso2: DJ
+  aliases:
+  - dj
+  - djiboutian
+  - djibouti
+  regions: []
+  cities: []
+- name: Dominica
+  iso2: DM
+  aliases:
+  - dm
+  - dominica
+  regions: []
+  cities: []
+- name: Dominican Republic
+  iso2: DO
+  aliases:
+  - do
+  - dominican
+  - república dominicana
+  - republica dominicana
+  - dominican republic
+  regions: []
+  cities: []
+- name: Ecuador
+  iso2: EC
+  aliases:
+  - ec
+  - ecuadorian
+  - ecuador
+  regions: []
+  cities: []
+- name: Egypt
+  iso2: EG
+  aliases:
+  - egypt
+  - eg
+  - egyptian
+  - misr
+  regions:
+  - Cairo
+  - Giza
+  - Alexandria
+  cities:
+  - Cairo
+  - Giza
+  - Alexandria
+  - New Cairo
+  - 6th of October
+  - Sheikh Zayed
+  - Mansoura
+  - Tanta
+  - Port Said
+  - Suez
+  - Maadi
+  - Nasr City
+- name: El Salvador
+  iso2: SV
+  aliases:
+  - sv
+  - salvadoran
+  - el salvador
+  regions: []
+  cities: []
+- name: Equatorial Guinea
+  iso2: GQ
+  aliases:
+  - gq
+  - equatorial guinea
+  regions: []
+  cities: []
+- name: Eritrea
+  iso2: ER
+  aliases:
+  - er
+  - eritrean
+  - eritrea
+  regions: []
+  cities: []
+- name: Estonia
+  iso2: EE
+  aliases:
+  - eesti
+  - ee
+  - estonian
+  - republic of estonia
+  - estonia
+  regions:
+  - Harju County
+  - Harjumaa
+  - Harju maakond
+  - Tartu County
+  - Tartumaa
+  - Ida-Viru County
+  - Ida-Virumaa
+  - Pärnu County
+  - Pärnumaa
+  - Lääne-Viru County
+  - Lääne-Virumaa
+  - Viljandi County
+  - Viljandimaa
+  - Rapla County
+  - Raplamaa
+  - Võru County
+  - Võrumaa
+  - Saare County
+  - Saaremaa
+  - Jõgeva County
+  - Jõgevamaa
+  - Järva County
+  - Järvamaa
+  - Valga County
+  - Valgamaa
+  - Põlva County
+  - Põlvamaa
+  - Lääne County
+  - Läänemaa
+  - Hiiu County
+  - Hiiumaa
+  cities:
+  - Tallinn
+  - Tartu
+  - Narva
+  - Pärnu
+  - Parnu
+  - Kohtla-Järve
+  - Viljandi
+  - Rakvere
+  - Maardu
+  - Kuressaare
+  - Jõhvi
+  - Haapsalu
+  - Keila
+  - Ülemiste
+  - Ülemiste City
+- name: Eswatini
+  iso2: SZ
+  aliases:
+  - sz
+  - swaziland
+  - swazi
+  - eswatini
+  regions: []
+  cities: []
+- name: Ethiopia
+  iso2: ET
+  aliases:
+  - ethiopia
+  - et
+  - ethiopian
+  regions:
+  - Addis Ababa
+  - Oromia
+  - Amhara
+  cities:
+  - Addis Ababa
+  - Dire Dawa
+  - Mekelle
+  - Hawassa
+  - Bahir Dar
+  - Adama
+- name: Fiji
+  iso2: FJ
+  aliases:
+  - fj
+  - fijian
+  - fiji
+  regions: []
+  cities: []
+- name: Finland
+  iso2: FI
+  aliases:
+  - suomi
+  - fi
+  - finnish
+  - republic of finland
+  - finland
+  regions:
+  - Uusimaa
+  - Helsinki-Uusimaa
+  - Nyland
+  - Pirkanmaa
+  - Tampere Region
+  - Southwest Finland
+  - Varsinais-Suomi
+  - North Ostrobothnia
+  - Pohjois-Pohjanmaa
+  - Central Finland
+  - Keski-Suomi
+  - Ostrobothnia
+  - Pohjanmaa
+  - Lapland
+  - Lappi
+  - Åland
+  - Aland
+  - Päijät-Häme
+  - Kanta-Häme
+  - Kymenlaakso
+  - South Karelia
+  - Etelä-Karjala
+  - North Karelia
+  - Pohjois-Karjala
+  - North Savo
+  - Pohjois-Savo
+  - South Savo
+  - Etelä-Savo
+  - Satakunta
+  - South Ostrobothnia
+  - Etelä-Pohjanmaa
+  - Central Ostrobothnia
+  - Kainuu
+  - Helsinki Metropolitan Area
+  - Capital Region
+  - Pääkaupunkiseutu
+  cities:
+  - Helsinki
+  - Helsingfors
+  - Espoo
+  - Esbo
+  - Tampere
+  - Tammerfors
+  - Vantaa
+  - Vanda
+  - Oulu
+  - Uleåborg
+  - Turku
+  - Åbo
+  - Jyväskylä
+  - Jyvaskyla
+  - Lahti
+  - Kuopio
+  - Pori
+  - Kouvola
+  - Joensuu
+  - Lappeenranta
+  - Hämeenlinna
+  - Hameenlinna
+  - Vaasa
+  - Vasa
+  - Seinäjoki
+  - Seinajoki
+  - Rovaniemi
+  - Mikkeli
+  - Kotka
+  - Salo
+  - Porvoo
+  - Borgå
+  - Kokkola
+  - Hyvinkää
+  - Lohja
+  - Järvenpää
+  - Nurmijärvi
+  - Kirkkonummi
+  - Kerava
+  - Tuusula
+  - Kajaani
+  - Savonlinna
+  - Rauma
+  - Kemi
+  - Tornio
+  - Keilaniemi
+  - Otaniemi
+  - Leppävaara
+  - Pasila
+  - Ruoholahti
+  - Kalasatama
+  - Aviapolis
+- name: France
+  iso2: FR
+  aliases:
+  - fr
+  - république française
+  - republique francaise
+  - french republic
+  - french
+  - france
+  regions:
+  - Île-de-France
+  - Ile-de-France
+  - IDF
+  - Auvergne-Rhône-Alpes
+  - Auvergne-Rhone-Alpes
+  - Provence-Alpes-Côte d'Azur
+  - Provence-Alpes-Cote d'Azur
+  - PACA
+  - Occitanie
+  - Nouvelle-Aquitaine
+  - Hauts-de-France
+  - Grand Est
+  - Bretagne
+  - Brittany
+  - Pays de la Loire
+  - Normandie
+  - Normandy
+  - Bourgogne-Franche-Comté
+  - Centre-Val de Loire
+  - Corse
+  - Corsica
+  - Alsace
+  - Lorraine
+  - Rhône-Alpes
+  - Aquitaine
+  - Midi-Pyrénées
+  - Nord-Pas-de-Calais
+  - Languedoc-Roussillon
+  cities:
+  - Paris
+  - Lyon
+  - Marseille
+  - Toulouse
+  - Nice
+  - Nantes
+  - Bordeaux
+  - Lille
+  - Strasbourg
+  - Montpellier
+  - Rennes
+  - Grenoble
+  - Sophia Antipolis
+  - Boulogne-Billancourt
+  - Nanterre
+  - Issy-les-Moulineaux
+  - La Défense
+  - La Defense
+  - Courbevoie
+  - Levallois-Perret
+  - Neuilly-sur-Seine
+  - Puteaux
+  - Saint-Denis
+  - Aix-en-Provence
+  - Toulon
+  - Rouen
+  - Dijon
+  - Angers
+  - Reims
+  - Le Havre
+  - Clermont-Ferrand
+  - Tours
+  - Orléans
+  - Metz
+  - Nancy
+  - Mulhouse
+  - Caen
+  - Versailles
+  - Massy
+  - Vélizy-Villacoublay
+- name: Gabon
+  iso2: GA
+  aliases:
+  - ga
+  - gabonese
+  - gabon
+  regions: []
+  cities: []
+- name: Gambia
+  iso2: GM
+  aliases:
+  - gm
+  - the gambia
+  - gambian
+  - gambia
+  regions: []
+  cities: []
+- name: Georgia
+  iso2: GE
+  aliases:
+  - საქართველო
+  - sakartvelo
+  - ge
+  - georgian
+  - republic of georgia
+  - georgia
+  regions:
+  - Tbilisi
+  - თბილისი
+  - Adjara
+  - Achara
+  - Imereti
+  - Kakheti
+  - Kvemo Kartli
+  - Shida Kartli
+  - Samegrelo-Zemo Svaneti
+  - Samtskhe-Javakheti
+  - Guria
+  - Mtskheta-Mtianeti
+  - Racha-Lechkhumi and Kvemo Svaneti
+  - Abkhazia
+  - South Ossetia
+  cities:
+  - Tbilisi
+  - Tiflis
+  - თბილისი
+  - Batumi
+  - Kutaisi
+  - Rustavi
+  - Gori
+  - Zugdidi
+  - Poti
+  - Kobuleti
+  - Khashuri
+  - Samtredia
+  - Senaki
+  - Telavi
+  - Mtskheta
+  - Marneuli
+  - Akhaltsikhe
+  - Ozurgeti
+  - Zestafoni
+  - Kaspi
+  - Chiatura
+  - Tskaltubo
+  - Sagarejo
+  - Gardabani
+  - Borjomi
+  - Tkibuli
+  - Khoni
+  - Bolnisi
+  - Akhalkalaki
+  - Gurjaani
+  - Mestia
+  - Sighnaghi
+  - Lagodekhi
+  - Kvareli
+  - Dedoplistskaro
+  - Ninotsminda
+  - Abasha
+  - Martvili
+  - Chkhorotsqu
+  - Tsalenjikha
+  - Jvari
+  - Khobi
+  - Lanchkhuti
+  - Chokhatauri
+  - Vani
+  - Bagdati
+  - Terjola
+  - Kharagauli
+  - Sachkhere
+  - Ambrolauri
+  - Oni
+  - Tsageri
+  - Lentekhi
+  - Dusheti
+  - Tianeti
+  - Stepantsminda
+  - Kazbegi
+  - Tsalka
+  - Dmanisi
+  - Tetritskaro
+  - Aspindza
+  - Adigeni
+  - Keda
+  - Shuakhevi
+  - Khulo
+  - Khelvachauri
+  - Sokhumi
+  - Sukhumi
+  - Tskhinvali
+  - Gagra
+  - Gali
+  - Ochamchire
+  - Gudauta
+  - Tkvarcheli
+  - Pitsunda
+  - New Athos
+  - Akhali Atoni
+- name: Germany
+  iso2: DE
+  aliases:
+  - deutschland
+  - de
+  - ger
+  - brd
+  - german
+  - germany
+  regions:
+  - Bavaria
+  - Bayern
+  - Berlin
+  - Hamburg
+  - Hesse
+  - Hessen
+  - North Rhine-Westphalia
+  - Nordrhein-Westfalen
+  - NRW
+  - Baden-Württemberg
+  - Baden-Wurttemberg
+  - Lower Saxony
+  - Niedersachsen
+  - Saxony
+  - Sachsen
+  - Rhineland-Palatinate
+  - Rheinland-Pfalz
+  - Schleswig-Holstein
+  - Brandenburg
+  - Thuringia
+  - Thüringen
+  - Saxony-Anhalt
+  - Sachsen-Anhalt
+  - Mecklenburg-Vorpommern
+  - Mecklenburg-Western Pomerania
+  - Saarland
+  - Bremen
+  cities:
+  - Berlin
+  - Munich
+  - München
+  - Hamburg
+  - Frankfurt
+  - Frankfurt am Main
+  - Cologne
+  - Köln
+  - Düsseldorf
+  - Dusseldorf
+  - Stuttgart
+  - Leipzig
+  - Dresden
+  - Hanover
+  - Hannover
+  - Nuremberg
+  - Nürnberg
+  - Essen
+  - Dortmund
+  - Bremen
+  - Bonn
+  - Karlsruhe
+  - Mannheim
+  - Heidelberg
+  - Münster
+  - Aachen
+  - Wiesbaden
+  - Darmstadt
+  - Walldorf
+  - Eschborn
+  - Ingolstadt
+  - Wolfsburg
+  - Augsburg
+  - Freiburg
+  - Mainz
+  - Potsdam
+- name: Ghana
+  iso2: GH
+  aliases:
+  - ghana
+  - gh
+  - ghanaian
+  regions:
+  - Greater Accra
+  - Ashanti
+  cities:
+  - Accra
+  - Kumasi
+  - Tema
+  - Takoradi
+  - Tamale
+  - East Legon
+- name: Greece
+  iso2: GR
+  aliases:
+  - ελλάδα
+  - ellada
+  - hellas
+  - hellenic republic
+  - gr
+  - greek
+  - greece
+  regions:
+  - Attica
+  - Attiki
+  - Central Macedonia
+  - Thessaloniki Region
+  - Crete
+  - Kriti
+  - Western Greece
+  - Peloponnese
+  - Thessaly
+  - Thessalia
+  - Central Greece
+  - Sterea Ellada
+  - Eastern Macedonia and Thrace
+  - Western Macedonia
+  - Epirus
+  - Ipeiros
+  - South Aegean
+  - North Aegean
+  - Ionian Islands
+  - Macedonia
+  cities:
+  - Athens
+  - Αθήνα
+  - Athina
+  - Thessaloniki
+  - Salonica
+  - Patras
+  - Patra
+  - Heraklion
+  - Iraklio
+  - Larissa
+  - Volos
+  - Ioannina
+  - Chania
+  - Rhodes
+  - Rhodos
+  - Kallithea
+  - Piraeus
+  - Peristeri
+  - Marousi
+  - Maroussi
+  - Chalandri
+  - Halandri
+  - Glyfada
+  - Kifisia
+  - Agia Paraskevi
+  - Neo Psychiko
+  - Kalamata
+  - Chalkida
+  - Alexandroupoli
+  - Kavala
+- name: Grenada
+  iso2: GD
+  aliases:
+  - gd
+  - grenada
+  regions: []
+  cities: []
+- name: Guatemala
+  iso2: GT
+  aliases:
+  - gt
+  - guatemalan
+  - guatemala
+  regions: []
+  cities: []
+- name: Guinea
+  iso2: GN
+  aliases:
+  - gn
+  - guinean
+  - guinée
+  - guinea
+  regions: []
+  cities: []
+- name: Guinea-Bissau
+  iso2: GW
+  aliases:
+  - gw
+  - guinea-bissau
+  regions: []
+  cities: []
+- name: Guyana
+  iso2: GY
+  aliases:
+  - gy
+  - guyanese
+  - guyana
+  regions: []
+  cities: []
+- name: Haiti
+  iso2: HT
+  aliases:
+  - ht
+  - haitian
+  - haïti
+  - haiti
+  regions: []
+  cities: []
+- name: Honduras
+  iso2: HN
+  aliases:
+  - hn
+  - honduran
+  - honduras
+  regions: []
+  cities: []
+- name: Hong Kong
+  iso2: HK
+  aliases:
+  - hong kong
+  - hk
+  - hong kong sar
+  - hksar
+  - hongkong
+  regions:
+  - Hong Kong Island
+  - Kowloon
+  - New Territories
+  cities:
+  - Hong Kong
+  - Kowloon
+  - Central
+  - Wan Chai
+  - Tsim Sha Tsui
+  - Quarry Bay
+  - Causeway Bay
+  - Kwun Tong
+  - Sha Tin
+  - Tsuen Wan
+  - Cyberport
+  - Admiralty
+- name: Hungary
+  iso2: HU
+  aliases:
+  - magyarország
+  - magyarorszag
+  - hu
+  - hungarian
+  - hungary
+  regions:
+  - Budapest
+  - Pest County
+  - Pest megye
+  - Central Hungary
+  - Közép-Magyarország
+  - Győr-Moson-Sopron
+  - Hajdú-Bihar
+  - Csongrád-Csanád
+  - Borsod-Abaúj-Zemplén
+  - Baranya
+  - Fejér
+  - Komárom-Esztergom
+  - Veszprém
+  - Bács-Kiskun
+  - Szabolcs-Szatmár-Bereg
+  - Jász-Nagykun-Szolnok
+  - Békés
+  - Heves
+  - Somogy
+  - Zala
+  - Vas
+  - Tolna
+  - Nógrád
+  cities:
+  - Budapest
+  - Debrecen
+  - Szeged
+  - Miskolc
+  - Pécs
+  - Pecs
+  - Győr
+  - Gyor
+  - Nyíregyháza
+  - Kecskemét
+  - Székesfehérvár
+  - Szombathely
+  - Szolnok
+  - Tatabánya
+  - Veszprém
+  - Sopron
+  - Érd
+  - Budaörs
+  - Törökbálint
+  - Dunaújváros
+  - Eger
+  - Zalaegerszeg
+- name: Iceland
+  iso2: IS
+  aliases:
+  - ísland
+  - island
+  - is
+  - icelandic
+  - republic of iceland
+  - iceland
+  regions:
+  - Capital Region
+  - Höfuðborgarsvæðið
+  - Southern Peninsula
+  - Suðurnes
+  - Western Region
+  - Vesturland
+  - Westfjords
+  - Vestfirðir
+  - Northwestern Region
+  - Northeastern Region
+  - Norðurland eystra
+  - Eastern Region
+  - Austurland
+  - Southern Region
+  - Suðurland
+  cities:
+  - Reykjavík
+  - Reykjavik
+  - Kópavogur
+  - Kopavogur
+  - Hafnarfjörður
+  - Hafnarfjordur
+  - Akureyri
+  - Garðabær
+  - Gardabaer
+  - Mosfellsbær
+  - Reykjanesbær
+  - Keflavík
+  - Keflavik
+  - Selfoss
+  - Akranes
+- name: India
+  iso2: IN
+  aliases:
+  - india
+  - in
+  - indian
+  - bharat
+  regions:
+  - Maharashtra
+  - Karnataka
+  - Delhi
+  - NCR
+  - National Capital Region
+  - Tamil Nadu
+  - Telangana
+  - Gujarat
+  - Haryana
+  - Uttar Pradesh
+  - West Bengal
+  - Kerala
+  - Rajasthan
+  - Punjab
+  - Andhra Pradesh
+  - Madhya Pradesh
+  - Odisha
+  - Bihar
+  cities:
+  - Mumbai
+  - Bengaluru
+  - Bangalore
+  - Delhi
+  - New Delhi
+  - Hyderabad
+  - Chennai
+  - Pune
+  - Gurugram
+  - Gurgaon
+  - Noida
+  - Kolkata
+  - Ahmedabad
+  - Jaipur
+  - Kochi
+  - Chandigarh
+  - Coimbatore
+  - Indore
+  - Thiruvananthapuram
+  - Lucknow
+  - Navi Mumbai
+  - Mohali
+  - Bhubaneswar
+  - Nagpur
+  - Surat
+  - Vadodara
+  - Mysuru
+  - Mysore
+  - Visakhapatnam
+- name: Indonesia
+  iso2: ID
+  aliases:
+  - indonesia
+  - id
+  - indonesian
+  regions:
+  - Jakarta
+  - DKI Jakarta
+  - West Java
+  - Jawa Barat
+  - East Java
+  - Jawa Timur
+  - Central Java
+  - Bali
+  - Banten
+  - Yogyakarta
+  - North Sumatra
+  cities:
+  - Jakarta
+  - Surabaya
+  - Bandung
+  - Medan
+  - Bali
+  - Denpasar
+  - Tangerang
+  - South Tangerang
+  - Bekasi
+  - Yogyakarta
+  - Semarang
+  - Makassar
+  - Depok
+  - Bogor
+- name: Iran
+  iso2: IR
+  aliases:
+  - ir
+  - iranian
+  - islamic republic of iran
+  - persia
+  - iran
+  regions: []
+  cities: []
+- name: Iraq
+  iso2: IQ
+  aliases:
+  - iraq
+  - iq
+  - iraqi
+  regions:
+  - Kurdistan Region
+  - Baghdad
+  cities:
+  - Baghdad
+  - Erbil
+  - Basra
+  - Sulaymaniyah
+  - Najaf
+  - Mosul
+- name: Ireland
+  iso2: IE
+  aliases:
+  - éire
+  - eire
+  - republic of ireland
+  - ie
+  - irish
+  - roi
+  - ireland
+  regions:
+  - Leinster
+  - Munster
+  - Connacht
+  - Connaught
+  - Ulster
+  - County Dublin
+  - Dublin
+  - County Cork
+  - Cork
+  - County Galway
+  - Galway
+  - County Limerick
+  - County Kildare
+  - Kildare
+  - County Meath
+  - Meath
+  - County Wicklow
+  - Wicklow
+  - County Louth
+  - Louth
+  - County Waterford
+  - County Clare
+  - Clare
+  - County Kerry
+  - County Mayo
+  - County Donegal
+  - County Tipperary
+  - County Westmeath
+  - County Wexford
+  - County Kilkenny
+  - County Sligo
+  cities:
+  - Dublin
+  - Cork
+  - Galway
+  - Limerick
+  - Waterford
+  - Drogheda
+  - Dundalk
+  - Sandyford
+  - Blanchardstown
+  - Swords
+  - Bray
+  - Kilkenny
+  - Athlone
+  - Sligo
+  - Shannon
+  - Leopardstown
+  - Cherrywood
+  - Citywest
+  - Tallaght
+  - Dún Laoghaire
+  - Dun Laoghaire
+  - Maynooth
+  - Naas
+  - Ennis
+  - Tralee
+  - Letterkenny
+  - Carlow
+  - Navan
+  - Ballsbridge
+  - Grand Canal Dock
+  - Silicon Docks
+  - Clonskeagh
+  - Park West
+  - Ballymount
+- name: Israel
+  iso2: IL
+  aliases:
+  - israel
+  - il
+  - israeli
+  regions:
+  - Tel Aviv District
+  - Central District
+  - Haifa District
+  - Jerusalem District
+  cities:
+  - Tel Aviv
+  - Tel Aviv-Yafo
+  - Jerusalem
+  - Haifa
+  - Herzliya
+  - Ra'anana
+  - Raanana
+  - Petah Tikva
+  - Netanya
+  - Ramat Gan
+  - Be'er Sheva
+  - Beersheba
+  - Rehovot
+  - Rosh Haayin
+  - Hod Hasharon
+  - Kfar Saba
+- name: Italy
+  iso2: IT
+  aliases:
+  - italia
+  - it
+  - italian
+  - italian republic
+  - italy
+  regions:
+  - Lombardy
+  - Lombardia
+  - Lazio
+  - Latium
+  - Piedmont
+  - Piemonte
+  - Veneto
+  - Emilia-Romagna
+  - Tuscany
+  - Toscana
+  - Campania
+  - Sicily
+  - Sicilia
+  - Apulia
+  - Puglia
+  - Liguria
+  - Friuli-Venezia Giulia
+  - Friuli Venezia Giulia
+  - Trentino-Alto Adige
+  - Trentino-South Tyrol
+  - South Tyrol
+  - Südtirol
+  - Alto Adige
+  - Marche
+  - Sardinia
+  - Sardegna
+  - Umbria
+  - Abruzzo
+  - Calabria
+  - Basilicata
+  - Molise
+  - Aosta Valley
+  - Valle d'Aosta
+  cities:
+  - Milan
+  - Milano
+  - Rome
+  - Roma
+  - Turin
+  - Torino
+  - Naples
+  - Napoli
+  - Florence
+  - Firenze
+  - Bologna
+  - Venice
+  - Venezia
+  - Genoa
+  - Genova
+  - Verona
+  - Padua
+  - Padova
+  - Bergamo
+  - Brescia
+  - Bari
+  - Palermo
+  - Trieste
+  - Modena
+  - Parma
+  - Vicenza
+  - Treviso
+  - Reggio Emilia
+  - Monza
+  - Catania
+  - Cagliari
+  - Trento
+  - Bolzano
+  - Bozen
+  - Udine
+  - Pisa
+  - Rimini
+  - Perugia
+  - Ancona
+  - Sesto San Giovanni
+  - Assago
+  - Segrate
+  - Rozzano
+- name: Jamaica
+  iso2: JM
+  aliases:
+  - jm
+  - jamaican
+  - jamaica
+  regions: []
+  cities: []
+- name: Japan
+  iso2: JP
+  aliases:
+  - japan
+  - jp
+  - japanese
+  - nippon
+  - nihon
+  regions:
+  - Tokyo
+  - Osaka
+  - Kanagawa
+  - Aichi
+  - Kyoto
+  - Fukuoka
+  - Hokkaido
+  - Hyogo
+  - Saitama
+  - Chiba
+  cities:
+  - Tokyo
+  - Osaka
+  - Yokohama
+  - Nagoya
+  - Kyoto
+  - Fukuoka
+  - Sapporo
+  - Kobe
+  - Minato
+  - Shibuya
+  - Chiyoda
+  - Shinjuku
+  - Chuo
+  - Kawasaki
+  - Saitama
+  - Sendai
+  - Hiroshima
+- name: Jordan
+  iso2: JO
+  aliases:
+  - jordan
+  - jo
+  - jordanian
+  regions:
+  - Amman Governorate
+  cities:
+  - Amman
+  - Irbid
+  - Zarqa
+  - Aqaba
+- name: Kazakhstan
+  iso2: KZ
+  aliases:
+  - kz
+  - kazakh
+  - kazakhstani
+  - kazakhstan
+  regions: []
+  cities: []
+- name: Kenya
+  iso2: KE
+  aliases:
+  - kenya
+  - ke
+  - kenyan
+  regions:
+  - Nairobi County
+  - Mombasa County
+  - Kisumu County
+  - Nakuru County
+  cities:
+  - Nairobi
+  - Mombasa
+  - Kisumu
+  - Nakuru
+  - Eldoret
+  - Westlands
+  - Kilimani
+  - Thika
+- name: Kiribati
+  iso2: KI
+  aliases:
+  - ki
+  - kiribati
+  regions: []
+  cities: []
+- name: Kosovo
+  iso2: XK
+  aliases:
+  - kosova
+  - kosovë
+  - косово
+  - xk
+  - kosovar
+  - republic of kosovo
+  - kosovo
+  regions:
+  - Pristina District
+  - Prizren District
+  - Peja District
+  - Mitrovica District
+  - Gjilan District
+  - Gjakova District
+  - Ferizaj District
+  cities:
+  - Pristina
+  - Prishtina
+  - Prishtinë
+  - Priština
+  - Prizren
+  - Peja
+  - Pejë
+  - Peć
+  - Mitrovica
+  - Mitrovicë
+  - Gjilan
+  - Gnjilane
+  - Gjakova
+  - Gjakovë
+  - Đakovica
+  - Ferizaj
+  - Uroševac
+  - Vushtrri
+  - Podujeva
+  - Fushë Kosova
+- name: Kuwait
+  iso2: KW
+  aliases:
+  - kuwait
+  - kw
+  - kuwaiti
+  regions: []
+  cities:
+  - Kuwait City
+  - Hawalli
+  - Salmiya
+  - Farwaniya
+  - Ahmadi
+- name: Kyrgyzstan
+  iso2: KG
+  aliases:
+  - kg
+  - kyrgyz
+  - kirghizia
+  - kyrgyzstan
+  regions: []
+  cities: []
+- name: Laos
+  iso2: LA
+  aliases:
+  - la
+  - lao
+  - lao pdr
+  - laos
+  regions: []
+  cities: []
+- name: Latvia
+  iso2: LV
+  aliases:
+  - latvija
+  - lv
+  - latvian
+  - republic of latvia
+  - latvia
+  regions:
+  - Riga
+  - Rīga
+  - Riga Region
+  - Rīgas reģions
+  - Pierīga
+  - Pieriga
+  - Vidzeme
+  - Kurzeme
+  - Zemgale
+  - Latgale
+  - Sēlija
+  - Selija
+  cities:
+  - Riga
+  - Rīga
+  - Daugavpils
+  - Liepāja
+  - Liepaja
+  - Jelgava
+  - Jūrmala
+  - Jurmala
+  - Ventspils
+  - Rēzekne
+  - Valmiera
+  - Jēkabpils
+  - Ogre
+  - Salaspils
+  - Mārupe
+  - Marupe
+- name: Lebanon
+  iso2: LB
+  aliases:
+  - lebanon
+  - liban
+  - lb
+  - lebanese
+  regions:
+  - Beirut
+  - Mount Lebanon
+  - North Lebanon
+  - South Lebanon
+  - Beqaa
+  - Bekaa
+  - Nabatieh
+  cities:
+  - Beirut
+  - Beyrouth
+  - Jounieh
+  - Tripoli
+  - Sidon
+  - Saida
+  - Tyre
+  - Zahle
+  - Byblos
+  - Jbeil
+  - Baabda
+  - Dbayeh
+  - Antelias
+  - Hazmieh
+  - Sin el Fil
+  - Dekwaneh
+- name: Lesotho
+  iso2: LS
+  aliases:
+  - ls
+  - basotho
+  - lesotho
+  regions: []
+  cities: []
+- name: Liberia
+  iso2: LR
+  aliases:
+  - lr
+  - liberian
+  - liberia
+  regions: []
+  cities: []
+- name: Libya
+  iso2: LY
+  aliases:
+  - ly
+  - libyan
+  - libya
+  regions: []
+  cities: []
+- name: Liechtenstein
+  iso2: LI
+  aliases:
+  - fürstentum liechtenstein
+  - principality of liechtenstein
+  - li
+  - liechtensteiner
+  - liechtenstein
+  regions:
+  - Oberland
+  - Unterland
+  cities:
+  - Vaduz
+  - Schaan
+  - Balzers
+  - Triesen
+  - Eschen
+  - Mauren
+  - Triesenberg
+  - Ruggell
+  - Gamprin
+  - Schellenberg
+  - Planken
+- name: Lithuania
+  iso2: LT
+  aliases:
+  - lietuva
+  - lt
+  - lithuanian
+  - republic of lithuania
+  - lithuania
+  regions:
+  - Vilnius County
+  - Vilniaus apskritis
+  - Kaunas County
+  - Kauno apskritis
+  - Klaipėda County
+  - Klaipėdos apskritis
+  - Šiauliai County
+  - Šiaulių apskritis
+  - Panevėžys County
+  - Panevėžio apskritis
+  - Alytus County
+  - Alytaus apskritis
+  - Marijampolė County
+  - Marijampolės apskritis
+  - Utena County
+  - Utenos apskritis
+  - Telšiai County
+  - Telšių apskritis
+  - Tauragė County
+  - Tauragės apskritis
+  - Aukštaitija
+  - Žemaitija
+  - Samogitia
+  - Dzūkija
+  - Suvalkija
+  - Sūduva
+  cities:
+  - Vilnius
+  - Kaunas
+  - Klaipėda
+  - Klaipeda
+  - Šiauliai
+  - Siauliai
+  - Panevėžys
+  - Panevezys
+  - Alytus
+  - Marijampolė
+  - Marijampole
+  - Mažeikiai
+  - Jonava
+  - Utena
+  - Kėdainiai
+  - Telšiai
+  - Tauragė
+  - Ukmergė
+  - Visaginas
+  - Palanga
+- name: Luxembourg
+  iso2: LU
+  aliases:
+  - lëtzebuerg
+  - letzebuerg
+  - luxemburg
+  - lu
+  - grand duchy of luxembourg
+  - luxembourgish
+  - luxembourg
+  regions:
+  - Luxembourg District
+  - Diekirch District
+  - Grevenmacher District
+  - Canton Luxembourg
+  - Canton Esch-sur-Alzette
+  cities:
+  - Luxembourg
+  - Luxembourg City
+  - Luxemburg
+  - Esch-sur-Alzette
+  - Esch
+  - Differdange
+  - Dudelange
+  - Ettelbruck
+  - Diekirch
+  - Kirchberg
+  - Strassen
+  - Bertrange
+  - Leudelange
+  - Howald
+  - Hesperange
+  - Capellen
+  - Munsbach
+  - Contern
+  - Belval
+  - Mamer
+  - Senningerberg
+  - Findel
+  - Windhof
+  - Bettembourg
+  - Mondorf-les-Bains
+- name: Macau
+  iso2: MO
+  aliases:
+  - mo
+  - macao
+  - macau sar
+  - macau
+  regions: []
+  cities: []
+- name: Madagascar
+  iso2: MG
+  aliases:
+  - mg
+  - malagasy
+  - madagascar
+  regions: []
+  cities: []
+- name: Malawi
+  iso2: MW
+  aliases:
+  - mw
+  - malawian
+  - malawi
+  regions: []
+  cities: []
+- name: Malaysia
+  iso2: MY
+  aliases:
+  - malaysia
+  - my
+  - malaysian
+  regions:
+  - Kuala Lumpur
+  - Selangor
+  - Penang
+  - Pulau Pinang
+  - Johor
+  - Federal Territory of Kuala Lumpur
+  - Sabah
+  - Sarawak
+  cities:
+  - Kuala Lumpur
+  - Petaling Jaya
+  - George Town
+  - Johor Bahru
+  - Cyberjaya
+  - Shah Alam
+  - Subang Jaya
+  - Putrajaya
+  - Ipoh
+  - Kota Kinabalu
+  - Kuching
+- name: Maldives
+  iso2: MV
+  aliases:
+  - mv
+  - maldivian
+  - maldives
+  regions: []
+  cities: []
+- name: Mali
+  iso2: ML
+  aliases:
+  - ml
+  - malian
+  - mali
+  regions: []
+  cities: []
+- name: Malta
+  iso2: MT
+  aliases:
+  - mt
+  - maltese
+  - republic of malta
+  - malta
+  regions:
+  - Northern Harbour
+  - Southern Harbour
+  - Northern Region
+  - South Eastern Region
+  - Western Region
+  - Gozo
+  - Għawdex
+  - Comino
+  cities:
+  - Valletta
+  - Sliema
+  - St. Julian's
+  - San Ġiljan
+  - Birkirkara
+  - Qormi
+  - Mosta
+  - Żabbar
+  - San Ġwann
+  - Gżira
+  - Msida
+  - Ta' Xbiex
+  - Swieqi
+  - Paola
+  - Naxxar
+  - Birżebbuġa
+  - Marsa
+  - Floriana
+  - Victoria
+  - Rabat
+  - Mrieħel
+  - Mriehel
+  - Luqa
+  - Marsaskala
+  - Attard
+- name: Marshall Islands
+  iso2: MH
+  aliases:
+  - mh
+  - marshall islands
+  regions: []
+  cities: []
+- name: Mauritania
+  iso2: MR
+  aliases:
+  - mr
+  - mauritanian
+  - mauritania
+  regions: []
+  cities: []
+- name: Mauritius
+  iso2: MU
+  aliases:
+  - mu
+  - mauritian
+  - mauritius
+  regions: []
+  cities: []
+- name: Mexico
+  iso2: MX
+  aliases:
+  - méxico
+  - mexico
+  - mx
+  - mexican
+  regions:
+  - Mexico City
+  - Ciudad de México
+  - CDMX
+  - Jalisco
+  - Nuevo León
+  - Nuevo Leon
+  - Querétaro
+  - Queretaro
+  - Estado de México
+  cities:
+  - Mexico City
+  - Guadalajara
+  - Monterrey
+  - Querétaro
+  - Queretaro
+  - Tijuana
+  - Puebla
+  - Cancún
+  - Cancun
+  - Mérida
+  - Merida
+- name: Micronesia
+  iso2: FM
+  aliases:
+  - fm
+  - federated states of micronesia
+  - micronesia
+  regions: []
+  cities: []
+- name: Moldova
+  iso2: MD
+  aliases:
+  - republica moldova
+  - republic of moldova
+  - md
+  - moldovan
+  - moldavia
+  - moldova
+  regions:
+  - Chișinău
+  - Chisinau Municipality
+  - Bălți Municipality
+  - Gagauzia
+  - Transnistria
+  - Stînga Nistrului
+  - Centru
+  - Nord
+  - Sud
+  cities:
+  - Chișinău
+  - Chisinau
+  - Kishinev
+  - Tiraspol
+  - Bălți
+  - Balti
+  - Bender
+  - Tighina
+  - Rîbnița
+  - Ribnita
+  - Cahul
+  - Ungheni
+  - Soroca
+  - Orhei
+  - Comrat
+  - Dubăsari
+  - Strășeni
+  - Căușeni
+  - Edineț
+  - Drochia
+  - Hîncești
+  - Florești
+- name: Monaco
+  iso2: MC
+  aliases:
+  - principality of monaco
+  - principauté de monaco
+  - mc
+  - monegasque
+  - monégasque
+  - monaco
+  regions:
+  - Monte Carlo
+  - Monte-Carlo
+  - La Condamine
+  - Fontvieille
+  - Monaco-Ville
+  - Larvotto
+  - Moneghetti
+  cities:
+  - Monaco
+  - Monte Carlo
+  - Monte-Carlo
+  - Fontvieille
+  - La Condamine
+  - Monaco-Ville
+- name: Mongolia
+  iso2: MN
+  aliases:
+  - mn
+  - mongolian
+  - mongolia
+  regions: []
+  cities: []
+- name: Montenegro
+  iso2: ME
+  aliases:
+  - crna gora
+  - црна гора
+  - me
+  - montenegrin
+  - montenegro
+  regions:
+  - Podgorica Capital City
+  - Central Region
+  - Coastal Region
+  - Northern Region
+  - Bay of Kotor
+  - Boka Kotorska
+  cities:
+  - Podgorica
+  - Nikšić
+  - Niksic
+  - Herceg Novi
+  - Pljevlja
+  - Bijelo Polje
+  - Bar
+  - Cetinje
+  - Berane
+  - Budva
+  - Kotor
+  - Tivat
+  - Ulcinj
+  - Rožaje
+  - Rozaje
+  - Danilovgrad
+- name: Morocco
+  iso2: MA
+  aliases:
+  - morocco
+  - maroc
+  - ma
+  - moroccan
+  regions:
+  - Casablanca-Settat
+  - Rabat-Salé-Kénitra
+  cities:
+  - Casablanca
+  - Rabat
+  - Marrakech
+  - Marrakesh
+  - Tangier
+  - Tanger
+  - Fez
+  - Fès
+  - Agadir
+  - Kenitra
+- name: Mozambique
+  iso2: MZ
+  aliases:
+  - mz
+  - mozambican
+  - moçambique
+  - mozambique
+  regions: []
+  cities: []
+- name: Myanmar
+  iso2: MM
+  aliases:
+  - mm
+  - burma
+  - burmese
+  - myanmar
+  regions: []
+  cities: []
+- name: Namibia
+  iso2: NA
+  aliases:
+  - na
+  - namibian
+  - namibia
+  regions: []
+  cities: []
+- name: Nauru
+  iso2: NR
+  aliases:
+  - nr
+  - nauru
+  regions: []
+  cities: []
+- name: Nepal
+  iso2: NP
+  aliases:
+  - np
+  - nepali
+  - nepalese
+  - nepal
+  regions: []
+  cities: []
+- name: Netherlands
+  iso2: NL
+  aliases:
+  - holland
+  - the netherlands
+  - nederland
+  - nl
+  - dutch
+  - netherlands
+  regions:
+  - North Holland
+  - Noord-Holland
+  - South Holland
+  - Zuid-Holland
+  - Utrecht
+  - North Brabant
+  - Noord-Brabant
+  - Gelderland
+  - Limburg
+  - Overijssel
+  - Groningen
+  - Flevoland
+  - Friesland
+  - Fryslân
+  - Drenthe
+  - Zeeland
+  - Randstad
+  cities:
+  - Amsterdam
+  - Rotterdam
+  - The Hague
+  - Den Haag
+  - '''s-Gravenhage'
+  - Utrecht
+  - Eindhoven
+  - Groningen
+  - Tilburg
+  - Almere
+  - Breda
+  - Nijmegen
+  - Haarlem
+  - Amersfoort
+  - Leiden
+  - Delft
+  - Hoofddorp
+  - Amstelveen
+  - '''s-Hertogenbosch'
+  - Den Bosch
+  - Arnhem
+  - Enschede
+  - Apeldoorn
+  - Zwolle
+  - Maastricht
+  - Hilversum
+  - Schiphol
+  - Zoetermeer
+  - Dordrecht
+  - Veldhoven
+- name: New Zealand
+  iso2: NZ
+  aliases:
+  - new zealand
+  - nz
+  - aotearoa
+  - kiwi
+  regions:
+  - Auckland
+  - Wellington
+  - Canterbury
+  - Waikato
+  - Otago
+  - Bay of Plenty
+  cities:
+  - Auckland
+  - Wellington
+  - Christchurch
+  - Hamilton
+  - Tauranga
+  - Dunedin
+  - Queenstown
+  - Palmerston North
+  - Napier
+  - Nelson
+- name: Nicaragua
+  iso2: NI
+  aliases:
+  - ni
+  - nicaraguan
+  - nicaragua
+  regions: []
+  cities: []
+- name: Niger
+  iso2: NE
+  aliases:
+  - ne
+  - nigerien
+  - niger
+  regions: []
+  cities: []
+- name: Nigeria
+  iso2: NG
+  aliases:
+  - nigeria
+  - ng
+  - nigerian
+  regions:
+  - Lagos
+  - Abuja
+  - Federal Capital Territory
+  - FCT
+  - Rivers
+  - Kano
+  - Oyo
+  - Ogun
+  - Enugu
+  - Kaduna
+  - Delta
+  cities:
+  - Lagos
+  - Abuja
+  - Port Harcourt
+  - Ibadan
+  - Kano
+  - Lekki
+  - Ikeja
+  - Victoria Island
+  - Ikoyi
+  - Yaba
+  - Enugu
+  - Kaduna
+  - Benin City
+  - Abeokuta
+  - Warri
+  - Uyo
+  - Calabar
+- name: North Korea
+  iso2: KP
+  aliases:
+  - kp
+  - dprk
+  - democratic people's republic of korea
+  - north korea
+  regions: []
+  cities: []
+- name: North Macedonia
+  iso2: MK
+  aliases:
+  - macedonia
+  - северна македонија
+  - severna makedonija
+  - mk
+  - macedonian
+  - fyrom
+  - republic of north macedonia
+  - north macedonia
+  regions:
+  - Skopje Region
+  - Skopski
+  - Pelagonia
+  - Pelagoniski
+  - Polog
+  - Pološki
+  - Eastern Region
+  - Istočen
+  - Southeastern Region
+  - Jugoistočen
+  - Southwestern Region
+  - Jugozapaden
+  - Vardar Region
+  - Vardarski
+  - Northeastern Region
+  - Severoistočen
+  cities:
+  - Skopje
+  - Скопје
+  - Bitola
+  - Kumanovo
+  - Prilep
+  - Tetovo
+  - Veles
+  - Štip
+  - Stip
+  - Ohrid
+  - Gostivar
+  - Strumica
+  - Kavadarci
+  - Kočani
+  - Kocani
+  - Kičevo
+  - Kicevo
+  - Struga
+  - Gevgelija
+- name: Norway
+  iso2: 'NO'
+  aliases:
+  - norge
+  - noreg
+  - 'no'
+  - norwegian
+  - kingdom of norway
+  - norway
+  regions:
+  - Oslo
+  - Viken
+  - Vestland
+  - Rogaland
+  - Trøndelag
+  - Trondelag
+  - Innlandet
+  - Agder
+  - Vestfold og Telemark
+  - Vestfold
+  - Telemark
+  - Møre og Romsdal
+  - More og Romsdal
+  - Nordland
+  - Troms og Finnmark
+  - Troms
+  - Finnmark
+  - Akershus
+  - Buskerud
+  - Østfold
+  - Ostfold
+  - Hordaland
+  - Sør-Trøndelag
+  - Oppland
+  - Hedmark
+  - Aust-Agder
+  - Vest-Agder
+  - Greater Oslo
+  - Stor-Oslo
+  - Østlandet
+  - Vestlandet
+  - Sørlandet
+  - Nord-Norge
+  cities:
+  - Oslo
+  - Bergen
+  - Trondheim
+  - Stavanger
+  - Drammen
+  - Kristiansand
+  - Tromsø
+  - Tromso
+  - Fredrikstad
+  - Sandnes
+  - Bærum
+  - Baerum
+  - Lysaker
+  - Fornebu
+  - Sandvika
+  - Asker
+  - Skien
+  - Porsgrunn
+  - Ålesund
+  - Alesund
+  - Tønsberg
+  - Tonsberg
+  - Sarpsborg
+  - Moss
+  - Bodø
+  - Bodo
+  - Haugesund
+  - Sandefjord
+  - Arendal
+  - Hamar
+  - Lillehammer
+  - Molde
+  - Larvik
+  - Halden
+  - Gjøvik
+  - Kongsberg
+  - Lillestrøm
+  - Lørenskog
+  - Ski
+  - Nydalen
+  - Skøyen
+  - Bjørvika
+  - Forus
+  - Kokstad
+  - Kongsvinger
+  - Horten
+  - Narvik
+  - Harstad
+  - Alta
+  - Hammerfest
+- name: Oman
+  iso2: OM
+  aliases:
+  - oman
+  - om
+  - omani
+  regions:
+  - Muscat
+  cities:
+  - Muscat
+  - Salalah
+  - Sohar
+  - Nizwa
+- name: Pakistan
+  iso2: PK
+  aliases:
+  - pakistan
+  - pk
+  - pakistani
+  regions:
+  - Punjab
+  - Sindh
+  - Khyber Pakhtunkhwa
+  - Islamabad Capital Territory
+  - Balochistan
+  cities:
+  - Karachi
+  - Lahore
+  - Islamabad
+  - Rawalpindi
+  - Faisalabad
+  - Peshawar
+  - Multan
+  - Hyderabad
+- name: Palau
+  iso2: PW
+  aliases:
+  - pw
+  - palau
+  regions: []
+  cities: []
+- name: Palestine
+  iso2: PS
+  aliases:
+  - ps
+  - palestinian
+  - state of palestine
+  - palestinian territories
+  - west bank
+  - gaza
+  - palestine
+  regions: []
+  cities: []
+- name: Panama
+  iso2: PA
+  aliases:
+  - pa
+  - panamanian
+  - panamá
+  - panama
+  regions: []
+  cities: []
+- name: Papua New Guinea
+  iso2: PG
+  aliases:
+  - pg
+  - png
+  - papua new guinea
+  regions: []
+  cities: []
+- name: Paraguay
+  iso2: PY
+  aliases:
+  - py
+  - paraguayan
+  - paraguay
+  regions: []
+  cities: []
+- name: Peru
+  iso2: PE
+  aliases:
+  - perú
+  - peru
+  - pe
+  - peruvian
+  regions:
+  - Lima
+  cities:
+  - Lima
+  - Arequipa
+  - Cusco
+  - Trujillo
+- name: Philippines
+  iso2: PH
+  aliases:
+  - philippines
+  - ph
+  - filipino
+  - pilipinas
+  regions:
+  - Metro Manila
+  - National Capital Region
+  - NCR
+  - Calabarzon
+  - Central Visayas
+  - Davao Region
+  - Cebu
+  cities:
+  - Manila
+  - Makati
+  - Taguig
+  - Quezon City
+  - Pasig
+  - Cebu City
+  - Davao City
+  - Bonifacio Global City
+  - BGC
+  - Mandaluyong
+  - Pasay
+  - Ortigas
+  - Alabang
+  - Muntinlupa
+  - Parañaque
+  - Iloilo City
+  - Clark
+  - Angeles
+- name: Poland
+  iso2: PL
+  aliases:
+  - polska
+  - pl
+  - polish
+  - republic of poland
+  - rzeczpospolita polska
+  - poland
+  regions:
+  - Masovian
+  - Masovia
+  - Mazowieckie
+  - Mazovia
+  - Masovian Voivodeship
+  - Województwo mazowieckie
+  - Lesser Poland
+  - Małopolskie
+  - Malopolskie
+  - Małopolska
+  - Malopolska
+  - Silesian
+  - Śląskie
+  - Slaskie
+  - Silesia
+  - Upper Silesia
+  - Greater Poland
+  - Wielkopolskie
+  - Wielkopolska
+  - Lower Silesian
+  - Dolnośląskie
+  - Dolnoslaskie
+  - Lower Silesia
+  - Pomeranian
+  - Pomorskie
+  - Pomerania
+  - Łódź Voivodeship
+  - Łódzkie
+  - Lodzkie
+  - West Pomeranian
+  - Zachodniopomorskie
+  - Kuyavian-Pomeranian
+  - Kujawsko-Pomorskie
+  - Lublin Voivodeship
+  - Lubelskie
+  - Subcarpathian
+  - Podkarpackie
+  - Podlaskie
+  - Warmian-Masurian
+  - Warmińsko-Mazurskie
+  - Lubusz
+  - Lubuskie
+  - Opole Voivodeship
+  - Opolskie
+  - Świętokrzyskie
+  - Swietokrzyskie
+  - Holy Cross
+  cities:
+  - Warsaw
+  - Warszawa
+  - Kraków
+  - Krakow
+  - Cracow
+  - Wrocław
+  - Wroclaw
+  - Poznań
+  - Poznan
+  - Gdańsk
+  - Gdansk
+  - Łódź
+  - Lodz
+  - Katowice
+  - Szczecin
+  - Lublin
+  - Bydgoszcz
+  - Gdynia
+  - Rzeszów
+  - Rzeszow
+  - Białystok
+  - Bialystok
+  - Tricity
+  - Trójmiasto
+  - Trojmiasto
+  - Sopot
+  - Toruń
+  - Torun
+  - Kielce
+  - Gliwice
+  - Olsztyn
+  - Opole
+  - Częstochowa
+  - Czestochowa
+  - Radom
+  - Bielsko-Biała
+  - Bielsko-Biala
+- name: Portugal
+  iso2: PT
+  aliases:
+  - pt
+  - portuguese
+  - portuguese republic
+  - república portuguesa
+  - portugal
+  regions:
+  - Lisbon District
+  - Lisboa
+  - Distrito de Lisboa
+  - Lisbon Metropolitan Area
+  - Área Metropolitana de Lisboa
+  - Porto District
+  - Distrito do Porto
+  - Porto Metropolitan Area
+  - Norte
+  - North Region
+  - Centro
+  - Central Region
+  - Alentejo
+  - Algarve
+  - Madeira
+  - Azores
+  - Açores
+  - Setúbal
+  - Setubal
+  - Braga District
+  - Aveiro District
+  - Coimbra District
+  - Leiria District
+  - Faro District
+  - Santarém District
+  - Viseu District
+  - Viana do Castelo District
+  cities:
+  - Lisbon
+  - Lisboa
+  - Porto
+  - Oporto
+  - Braga
+  - Coimbra
+  - Aveiro
+  - Faro
+  - Funchal
+  - Cascais
+  - Oeiras
+  - Sintra
+  - Matosinhos
+  - Vila Nova de Gaia
+  - Gaia
+  - Setúbal
+  - Setubal
+  - Leiria
+  - Guimarães
+  - Guimaraes
+  - Maia
+  - Almada
+  - Amadora
+  - Loures
+  - Odivelas
+  - Évora
+  - Evora
+  - Viseu
+  - Santarém
+  - Viana do Castelo
+  - Portimão
+  - Lagoa
+  - Carnaxide
+  - Paço de Arcos
+  - Porto Salvo
+  - Taguspark
+  - Lagoas Park
+  - Linda-a-Velha
+  - Alfragide
+  - Parque das Nações
+  - Alcântara
+  - Marvila
+  - Ponta Delgada
+- name: Puerto Rico
+  iso2: PR
+  aliases:
+  - pr
+  - puerto rican
+  - puerto rico
+  regions: []
+  cities: []
+- name: Qatar
+  iso2: QA
+  aliases:
+  - qatar
+  - qa
+  - qatari
+  regions:
+  - Doha
+  cities:
+  - Doha
+  - Lusail
+  - Al Rayyan
+  - Al Wakrah
+- name: Republic of the Congo
+  iso2: CG
+  aliases:
+  - cg
+  - congo-brazzaville
+  - congo brazzaville
+  - republic of the congo
+  regions: []
+  cities: []
+- name: Romania
+  iso2: RO
+  aliases:
+  - românia
+  - ro
+  - romanian
+  - rumania
+  - romania
+  regions:
+  - Bucharest
+  - București
+  - Bucuresti
+  - Ilfov
+  - Cluj County
+  - Cluj
+  - Timiș
+  - Timis
+  - Iași County
+  - Iasi
+  - Brașov County
+  - Brasov
+  - Constanța County
+  - Constanta
+  - Sibiu County
+  - Bihor
+  - Dolj
+  - Prahova
+  - Argeș
+  - Mureș
+  - Transylvania
+  - Transilvania
+  - Ardeal
+  - Moldavia
+  - Moldova Region
+  - Wallachia
+  - Muntenia
+  - Oltenia
+  - Banat
+  - Dobrogea
+  - Bucharest-Ilfov
+  cities:
+  - Bucharest
+  - București
+  - Bucuresti
+  - Cluj-Napoca
+  - Cluj
+  - Timișoara
+  - Timisoara
+  - Iași
+  - Iasi
+  - Brașov
+  - Brasov
+  - Constanța
+  - Constanta
+  - Sibiu
+  - Craiova
+  - Oradea
+  - Galați
+  - Galati
+  - Ploiești
+  - Ploiesti
+  - Arad
+  - Pitești
+  - Pitesti
+  - Bacău
+  - Bacau
+  - Târgu Mureș
+  - Targu Mures
+  - Baia Mare
+  - Suceava
+  - Otopeni
+  - Voluntari
+  - Pipera
+- name: Russia
+  iso2: RU
+  aliases:
+  - russian federation
+  - россия
+  - rossiya
+  - ru
+  - russian
+  - russia
+  regions:
+  - Moscow
+  - Москва
+  - Moscow Oblast
+  - Московская область
+  - Saint Petersburg
+  - Санкт-Петербург
+  - Leningrad Oblast
+  - Novosibirsk Oblast
+  - Sverdlovsk Oblast
+  - Tatarstan
+  - Krasnodar Krai
+  - Nizhny Novgorod Oblast
+  - Chelyabinsk Oblast
+  - Samara Oblast
+  - Rostov Oblast
+  - Bashkortostan
+  - Perm Krai
+  - Krasnoyarsk Krai
+  - Voronezh Oblast
+  - Volgograd Oblast
+  - Kaliningrad Oblast
+  - Primorsky Krai
+  - Khabarovsk Krai
+  - Irkutsk Oblast
+  - Omsk Oblast
+  - Tyumen Oblast
+  - Siberia
+  - Urals
+  - Far East
+  - Central Federal District
+  - Northwestern Federal District
+  - Volga Federal District
+  - Southern Federal District
+  - Siberian Federal District
+  - Ural Federal District
+  - Far Eastern Federal District
+  - North Caucasian Federal District
+  cities:
+  - Moscow
+  - Москва
+  - Moskva
+  - Saint Petersburg
+  - St. Petersburg
+  - St Petersburg
+  - Санкт-Петербург
+  - Novosibirsk
+  - Yekaterinburg
+  - Ekaterinburg
+  - Kazan
+  - Nizhny Novgorod
+  - Chelyabinsk
+  - Samara
+  - Omsk
+  - Rostov-on-Don
+  - Ufa
+  - Krasnoyarsk
+  - Voronezh
+  - Perm
+  - Volgograd
+  - Krasnodar
+  - Saratov
+  - Tyumen
+  - Tolyatti
+  - Izhevsk
+  - Kaliningrad
+  - Vladivostok
+  - Khabarovsk
+  - Irkutsk
+  - Sochi
+  - Skolkovo
+  - Innopolis
+- name: Rwanda
+  iso2: RW
+  aliases:
+  - rwanda
+  - rw
+  - rwandan
+  regions:
+  - Kigali
+  cities:
+  - Kigali
+  - Butare
+  - Huye
+  - Musanze
+  - Rubavu
+- name: Saint Kitts and Nevis
+  iso2: KN
+  aliases:
+  - kn
+  - st kitts
+  - st. kitts and nevis
+  - saint kitts and nevis
+  regions: []
+  cities: []
+- name: Saint Lucia
+  iso2: LC
+  aliases:
+  - lc
+  - st lucia
+  - st. lucia
+  - saint lucia
+  regions: []
+  cities: []
+- name: Saint Vincent and the Grenadines
+  iso2: VC
+  aliases:
+  - vc
+  - st vincent
+  - saint vincent and the grenadines
+  regions: []
+  cities: []
+- name: Samoa
+  iso2: WS
+  aliases:
+  - ws
+  - samoan
+  - samoa
+  regions: []
+  cities: []
+- name: San Marino
+  iso2: SM
+  aliases:
+  - repubblica di san marino
+  - republic of san marino
+  - sm
+  - sammarinese
+  - san marino
+  regions:
+  - Città di San Marino
+  - Serravalle
+  - Borgo Maggiore
+  - Domagnano
+  - Fiorentino
+  - Faetano
+  - Acquaviva
+  - Chiesanuova
+  - Montegiardino
+  cities:
+  - San Marino
+  - Città di San Marino
+  - Serravalle
+  - Dogana
+  - Borgo Maggiore
+  - Domagnano
+  - Fiorentino
+- name: Saudi Arabia
+  iso2: SA
+  aliases:
+  - ksa
+  - saudi
+  - saudi arabia
+  - kingdom of saudi arabia
+  - sa
+  - saudi arabian
+  regions:
+  - Riyadh Region
+  - Riyadh Province
+  - Makkah
+  - Makkah Province
+  - Eastern Province
+  - Madinah
+  - Al Madinah
+  cities:
+  - Riyadh
+  - Jeddah
+  - Dammam
+  - Khobar
+  - Al Khobar
+  - Dhahran
+  - Mecca
+  - Makkah
+  - Medina
+  - Madinah
+  - Jubail
+  - Tabuk
+  - NEOM
+  - King Abdullah Economic City
+- name: Senegal
+  iso2: SN
+  aliases:
+  - senegal
+  - sénégal
+  - sn
+  - senegalese
+  regions:
+  - Dakar
+  cities:
+  - Dakar
+  - Thiès
+  - Saint-Louis
+  - Touba
+  - Diamniadio
+- name: Serbia
+  iso2: RS
+  aliases:
+  - srbija
+  - србија
+  - rs
+  - serbian
+  - republic of serbia
+  - serbia
+  regions:
+  - Belgrade
+  - Beograd
+  - City of Belgrade
+  - Vojvodina
+  - Central Serbia
+  - Šumadija and Western Serbia
+  - Southern and Eastern Serbia
+  - South Bačka
+  - Nišava
+  - Raška
+  - Mačva
+  - Zlatibor
+  - Pomoravlje
+  - Braničevo
+  - Kolubara
+  - Srem
+  - Banat
+  - Bačka
+  cities:
+  - Belgrade
+  - Beograd
+  - Novi Sad
+  - Niš
+  - Nis
+  - Kragujevac
+  - Subotica
+  - Zrenjanin
+  - Pančevo
+  - Pancevo
+  - Čačak
+  - Cacak
+  - Novi Pazar
+  - Kraljevo
+  - Smederevo
+  - Leskovac
+  - Valjevo
+  - Kruševac
+  - Krusevac
+  - Vranje
+  - Šabac
+  - Sabac
+  - Užice
+  - Uzice
+  - Sombor
+  - Požarevac
+  - Pozarevac
+  - Zemun
+  - Novi Beograd
+  - New Belgrade
+  - Inđija
+  - Stara Pazova
+- name: Seychelles
+  iso2: SC
+  aliases:
+  - sc
+  - seychellois
+  - seychelles
+  regions: []
+  cities: []
+- name: Sierra Leone
+  iso2: SL
+  aliases:
+  - sl
+  - sierra leonean
+  - sierra leone
+  regions: []
+  cities: []
+- name: Singapore
+  iso2: SG
+  aliases:
+  - singapore
+  - sg
+  - singaporean
+  regions: []
+  cities:
+  - Singapore
+  - One-North
+  - Jurong
+  - Tampines
+  - Changi
+- name: Slovakia
+  iso2: SK
+  aliases:
+  - slovensko
+  - slovenská republika
+  - slovak republic
+  - sk
+  - slovak
+  - slovakia
+  regions:
+  - Bratislava Region
+  - Bratislavský kraj
+  - Trnava Region
+  - Trnavský kraj
+  - Trenčín Region
+  - Trenčiansky kraj
+  - Nitra Region
+  - Nitriansky kraj
+  - Žilina Region
+  - Žilinský kraj
+  - Banská Bystrica Region
+  - Banskobystrický kraj
+  - Prešov Region
+  - Prešovský kraj
+  - Košice Region
+  - Košický kraj
+  cities:
+  - Bratislava
+  - Pressburg
+  - Košice
+  - Kosice
+  - Prešov
+  - Presov
+  - Žilina
+  - Zilina
+  - Nitra
+  - Banská Bystrica
+  - Banska Bystrica
+  - Trnava
+  - Trenčín
+  - Trencin
+  - Martin
+  - Poprad
+  - Piešťany
+  - Zvolen
+  - Prievidza
+  - Považská Bystrica
+- name: Slovenia
+  iso2: SI
+  aliases:
+  - slovenija
+  - si
+  - slovenian
+  - slovene
+  - republic of slovenia
+  - slovenia
+  regions:
+  - Central Slovenia
+  - Osrednjeslovenska
+  - Drava
+  - Podravska
+  - Savinja
+  - Savinjska
+  - Upper Carniola
+  - Gorenjska
+  - Coastal-Karst
+  - Obalno-kraška
+  - Southeast Slovenia
+  - Jugovzhodna Slovenija
+  - Mura
+  - Pomurska
+  - Carinthia
+  - Koroška
+  - Gorizia
+  - Goriška
+  - Littoral-Inner Carniola
+  - Primorsko-notranjska
+  - Lower Sava
+  - Posavska
+  - Central Sava
+  - Zasavska
+  - Styria
+  - Štajerska
+  cities:
+  - Ljubljana
+  - Laibach
+  - Maribor
+  - Celje
+  - Kranj
+  - Koper
+  - Capodistria
+  - Novo Mesto
+  - Velenje
+  - Nova Gorica
+  - Ptuj
+  - Trbovlje
+  - Kamnik
+  - Domžale
+  - Domzale
+  - Jesenice
+  - Škofja Loka
+  - Murska Sobota
+  - Trzin
+  - Grosuplje
+  - Vrhnika
+- name: Solomon Islands
+  iso2: SB
+  aliases:
+  - sb
+  - solomon islands
+  regions: []
+  cities: []
+- name: Somalia
+  iso2: SO
+  aliases:
+  - so
+  - somali
+  - somalia
+  regions: []
+  cities: []
+- name: South Africa
+  iso2: ZA
+  aliases:
+  - south africa
+  - za
+  - south african
+  - rsa
+  regions:
+  - Gauteng
+  - Western Cape
+  - KwaZulu-Natal
+  - Eastern Cape
+  - Free State
+  - Limpopo
+  - Mpumalanga
+  - North West
+  - Northern Cape
+  cities:
+  - Johannesburg
+  - Cape Town
+  - Durban
+  - Pretoria
+  - Sandton
+  - Centurion
+  - Stellenbosch
+  - Port Elizabeth
+  - Gqeberha
+  - Midrand
+  - Bloemfontein
+  - East London
+  - Randburg
+  - Rosebank
+  - Umhlanga
+- name: South Korea
+  iso2: KR
+  aliases:
+  - south korea
+  - korea
+  - republic of korea
+  - kr
+  - korean
+  - south korean
+  regions:
+  - Seoul
+  - Gyeonggi
+  - Gyeonggi-do
+  - Busan
+  - Incheon
+  - Daejeon
+  - Daegu
+  cities:
+  - Seoul
+  - Busan
+  - Incheon
+  - Daegu
+  - Seongnam
+  - Pangyo
+  - Suwon
+  - Daejeon
+  - Gwangju
+  - Ulsan
+  - Gangnam
+  - Yongin
+  - Goyang
+- name: South Sudan
+  iso2: SS
+  aliases:
+  - ss
+  - south sudanese
+  - south sudan
+  regions: []
+  cities: []
+- name: Spain
+  iso2: ES
+  aliases:
+  - españa
+  - espana
+  - es
+  - spanish
+  - kingdom of spain
+  - spain
+  regions:
+  - Madrid
+  - Community of Madrid
+  - Comunidad de Madrid
+  - Catalonia
+  - Cataluña
+  - Catalunya
+  - Andalusia
+  - Andalucía
+  - Andalucia
+  - Valencia
+  - Valencian Community
+  - Comunidad Valenciana
+  - Comunitat Valenciana
+  - Basque Country
+  - País Vasco
+  - Pais Vasco
+  - Euskadi
+  - Galicia
+  - Castile and León
+  - Castilla y León
+  - Castilla-La Mancha
+  - Aragon
+  - Aragón
+  - Canary Islands
+  - Islas Canarias
+  - Canarias
+  - Balearic Islands
+  - Islas Baleares
+  - Illes Balears
+  - Murcia
+  - Region of Murcia
+  - Navarre
+  - Navarra
+  - Asturias
+  - Cantabria
+  - Extremadura
+  - La Rioja
+  - Ceuta
+  - Melilla
+  cities:
+  - Madrid
+  - Barcelona
+  - Valencia
+  - Seville
+  - Sevilla
+  - Bilbao
+  - Málaga
+  - Malaga
+  - Zaragoza
+  - Saragossa
+  - Alicante
+  - Palma
+  - Palma de Mallorca
+  - Murcia
+  - Las Palmas
+  - Las Palmas de Gran Canaria
+  - Valladolid
+  - Vigo
+  - A Coruña
+  - La Coruña
+  - San Sebastián
+  - San Sebastian
+  - Donostia
+  - Pamplona
+  - Granada
+  - Córdoba
+  - Cordoba
+  - Santander
+  - Oviedo
+  - Gijón
+  - Vitoria-Gasteiz
+  - Alcobendas
+  - Pozuelo de Alarcón
+  - Las Rozas
+  - Tres Cantos
+  - Sant Cugat del Vallès
+  - L'Hospitalet de Llobregat
+  - Marbella
+  - Santa Cruz de Tenerife
+  - Tarragona
+  - Girona
+- name: Sri Lanka
+  iso2: LK
+  aliases:
+  - sri lanka
+  - lk
+  - sri lankan
+  - ceylon
+  regions:
+  - Western Province
+  cities:
+  - Colombo
+  - Kandy
+  - Galle
+  - Negombo
+- name: Sudan
+  iso2: SD
+  aliases:
+  - sd
+  - sudanese
+  - sudan
+  regions: []
+  cities: []
+- name: Suriname
+  iso2: SR
+  aliases:
+  - sr
+  - surinamese
+  - suriname
+  regions: []
+  cities: []
+- name: Sweden
+  iso2: SE
+  aliases:
+  - sverige
+  - se
+  - swedish
+  - kingdom of sweden
+  - sweden
+  regions:
+  - Stockholm County
+  - Stockholms län
+  - Stockholm
+  - Västra Götaland
+  - Vastra Gotaland
+  - Västra Götaland County
+  - Skåne
+  - Skane
+  - Scania
+  - Skåne County
+  - Uppsala County
+  - Uppsala län
+  - Östergötland
+  - Ostergotland
+  - Jönköping County
+  - Jonkoping
+  - Halland
+  - Örebro County
+  - Orebro
+  - Västerbotten
+  - Norrbotten
+  - Gävleborg
+  - Dalarna
+  - Södermanland
+  - Västmanland
+  - Värmland
+  - Kalmar County
+  - Kronoberg
+  - Blekinge
+  - Gotland
+  - Jämtland
+  - Västernorrland
+  - Mälardalen
+  - Norrland
+  - Götaland
+  - Svealand
+  cities:
+  - Stockholm
+  - Gothenburg
+  - Göteborg
+  - Goteborg
+  - Malmö
+  - Malmo
+  - Uppsala
+  - Linköping
+  - Linkoping
+  - Lund
+  - Västerås
+  - Vasteras
+  - Örebro
+  - Orebro
+  - Helsingborg
+  - Norrköping
+  - Norrkoping
+  - Jönköping
+  - Jonkoping
+  - Umeå
+  - Umea
+  - Solna
+  - Kista
+  - Sundbyberg
+  - Nacka
+  - Södertälje
+  - Sodertalje
+  - Täby
+  - Danderyd
+  - Mölndal
+  - Molndal
+  - Karlstad
+  - Gävle
+  - Gavle
+  - Växjö
+  - Vaxjo
+  - Luleå
+  - Lulea
+  - Borås
+  - Boras
+  - Eskilstuna
+  - Halmstad
+  - Sundsvall
+  - Trollhättan
+  - Kalmar
+  - Kungsbacka
+  - Huddinge
+  - Sollentuna
+- name: Switzerland
+  iso2: CH
+  aliases:
+  - schweiz
+  - suisse
+  - svizzera
+  - ch
+  - swiss
+  - confoederatio helvetica
+  - swiss confederation
+  - switzerland
+  regions:
+  - Zurich
+  - Zürich
+  - Canton of Zurich
+  - Kanton Zürich
+  - Bern
+  - Berne
+  - Canton of Bern
+  - Geneva
+  - Genève
+  - Geneve
+  - Genf
+  - Canton of Geneva
+  - Vaud
+  - Waadt
+  - Basel-Stadt
+  - Basel-City
+  - Basel-Landschaft
+  - Basel-Country
+  - Basel
+  - Aargau
+  - Argovia
+  - St. Gallen
+  - Sankt Gallen
+  - St Gallen
+  - Ticino
+  - Tessin
+  - Lucerne
+  - Luzern
+  - Zug
+  - Schwyz
+  - Thurgau
+  - Fribourg
+  - Freiburg
+  - Neuchâtel
+  - Neuchatel
+  - Valais
+  - Wallis
+  - Graubünden
+  - Grisons
+  - Solothurn
+  - Schaffhausen
+  - Jura
+  - Appenzell
+  - Glarus
+  - Nidwalden
+  - Obwalden
+  - Uri
+  cities:
+  - Zurich
+  - Zürich
+  - Geneva
+  - Genève
+  - Geneve
+  - Genf
+  - Basel
+  - Bern
+  - Berne
+  - Lausanne
+  - Lucerne
+  - Luzern
+  - Zug
+  - Winterthur
+  - St. Gallen
+  - Sankt Gallen
+  - Lugano
+  - Baar
+  - Schlieren
+  - Opfikon
+  - Glattbrugg
+  - Wallisellen
+  - Dübendorf
+  - Kloten
+  - Biel
+  - Bienne
+  - Thun
+  - Fribourg
+  - Neuchâtel
+  - Sion
+  - Nyon
+  - Vevey
+  - Montreux
+  - Chur
+  - Schaffhausen
+  - Rotkreuz
+  - Cham
+  - Rapperswil
+  - Lenzburg
+  - Baden
+- name: Syria
+  iso2: SY
+  aliases:
+  - sy
+  - syrian
+  - syrian arab republic
+  - syria
+  regions: []
+  cities: []
+- name: Taiwan
+  iso2: TW
+  aliases:
+  - taiwan
+  - tw
+  - taiwanese
+  - republic of china
+  - roc
+  regions:
+  - Taipei
+  - New Taipei
+  - Taoyuan
+  - Hsinchu
+  - Taichung
+  - Kaohsiung
+  - Tainan
+  cities:
+  - Taipei
+  - New Taipei
+  - Taoyuan
+  - Hsinchu
+  - Taichung
+  - Kaohsiung
+  - Tainan
+  - Zhubei
+  - Neihu
+  - Xinyi
+- name: Tajikistan
+  iso2: TJ
+  aliases:
+  - tj
+  - tajik
+  - tajikistan
+  regions: []
+  cities: []
+- name: Tanzania
+  iso2: TZ
+  aliases:
+  - tanzania
+  - tz
+  - tanzanian
+  regions:
+  - Dar es Salaam
+  - Dodoma
+  - Arusha
+  - Zanzibar
+  cities:
+  - Dar es Salaam
+  - Dodoma
+  - Arusha
+  - Mwanza
+  - Zanzibar City
+  - Mbeya
+- name: Thailand
+  iso2: TH
+  aliases:
+  - thailand
+  - th
+  - thai
+  regions:
+  - Bangkok
+  - Chiang Mai
+  - Chon Buri
+  - Phuket
+  cities:
+  - Bangkok
+  - Chiang Mai
+  - Phuket
+  - Nonthaburi
+  - Pattaya
+  - Rayong
+  - Samut Prakan
+- name: Timor-Leste
+  iso2: TL
+  aliases:
+  - tl
+  - east timor
+  - timorese
+  - timor-leste
+  regions: []
+  cities: []
+- name: Togo
+  iso2: TG
+  aliases:
+  - tg
+  - togolese
+  - togo
+  regions: []
+  cities: []
+- name: Tonga
+  iso2: TO
+  aliases:
+  - to
+  - tongan
+  - tonga
+  regions: []
+  cities: []
+- name: Trinidad and Tobago
+  iso2: TT
+  aliases:
+  - tt
+  - trinidad
+  - trinidadian
+  - trinidad and tobago
+  regions: []
+  cities: []
+- name: Tunisia
+  iso2: TN
+  aliases:
+  - tunisia
+  - tunisie
+  - tn
+  - tunisian
+  regions: []
+  cities:
+  - Tunis
+  - Sfax
+  - Sousse
+  - Ariana
+  - Lac
+- name: Turkmenistan
+  iso2: TM
+  aliases:
+  - tm
+  - turkmen
+  - turkmenistan
+  regions: []
+  cities: []
+- name: Tuvalu
+  iso2: TV
+  aliases:
+  - tv
+  - tuvalu
+  regions: []
+  cities: []
+- name: Türkiye
+  iso2: TR
+  aliases:
+  - türkiye
+  - turkiye
+  - turkey
+  - tr
+  - turkish
+  regions:
+  - Istanbul
+  - İstanbul
+  - Ankara
+  - Izmir
+  - İzmir
+  - Marmara
+  cities:
+  - Istanbul
+  - İstanbul
+  - Ankara
+  - Izmir
+  - İzmir
+  - Bursa
+  - Antalya
+  - Konya
+  - Kocaeli
+  - Gaziantep
+  - Adana
+  - Eskişehir
+- name: Uganda
+  iso2: UG
+  aliases:
+  - uganda
+  - ug
+  - ugandan
+  regions:
+  - Central Region
+  - Kampala
+  cities:
+  - Kampala
+  - Entebbe
+  - Jinja
+  - Gulu
+  - Mbarara
+- name: Ukraine
+  iso2: UA
+  aliases:
+  - україна
+  - ukraina
+  - ua
+  - ukrainian
+  - ukraine
+  regions:
+  - Kyiv
+  - Київ
+  - Kyiv Oblast
+  - Київська область
+  - Kyiv City
+  - Lviv Oblast
+  - Львівська область
+  - Kharkiv Oblast
+  - Харківська область
+  - Dnipropetrovsk Oblast
+  - Odesa Oblast
+  - Odessa Oblast
+  - Zaporizhzhia Oblast
+  - Vinnytsia Oblast
+  - Poltava Oblast
+  - Ivano-Frankivsk Oblast
+  - Zakarpattia Oblast
+  - Transcarpathia
+  - Ternopil Oblast
+  - Khmelnytskyi Oblast
+  - Rivne Oblast
+  - Volyn Oblast
+  - Chernivtsi Oblast
+  - Cherkasy Oblast
+  - Zhytomyr Oblast
+  - Chernihiv Oblast
+  - Sumy Oblast
+  - Mykolaiv Oblast
+  - Kherson Oblast
+  - Kirovohrad Oblast
+  - Donetsk Oblast
+  - Luhansk Oblast
+  - Crimea
+  - Western Ukraine
+  - Galicia
+  - Halychyna
+  cities:
+  - Kyiv
+  - Kiev
+  - Київ
+  - Kharkiv
+  - Kharkov
+  - Odesa
+  - Odessa
+  - Dnipro
+  - Dnipropetrovsk
+  - Lviv
+  - Lvov
+  - Львів
+  - Zaporizhzhia
+  - Zaporozhye
+  - Vinnytsia
+  - Vinnitsa
+  - Ivano-Frankivsk
+  - Ternopil
+  - Lutsk
+  - Rivne
+  - Uzhhorod
+  - Uzhgorod
+  - Chernivtsi
+  - Khmelnytskyi
+  - Zhytomyr
+  - Cherkasy
+  - Poltava
+  - Kryvyi Rih
+  - Mykolaiv
+  - Nikolaev
+  - Kherson
+  - Sumy
+  - Chernihiv
+  - Donetsk
+  - Luhansk
+- name: United Arab Emirates
+  iso2: AE
+  aliases:
+  - uae
+  - united arab emirates
+  - emirates
+  - u.a.e.
+  - ae
+  - emirati
+  regions:
+  - Dubai
+  - Abu Dhabi
+  - Sharjah
+  - Ajman
+  - Ras Al Khaimah
+  - Fujairah
+  - Umm Al Quwain
+  cities:
+  - Dubai
+  - Abu Dhabi
+  - Sharjah
+  - Ajman
+  - Al Ain
+  - Ras Al Khaimah
+  - Fujairah
+  - Dubai Internet City
+  - Dubai Media City
+  - DIFC
+  - Jebel Ali
+- name: United Kingdom
+  iso2: GB
+  aliases:
+  - uk
+  - great britain
+  - britain
+  - england
+  - scotland
+  - wales
+  - northern ireland
+  - gb
+  - british
+  - u.k.
+  - united kingdom
+  regions:
+  - England
+  - Scotland
+  - Wales
+  - Northern Ireland
+  - Greater London
+  - London
+  - Greater Manchester
+  - West Midlands
+  - West Yorkshire
+  - South Yorkshire
+  - Merseyside
+  - Tyne and Wear
+  - East of England
+  - South East England
+  - South West England
+  - North West England
+  - North East England
+  - Yorkshire and the Humber
+  - East Midlands
+  - Cambridgeshire
+  - Oxfordshire
+  - Surrey
+  - Berkshire
+  - Hertfordshire
+  - Kent
+  - Essex
+  - Hampshire
+  - Lancashire
+  - Cheshire
+  - Buckinghamshire
+  - Bristol
+  - Edinburgh
+  - Glasgow City
+  - Lothian
+  - Cardiff
+  - Belfast
+  - Midlands
+  - Thames Valley
+  - Home Counties
+  cities:
+  - London
+  - Manchester
+  - Birmingham
+  - Edinburgh
+  - Glasgow
+  - Leeds
+  - Bristol
+  - Liverpool
+  - Cambridge
+  - Oxford
+  - Reading
+  - Newcastle upon Tyne
+  - Newcastle
+  - Sheffield
+  - Nottingham
+  - Cardiff
+  - Belfast
+  - Milton Keynes
+  - Brighton
+  - Southampton
+  - Aberdeen
+  - Leicester
+  - Coventry
+  - Bath
+  - Exeter
+  - York
+  - Swindon
+  - Guildford
+  - Slough
+  - Watford
+  - Basingstoke
+  - Warrington
+  - Derby
+  - Stoke-on-Trent
+  - Portsmouth
+  - Norwich
+  - Dundee
+  - Swansea
+  - Canary Wharf
+  - Croydon
+  - Richmond upon Thames
+- name: United States
+  iso2: US
+  aliases:
+  - usa
+  - us
+  - united states of america
+  - america
+  - u.s.
+  - u.s.a.
+  - american
+  - united states
+  regions:
+  - Alabama
+  - Alaska
+  - Arizona
+  - Arkansas
+  - California
+  - Colorado
+  - Connecticut
+  - Delaware
+  - Florida
+  - Georgia
+  - Hawaii
+  - Idaho
+  - Illinois
+  - Indiana
+  - Iowa
+  - Kansas
+  - Kentucky
+  - Louisiana
+  - Maine
+  - Maryland
+  - Massachusetts
+  - Michigan
+  - Minnesota
+  - Mississippi
+  - Missouri
+  - Montana
+  - Nebraska
+  - Nevada
+  - New Hampshire
+  - New Jersey
+  - New Mexico
+  - New York
+  - North Carolina
+  - North Dakota
+  - Ohio
+  - Oklahoma
+  - Oregon
+  - Pennsylvania
+  - Rhode Island
+  - South Carolina
+  - South Dakota
+  - Tennessee
+  - Texas
+  - Utah
+  - Vermont
+  - Virginia
+  - Washington
+  - West Virginia
+  - Wisconsin
+  - Wyoming
+  - District of Columbia
+  - DC
+  - Washington DC
+  - Washington, D.C.
+  cities:
+  - New York
+  - New York City
+  - San Francisco
+  - Los Angeles
+  - Chicago
+  - Boston
+  - Seattle
+  - Austin
+  - Dallas
+  - Houston
+  - Atlanta
+  - Miami
+  - Denver
+  - Washington
+  - Philadelphia
+  - San Diego
+  - San Jose
+  - Palo Alto
+  - Mountain View
+  - Menlo Park
+  - Redwood City
+  - Sunnyvale
+  - Santa Clara
+  - Oakland
+  - Berkeley
+  - Cupertino
+  - Portland
+  - Phoenix
+  - Minneapolis
+  - Detroit
+  - Salt Lake City
+  - Raleigh
+  - Charlotte
+  - Nashville
+  - Pittsburgh
+  - Las Vegas
+  - Irvine
+  - Bay Area
+  - San Francisco Bay Area
+  - Greater New York
+  - New York City Metropolitan Area
+  - Greater Boston
+  - Greater Chicago Area
+  - Greater Seattle Area
+  - Los Angeles Metropolitan Area
+  - Dallas-Fort Worth
+  - Silicon Valley
+- name: Uruguay
+  iso2: UY
+  aliases:
+  - uy
+  - uruguayan
+  - uruguay
+  regions: []
+  cities: []
+- name: Uzbekistan
+  iso2: UZ
+  aliases:
+  - uz
+  - uzbek
+  - uzbekistan
+  regions: []
+  cities: []
+- name: Vanuatu
+  iso2: VU
+  aliases:
+  - vu
+  - vanuatu
+  regions: []
+  cities: []
+- name: Vatican City
+  iso2: VA
+  aliases:
+  - holy see
+  - vatican
+  - vatican city state
+  - stato della città del vaticano
+  - va
+  - vatican city
+  regions: []
+  cities:
+  - Vatican City
+- name: Venezuela
+  iso2: VE
+  aliases:
+  - ve
+  - venezuelan
+  - venezuela
+  regions: []
+  cities: []
+- name: Vietnam
+  iso2: VN
+  aliases:
+  - vietnam
+  - viet nam
+  - vn
+  - vietnamese
+  regions:
+  - Ho Chi Minh City
+  - Hanoi
+  - Da Nang
+  cities:
+  - Ho Chi Minh City
+  - Hanoi
+  - Ha Noi
+  - Da Nang
+  - Saigon
+  - Hai Phong
+  - Can Tho
+  - Binh Duong
+- name: Yemen
+  iso2: YE
+  aliases:
+  - ye
+  - yemeni
+  - yemen
+  regions: []
+  cities: []
+- name: Zambia
+  iso2: ZM
+  aliases:
+  - zm
+  - zambian
+  - zambia
+  regions: []
+  cities: []
+- name: Zimbabwe
+  iso2: ZW
+  aliases:
+  - zw
+  - zimbabwean
+  - zimbabwe
+  regions: []
+  cities: []

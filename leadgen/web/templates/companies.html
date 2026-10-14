@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Companies · {{ run.spec.name }}{% endblock %}
+{% block heading %}<a class="muted" href="/runs/{{ run.id }}">{{ run.spec.name }}</a> <span class="faint">/</span> Companies{% endblock %}
+{% block content %}
+<h1 class="mb-4">Companies <span class="faint" style="font-weight:600">({{ companies|length }})</span></h1>
+<div class="card table-wrap mb-6">
+<table class="tbl">
+  <thead><tr><th>Company</th><th>Industry</th><th>HQ</th><th>Size</th><th>Founded</th><th>Status</th><th class="num">People</th><th class="num">Coverage</th><th>Via</th><th>Notes</th></tr></thead>
+  <tbody>
+  {% for c in companies %}
+  {% set found = counts.get(c.key, 0) %}
+  <tr>
+    <td>{% if c.linkedin_url %}<a href="{{ c.linkedin_url }}" target="_blank" rel="noopener" style="font-weight:600">{{ c.name }}</a>{% else %}<span style="font-weight:600">{{ c.name }}</span>{% endif %}{% if c.website %}<div class="faint" style="font-size:.72rem">{{ c.website }}</div>{% endif %}</td>
+    <td class="muted">{{ c.industry or '—' }}</td><td class="muted">{{ c.hq or '—' }}</td>
+    <td class="muted">{{ c.size_bucket or '—' }}{% if c.employee_count_hint %} <span class="faint">({{ c.employee_count_hint }})</span>{% endif %}</td>
+    <td class="muted">{{ c.founded or '—' }}</td><td><span class="badge">{{ c.status }}</span></td>
+    <td class="num"><a href="/runs/{{ run.id }}/leads?company={{ c.key }}" style="font-weight:600">{{ found }}</a></td>
+    <td class="num muted">{% if c.size_midpoint %}{{ (100 * found / c.size_midpoint)|round|int }}%{% else %}?{% endif %}</td>
+    <td class="muted" style="font-size:.74rem">{{ c.discovered_via|join('; ') }}</td>
+    <td class="muted" style="font-size:.74rem">{{ c.filter_reasons|join('; ') }}{% if c.unknown_fields %} <span class="faint">unknown: {{ c.unknown_fields|join(', ') }}</span>{% endif %}{% if c.function_breakdown %}<div class="faint">{% for k, v in c.function_breakdown.items() %}{{ k }} {{ v }}{{ ', ' if not loop.last }}{% endfor %}</div>{% endif %}</td>
+  </tr>
+  {% else %}<tr><td class="empty" colspan="10">No companies yet.</td></tr>{% endfor %}
+  </tbody>
+</table>
+</div>
+<h2 class="mb-2">Facet progress</h2>
+<div class="card table-wrap">
+<table class="tbl" style="font-size:.78rem"><thead><tr><th>Company</th><th>Facet</th><th>Status</th><th class="num">Last page</th><th class="num">New found</th><th>Updated</th></tr></thead>
+<tbody>{% for f in facets %}<tr><td class="muted">{{ f.company_key }}</td><td class="muted">{{ f.facet_id }}</td><td><span class="badge">{{ f.status }}</span></td><td class="num">{{ f.last_page }}</td><td class="num">{{ f.new_found }}</td><td class="muted">{{ f.updated_at }}</td></tr>{% else %}<tr><td class="empty" colspan="6">No facet activity.</td></tr>{% endfor %}</tbody></table>
+</div>
+{% endblock %}

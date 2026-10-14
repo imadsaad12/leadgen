@@ -1,0 +1,980 @@
+LeadGen — relevant leads
+Run: run_20261002113222_9ab37f  |  offer: CPaaS  |  fintech in Lebanon
+Exported: 2026-10-02 14:39  |  122 relevant leads
+==========================================================================================
+
+1. Ali Hayek   [fit 92]
+   Title     : CPaaS Product & Markets Growth | AI & Automation | CX & Marketing | Executive Masters in Marketing and Communication - ESCP
+   Company   : (company unknown)
+   Dept/Level: marketing / mid
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/ali-hayek-4720516a/
+   Why       : Directly works in CPaaS Product & Markets Growth — ideal target and product champion
+
+2. Fouad Azar   [fit 82]
+   Title     : Call Center Manager
+   Company   : Servedia
+   Dept/Level: support / manager
+   Location  : Balluna, Keserwan-Jbeil Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/fouad-azar-8a36b6206/
+   Why       : Call Center Manager directly benefits from CPaaS for voice/messaging orchestration
+
+3. Maamoun Ghazouli   [fit 82]
+   Title     : Senior SMS Account Manager
+   Company   : GABS Telecommunications LTD
+   Dept/Level: sales / manager
+   Location  : Beirut Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/maamoun-ghazouli-2592a8181/
+   Why       : Senior SMS Account Manager at a telecom company directly works with CPaaS/messaging services
+
+4. Hisham Ashkar   [fit 80]
+   Title     : Director B2B
+   Company   : touch Lebanon
+   Dept/Level: sales / director
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/hisham-ashkar-5942b621/
+   Why       : Director B2B at a telecom operator is a high-value CPaaS buyer/partner
+
+5. Hassan A.   [fit 75]
+   Title     : Technical Director - Telecom & Business Solutions
+   Company   : (company unknown)
+   Dept/Level: it / director
+   Location  : Beirut Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/hassan-a-a05a6224/
+   Why       : Technical Director in Telecom & Business Solutions is a strong CPaaS evaluator and decision-maker
+
+6. Tahseen Farhat   [fit 75]
+   Title     : Business Owner | Senior Operations Manager | Call Center Management | Business Analysis | Sales Management | Sales Training | Lead Generation | CRM Expert | Corporate Trainer | B2B Sales Expert
+   Company   : (company unknown)
+   Dept/Level: executive / founder
+   Location  : Antelias, Mount Lebanon Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/tahseenfarhat/
+   Why       : Business owner running a call center with CRM expertise is a high-fit CPaaS decision-maker
+
+7. Dr.Tarek Saleh   [fit 72]
+   Title     : Regional CMO & CCO
+   Company   : (company unknown)
+   Dept/Level: marketing / cxo
+   Location  : Balluna, Keserwan-Jbeil Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/dr-tarek-saleh-661ba035/
+   Why       : Regional CMO & CCO oversees customer communications, strong CPaaS buyer/influencer
+
+8. Wassim Abou Rjaily   [fit 72]
+   Title     : Corporate Sales Senior Manager
+   Company   : Alfa Telecom
+   Dept/Level: sales / manager
+   Location  : Beirut Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/wassimabourjaily/
+   Why       : Corporate Sales Senior Manager at a telecom company is a strong CPaaS prospect and potential reseller/buyer
+
+9. Mira Abi Nader   [fit 70]
+   Title     : Customer Experience Manager
+   Company   : Alfa Telecommunications
+   Dept/Level: customer_success / manager
+   Location  : Beirut Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/mira-abi-nader-21289724/
+   Why       : Customer Experience Manager at telecom directly benefits from and would evaluate CPaaS solutions
+
+10. Samer Merhi   [fit 70]
+   Title     : Channel & Partnerships Sales Manager | Partner Development | Indirect Sales | Revenue Growth | EMEA
+   Company   : (company unknown)
+   Dept/Level: sales / manager
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/samer-merhi/
+   Why       : Channel & Partnerships Sales Manager could be a CPaaS reseller or integration partner
+
+11. Hussein Fawaz   [fit 68]
+   Title     : Tele Sales Unit Supervisor
+   Company   : GlobalCom Holding s.a.l
+   Dept/Level: sales / manager
+   Location  : Beirut, Beirut Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/hussein-fawaz-5b783278/
+   Why       : Tele-sales supervisor at a telecom holding company is a direct CPaaS user and influencer
+
+12. Maroun El Kik   [fit 68]
+   Title     : Head of Customer Support
+   Company   : Monty Finance SAL
+   Dept/Level: support / director
+   Location  : Matn District, Mount Lebanon Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/maroun-el-kik-0678b488/
+   Why       : Head of Customer Support at Monty Finance; directly relies on CPaaS channels (SMS, messaging) for support communications.
+
+13. Fouad Fattouh   [fit 65]
+   Title     : Information Technology and Digital Transformation Professional
+   Company   : (company unknown)
+   Dept/Level: it / mid
+   Location  : Beirut Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/fouadfattouh/
+   Why       : IT & Digital Transformation professional is a core CPaaS evaluator
+
+14. Hadi Awwad   [fit 65]
+   Title     : Telecom Engineer
+   Company   : (company unknown)
+   Dept/Level: engineering / mid
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/hadi-awwad-4955a5a2/
+   Why       : Telecom engineer is directly relevant to evaluating and implementing CPaaS solutions
+
+15. Hady Khalife   [fit 65]
+   Title     : Technical Operations Manager
+   Company   : Mobile Arts
+   Dept/Level: operations / manager
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/hady-khalife-80b387b/
+   Why       : Technical Operations Manager at Mobile Arts (mobile tech company); strong technical influencer for CPaaS integration.
+
+16. Hani Z.   [fit 65]
+   Title     : Group CMO
+   Company   : RJ Group
+   Dept/Level: marketing / cxo
+   Location  : Beirut Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/hani-z-64a54172/
+   Why       : Group CMO may use CPaaS for customer engagement and omnichannel marketing campaigns
+
+17. Nabil Bazerji   [fit 65]
+   Title     : Managing Director
+   Company   : GABS
+   Dept/Level: executive / cxo
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/nabil-bazerji/
+   Why       : Managing Director of GABS (telecoms) is a senior decision-maker in a CPaaS-relevant company
+
+18. Chantale Al-Khoury   [fit 62]
+   Title     : Presale Manager
+   Company   : Ingram Micro Levant
+   Dept/Level: sales / manager
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/chantale-al-khoury-187a2b9/
+   Why       : Presale Manager at Ingram Micro (major tech distributor) evaluates and resells CPaaS-type solutions
+
+19. Charbel Edward Assaf   [fit 62]
+   Title     : Managing Director
+   Company   : 88medias
+   Dept/Level: executive / cxo
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/ceassaf/
+   Why       : Managing Director of a media company could evaluate CPaaS for customer communications
+
+20. Fadel Farhat   [fit 62]
+   Title     : Aftersales App Support Specialist
+   Company   : Whish Money
+   Dept/Level: support / mid
+   Location  : Beirut, Beirut Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/fadel-farhat-27b189295/
+   Why       : Whish Money is a fintech that heavily relies on CPaaS (OTP SMS, notifications); app support specialist is an influencer/user of such platforms.
+
+21. Jad Baaklini   [fit 62]
+   Title     : Managing Director
+   Company   : B-Engineering
+   Dept/Level: executive / cxo
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/jad-baaklini-55710967/
+   Why       : Managing Director of an engineering firm can make CPaaS investment decisions
+
+22. Lara E. Abou-Zeid   [fit 62]
+   Title     : Marketing Director
+   Company   : Cafe Najjar
+   Dept/Level: marketing / director
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/lara-e-abou-zeid-32173b20/
+   Why       : Marketing Director at a consumer brand; likely buyer of SMS/messaging campaigns via CPaaS
+
+23. Raif Hourani رئيف حوراني   [fit 62]
+   Title     : Co-Founder & CEO
+   Company   : sira
+   Dept/Level: executive / founder
+   Location  : Beirut, Beirut Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/raifhourani/
+   Why       : Co-Founder & CEO of a startup likely owns all tech/comms decisions
+
+24. Anthony Tannoury, PhD, Eng.   [fit 60]
+   Title     : Head of digital transformation and Technology - Consultancy
+   Company   : CRDP_LB - ...technology strategy. 2. Lead the digital...
+   Dept/Level: operations / director
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/anthony-tannoury-phd-eng-523a7a44/
+   Why       : Head of Digital Transformation at a government education body; strong fit for CPaaS adoption and integration
+
+25. Ghady Faraj   [fit 60]
+   Title     : Sales Manager Levant & Pakistan
+   Company   : Barracuda
+   Dept/Level: sales / manager
+   Location  : Beirut, Beirut Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/ghady-faraj-1790aa13a/
+   Why       : Sales Manager at a cybersecurity/networking firm may partner with or evaluate CPaaS vendors
+
+26. Rami Sabbagh   [fit 60]
+   Title     : Executive Director
+   Company   : Adib AL-Sabbagh Trading
+   Dept/Level: executive / cxo
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/rami-sabbagh-a05554b0/
+   Why       : Executive Director of a trading company could budget for CPaaS customer engagement tools
+
+27. Yehya Beyrakdar   [fit 60]
+   Title     : Chief Executive Officer
+   Company   : Skylyncs Group
+   Dept/Level: executive / cxo
+   Location  : Beirut Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/yehya-beyrakdar/
+   Why       : CEO of Skylyncs Group has budget authority for CPaaS adoption
+
+28. Zaher Bsat   [fit 60]
+   Title     : managing director
+   Company   : AMB Group
+   Dept/Level: executive / cxo
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/zaher-bsat-4a31a034/
+   Why       : Managing Director of a group can budget and decide on CPaaS adoption
+
+29. Elias Chedid   [fit 58]
+   Title     : Product Portfolio Manager - Head of Enterprise Application Development
+   Company   : Dar
+   Dept/Level: finance / manager
+   Location  : Bsalim, Mount Lebanon Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/elias-a-chedid/
+   Why       : Head of Enterprise Application Development; likely evaluates and integrates CPaaS APIs
+
+30. Karim Hanbali   [fit 58]
+   Title     : Managing Director
+   Company   : Bachir Hanbali Est
+   Dept/Level: executive / cxo
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/karim-hanbali-bb59a815/
+   Why       : Managing Director with full budget authority could adopt CPaaS for business communications
+
+31. Nour Harb   [fit 58]
+   Title     : Senior Business Development Manager
+   Company   : Monty Finance
+   Dept/Level: sales / manager
+   Location  : Beirut Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/nour-harb-49636988/
+   Why       : Senior BDM at Monty Finance (fintech); CPaaS is critical for OTP, transaction alerts, and customer notifications in fintech.
+
+32. Rodolph Salem   [fit 58]
+   Title     : Commercial And Marketing Director
+   Company   : Ahmed Abdulwahed Co.
+   Dept/Level: marketing / director
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/rodolph-salem-075b4b76/
+   Why       : Commercial & Marketing Director would likely own customer engagement and CPaaS decisions
+
+33. Abdo Zarife   [fit 55]
+   Title     : Director
+   Company   : A.Z.TEC
+   Dept/Level: executive / director
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/abdo-zarife-2663983a/
+   Why       : Director-level executive at a tech firm could influence CPaaS adoption
+
+34. EL TAYAH ZIAD   [fit 55]
+   Title     : Senior Director Marketing B2B Indevco Group
+   Company   : (company unknown)
+   Dept/Level: marketing / director
+   Location  : Beirut Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/ziadeltayah/
+   Why       : Senior Director B2B Marketing at a large group could use CPaaS for campaigns and customer messaging
+
+35. Georges Bachalany   [fit 55]
+   Title     : Sales Operations Manager
+   Company   : Arctera.io
+   Dept/Level: sales / manager
+   Location  : Beirut, Beirut Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/georges-bachalany-9855634a/
+   Why       : Sales Operations Manager could evaluate CPaaS for sales communications automation
+
+36. Hiba Bazzi   [fit 55]
+   Title     : Digital Specialist
+   Company   : Neo by Bank Audi
+   Dept/Level: marketing / mid
+   Location  : Beirut Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/hiba-bazzi-52b3a2118/
+   Why       : Digital Specialist at Neo by Bank Audi; digital banking heavily uses CPaaS for OTPs and alerts.
+
+37. Ismail Iskandarani   [fit 55]
+   Title     : Partnerships & Alliances Manager
+   Company   : TestCrew
+   Dept/Level: sales / manager
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/ismail-iskandarani/
+   Why       : Partnerships & Alliances Manager at TestCrew could integrate or resell CPaaS solutions
+
+38. Joelle Bouban   [fit 55]
+   Title     : Sales and Marketing Manager
+   Company   : Capital Finance Company S.A.L.
+   Dept/Level: marketing / manager
+   Location  : Dbayeh, Mount Lebanon Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/joelle-bouban-b4807b84/
+   Why       : Sales & Marketing Manager at a finance company; plausible buyer for customer communication tools
+
+39. Marwan Sweidan   [fit 55]
+   Title     : Founder & Managing Director
+   Company   : SmushKies
+   Dept/Level: executive / founder
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/marwansweidan/
+   Why       : Founder & MD owns all technology and communication decisions for the business
+
+40. Mohammad Ibrahim   [fit 55]
+   Title     : Managing Director
+   Company   : Quantum Development
+   Dept/Level: executive / cxo
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/mohammad-ibrahim-94a93a58/
+   Why       : Managing Director at a development company could evaluate CPaaS for client projects
+
+41. Najib Choucair   [fit 55]
+   Title     : Executive Director Head of Banking Department
+   Company   : Banque Du Liban
+   Dept/Level: executive / cxo
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/najib-choucair-600a5033/
+   Why       : Executive Director at a central bank could oversee CPaaS for institutional communications
+
+42. Roy Ayoub   [fit 55]
+   Title     : Co-Owner | Managing Director | Operations Management, Strategic Planning
+   Company   : (company unknown)
+   Dept/Level: executive / founder
+   Location  : Beirut Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/roy-ayoub-85589b114/
+   Why       : Co-Owner/Managing Director with operations oversight is a budget holder for CPaaS solutions
+
+43. Sara Bakerli   [fit 55]
+   Title     : Digital Project Lead
+   Company   : COTI Holding
+   Dept/Level: operations / lead
+   Location  : Beirut, Beirut Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/sara-bakerli-670582277/
+   Why       : Digital Project Lead at a holding company; likely evaluates and implements digital communication tools
+
+44. Ahmad AL AYOUBI   [fit 52]
+   Title     : Sales supervisor corporate division
+   Company   : APEC
+   Dept/Level: sales / manager
+   Location  : North Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/ahmad-al-ayoubi-387725b5/
+   Why       : Sales supervisor in corporate division may use or advocate for CPaaS outreach tools
+
+45. Alii Hallal   [fit 52]
+   Title     : Managing Director
+   Company   : Tolsen tools lebanon
+   Dept/Level: executive / cxo
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/alii-hallal-682a1b66/
+   Why       : Managing Director at a tools distribution company could adopt CPaaS for customer comms
+
+46. Aline Baddour   [fit 52]
+   Title     : Communication Director
+   Company   : Hermès
+   Dept/Level: marketing / director
+   Location  : Beirut Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/aline-baddour-857383192/
+   Why       : Communications Director at a luxury brand could own omnichannel messaging strategy and CPaaS adoption
+
+47. Johnny Ziade   [fit 52]
+   Title     : Head of Business Development
+   Company   : WASL s.a.l.
+   Dept/Level: sales / director
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/johnny-ziade-3b2571149/
+   Why       : Head of Business Development could explore CPaaS partnerships or customer-facing communication integrations, but role is sales-focused rather than tech/product procurement.
+
+48. Rabih Hage   [fit 52]
+   Title     : Managing Director
+   Company   : DOMTECH
+   Dept/Level: executive / cxo
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/rabih-hage-13971020/
+   Why       : MD at a tech company (DOMTECH); likely budget owner for communication infrastructure
+
+49. Rouba Ghanem   [fit 52]
+   Title     : Chief Marketing Officer
+   Company   : Orion&Partners
+   Dept/Level: marketing / cxo
+   Location  : Beirut Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/rouba-ghanem-3275071a3/
+   Why       : CMO at a marketing/consulting firm; CPaaS supports omnichannel marketing campaigns.
+
+50. Salma Dib   [fit 52]
+   Title     : Engineering director
+   Company   : National Automated Systems
+   Dept/Level: engineering / director
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/salma-dib-74226512b/
+   Why       : Engineering Director at a systems automation company; technical decision-maker for communications infrastructure.
+
+51. Ziad Osman   [fit 52]
+   Title     : Manufacturing | FinTech | Telecom | Customer Relations | Sales | BD | Customer Service  | Contact Centre
+   Company   : (company unknown)
+   Dept/Level: operations / mid
+   Location  : Beirut Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/ziad-osman-156b8513/
+   Why       : Telecom and contact centre background makes them a plausible CPaaS evaluator or influencer
+
+52. Amine Dib   [fit 50]
+   Title     : Founder & Director
+   Company   : Threshold sarl
+   Dept/Level: executive / founder
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/amine-dib-547834175/
+   Why       : Founder & Director owns tech/comms decisions for the firm
+
+53. Bilal Awada   [fit 50]
+   Title     : Team Lead
+   Company   : OGERO
+   Dept/Level: other / manager
+   Location  : Beirut Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/bilal-awada/
+   Why       : Team Lead at OGERO (Lebanese national telecom operator); relevant technical stakeholder in a communications context.
+
+54. Elie Raad   [fit 50]
+   Title     : Senior IM officer
+   Company   : ABAAD
+   Dept/Level: it / senior
+   Location  : Zahlé District, Beqaa Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/elie-raad-876328b7/
+   Why       : Senior IT officer could evaluate and influence CPaaS integration decisions
+
+55. Karine Noufaily   [fit 50]
+   Title     : Commercial Director
+   Company   : GEN
+   Dept/Level: sales / director
+   Location  : Beirut Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/karine-noufaily-a09b2162/
+   Why       : Commercial Director could own communications channel budget and vendor decisions
+
+56. Michel Fayad   [fit 50]
+   Title     : Director
+   Company   : Online Dimensions
+   Dept/Level: executive / director
+   Location  : Beirut Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/michel-fayad-2b3478250/
+   Why       : Director at Online Dimensions (digital/IT company); likely evaluates or resells communication tech solutions.
+
+57. Pierre Chalfoun   [fit 50]
+   Title     : Director
+   Company   : ACE
+   Dept/Level: executive / director
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/pierre-chalfoun-0863257/
+   Why       : Director-level executive who could influence CPaaS decisions for the organization
+
+58. Salim Kantar   [fit 50]
+   Title     : Senior Account Manager
+   Company   : Techtrade Business Systems
+   Dept/Level: sales / manager
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/salim-kantar-952b1144/
+   Why       : Senior Account Manager at a business tech company may influence CPaaS resale or adoption
+
+59. SIWIN KHAIZARAN   [fit 50]
+   Title     : Managing Director AMEE Travel and Tourism
+   Company   : (company unknown)
+   Dept/Level: executive / cxo
+   Location  : Ras Beirut, Beirut Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/siwin-khaizaran-bb05b9262/
+   Why       : Managing Director of a travel company; CPaaS used for booking notifications and customer comms
+
+60. Taha Al Zoubiadi   [fit 50]
+   Title     : Owner & Managing Director
+   Company   : TS Travel Sloon
+   Dept/Level: executive / founder
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/taha-al-zoubiadi-30abb9339/
+   Why       : Owner & MD at a travel company could use CPaaS for booking notifications and customer messaging
+
+61. Tony Ghattas   [fit 50]
+   Title     : Commercial and Development manager
+   Company   : Shaker Electronics and Appliances Lebanon Co. (SEALCO SAL)
+   Dept/Level: sales / manager
+   Location  : Beirut Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/tony-ghattas-a05a3729/
+   Why       : Commercial & Development manager at electronics company could use CPaaS for customer comms
+
+62. Yasser Alkhalifa   [fit 50]
+   Title     : CEO
+   Company   : BIHORNS
+   Dept/Level: executive / cxo
+   Location  : Hlaliyeh Saida, South Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/yasser-alkhalifa-6337718a/
+   Why       : CEO of small company is likely budget owner for any communication tools
+
+63. Anthony Khalil   [fit 48]
+   Title     : Marketing Director
+   Company   : Great White
+   Dept/Level: marketing / director
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/anthony-khalil-7763b6a/
+   Why       : Marketing Director may use CPaaS for SMS/push campaigns and customer outreach
+
+64. Elie Barmo   [fit 48]
+   Title     : Managing Director
+   Company   : Construct Box LLC
+   Dept/Level: executive / cxo
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/elie-barmo-07075547/
+   Why       : Managing Director of a construction firm; budget owner who could adopt CPaaS for project communication
+
+65. Graziella Kassab Aoun   [fit 48]
+   Title     : Director
+   Company   : Path Solutions
+   Dept/Level: executive / director
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/graziella-kassab-aoun-66b66444/
+   Why       : Director at Path Solutions (Islamic fintech software); fintech firms integrate CPaaS for client notifications and 2FA.
+
+66. Kamel Al ammar   [fit 48]
+   Title     : Account Manager
+   Company   : Arab Business Machine
+   Dept/Level: sales / manager
+   Location  : Beirut, Beirut Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/kamel-al-ammar-b5948821a/
+   Why       : Account Manager at a business machines company may resell or use CPaaS
+
+67. Loutfallah Abi Akar   [fit 48]
+   Title     : Unit Relationship Manager (B2B)
+   Company   : Bupa Arabia
+   Dept/Level: customer_success / manager
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/loutfallah-abi-akar-6bb2a4135/
+   Why       : B2B Relationship Manager at Bupa Arabia could influence CPaaS for client communication workflows
+
+68. Mireille Al Hajj   [fit 48]
+   Title     : Senior Specialist, Corporate Sales
+   Company   : OMT
+   Dept/Level: sales / senior
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/alhajjmireille/
+   Why       : Corporate Sales at OMT (money transfer); OMT uses CPaaS heavily for transaction notifications and OTPs.
+
+69. Najib El Hady   [fit 48]
+   Title     : Business Development Manager
+   Company   : The Scaling Ministry
+   Dept/Level: sales / manager
+   Location  : Beirut Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/najib-el-hady/
+   Why       : Business Development Manager could use or recommend CPaaS for client outreach
+
+70. Said Mehanna   [fit 48]
+   Title     : Managing Director
+   Company   : ENERGIA sarl
+   Dept/Level: executive / cxo
+   Location  : Beirut Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/said-mehanna-23a42017/
+   Why       : MD of an energy company; executive budget owner who may need CPaaS for operations communication
+
+71. Zeina Kanso   [fit 48]
+   Title     : Operations Director
+   Company   : MedNet Liban
+   Dept/Level: operations / director
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/zeina-kanso-b9aba7a4/
+   Why       : Operations Director at a health insurance/TPA company; CPaaS relevant for member and provider notifications.
+
+72. charbel aboud   [fit 45]
+   Title     : Director of Operations
+   Company   : Addmind Hospitality
+   Dept/Level: operations / director
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/charbel-aboud-701b13b8/
+   Why       : Director of Operations at hospitality group may need CPaaS for guest communications
+
+73. Charbel Eilo   [fit 45]
+   Title     : Brand & Marketing Manager
+   Company   : SK bijoux
+   Dept/Level: marketing / manager
+   Location  : Beirut Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/charbel-eilo-557670109/
+   Why       : Brand & Marketing Manager could use CPaaS for SMS/campaign messaging
+
+74. Donald Daccache   [fit 45]
+   Title     : Managing Director
+   Company   : Zaatar W Zeit
+   Dept/Level: executive / cxo
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/donald-daccache-a9683964/
+   Why       : Managing Director of a restaurant chain could authorize CPaaS for customer notifications/loyalty, but low technical fit and unlikely primary evaluator.
+
+75. Doris Ermu   [fit 45]
+   Title     : Managing Director
+   Company   : Beirut International Movers sarl
+   Dept/Level: executive / cxo
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/doris-ermu-145a7a14/
+   Why       : Managing Director of a logistics/moving company could use CPaaS for customer notifications and coordination
+
+76. Dr. Mohamad Daaboul   [fit 45]
+   Title     : Director
+   Company   : Scopsis
+   Dept/Level: executive / director
+   Location  : Beirut Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/dr-mohamad-daaboul-25953072/
+   Why       : Director at Scopsis could influence tech/comms procurement
+
+77. Hanane Rammal   [fit 45]
+   Title     : Business Development Manager
+   Company   : Bravomiles.com
+   Dept/Level: sales / manager
+   Location  : Beirut, Beirut Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/hanane-rammal-b28312b/
+   Why       : BDM at a loyalty/travel-rewards company may influence customer engagement and messaging tools
+
+78. Hussein Korri   [fit 45]
+   Title     : Managing Director
+   Company   : Korri Group
+   Dept/Level: executive / cxo
+   Location  : Beirut Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/hussein-korri/
+   Why       : Group MD is a senior decision-maker who could authorize CPaaS adoption across the organization
+
+79. Jamil Alam   [fit 45]
+   Title     : Deputy Chief Executive Officer - Digital Wall
+   Company   : (company unknown)
+   Dept/Level: executive / cxo
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/jamil-alam-7605526b/
+   Why       : Deputy CEO with digital focus could sponsor CPaaS adoption at executive level
+
+80. Marie-Joe Jamous   [fit 45]
+   Title     : E-commerce | Digital Marketing | Omnichannel Engagement
+   Company   : (company unknown)
+   Dept/Level: marketing / mid
+   Location  : Beirut Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/mariejoe-jamous/
+   Why       : Omnichannel engagement and e-commerce role directly aligns with CPaaS messaging use cases
+
+81. Moatasem Alnajem   [fit 45]
+   Title     : Business Operations | CRM & Sales Operations | B2B SaaS |  | Marketing Strategy | Salesforce | Business Process Improvement
+   Company   : (company unknown)
+   Dept/Level: operations / mid
+   Location  : Tripoli District, North Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/moatasem-alnajem/
+   Why       : CRM & sales ops in B2B SaaS; could influence CPaaS for customer engagement workflows
+
+82. Namir Matar   [fit 45]
+   Title     : Techno-Functional Senior Lead Business Analyst
+   Company   : Azentio
+   Dept/Level: operations / lead
+   Location  : Halat, Keserwan-Jbeil Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/namir-matar-78625438/
+   Why       : Senior Business Analyst could influence CPaaS integration projects
+
+83. Pascal Rahme   [fit 45]
+   Title     : Director Of Distribution
+   Company   : Empire
+   Dept/Level: operations / director
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/pascal-rahme-a04a2746/
+   Why       : Distribution Director at a consumer goods company; could use CPaaS for logistics/customer notifications
+
+84. Rachelle Rahme -MBA Candidate   [fit 45]
+   Title     : Senior PR & Marketing Manager
+   Company   : TECNO Mobile Global
+   Dept/Level: marketing / manager
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/rachelle-rahme-mba-candidate-7990171b6/
+   Why       : Senior PR & Marketing Manager at a mobile brand could use CPaaS for customer messaging
+
+85. Solange Bou malham   [fit 45]
+   Title     : Head of Affiliates
+   Company   : Final Enterprise N.V.
+   Dept/Level: marketing / director
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/solange-bou-malham-571374106/
+   Why       : Affiliate marketing head may use CPaaS for campaign messaging and partner communications
+
+86. Marwan Menassa   [fit 44]
+   Title     : Affiliate Manager
+   Company   : INFINOX Global
+   Dept/Level: marketing / manager
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/marwan-menassa-030884123/
+   Why       : Affiliate manager at a fintech broker may use CPaaS for partner/campaign communications
+
+87. Elie Irany   [fit 42]
+   Title     : Lead Generation Specialist | Driving Qualified B2B Leads & Sales Pipeline Growth | CRM & Multi-Channel Outreach Expert
+   Company   : (company unknown)
+   Dept/Level: sales / lead
+   Location  : Zahlé District, Beqaa Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/elie-irany-16251914b/
+   Why       : Multi-channel outreach and CRM specialist may use or influence CPaaS for lead gen communications
+
+88. George Kai   [fit 42]
+   Title     : Marketing Manager
+   Company   : Jubaili Bros
+   Dept/Level: marketing / manager
+   Location  : Beirut, Beirut Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/george-kai-5a678292/
+   Why       : Marketing manager could use CPaaS for bulk SMS and digital campaign delivery
+
+89. Peter Der-Mesropian   [fit 42]
+   Title     : Technical Director
+   Company   : Colortek, A Division of Kassaa Group
+   Dept/Level: it / director
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/peterdermes89/
+   Why       : Technical Director in IT could evaluate CPaaS integration for a manufacturing/distribution group
+
+90. Ralph Abdel Sater   [fit 42]
+   Title     : Unit Manager
+   Company   : MetLife Lebanon
+   Dept/Level: other / manager
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/ralph-abdel-sater-ba0780351/
+   Why       : Unit Manager at MetLife Lebanon; insurance firms rely on CPaaS for policy alerts and customer SMS.
+
+91. Samer Abdul Aziz   [fit 42]
+   Title     : Managing Director
+   Company   : Zima Group Internaional
+   Dept/Level: executive / cxo
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/samer-abdul-aziz-08700b8/
+   Why       : CXO at an international group could sponsor CPaaS adoption enterprise-wide, but no specific communications or tech function indicated.
+
+92. Badr Zeidan   [fit 40]
+   Title     : Managing Director
+   Company   : (company unknown)
+   Dept/Level: executive / cxo
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/badr-zeidan-8a94518a/
+   Why       : Managing Director seniority makes them a plausible budget owner for CPaaS
+
+93. Billal Abou Al Hassan   [fit 40]
+   Title     : Senior Account Executive
+   Company   : Kay Systems International SAL
+   Dept/Level: sales / senior
+   Location  : Beirut Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/billal-abou-al-hassan-11bb27154/
+   Why       : Account executive at a systems integrator may handle or influence CPaaS solutions
+
+94. Hala Zeidan Nasser   [fit 40]
+   Title     : Customer Engagement Manager
+   Company   : For the Love of Bread Organic Bakery
+   Dept/Level: customer_success / manager
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/hala-zeidan-nasser-43b7a3155/
+   Why       : Customer engagement manager could leverage CPaaS for customer communications
+
+95. Jeanette Sleiman   [fit 40]
+   Title     : Operations & Business Leader | Multi-Sector Expertise | Strategic Project Manager | 15+ Years of Experience
+   Company   : (company unknown)
+   Dept/Level: operations / lead
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/jeanettesleiman555/
+   Why       : Senior operations/project leader could evaluate CPaaS for business process communication
+
+96. kamal Aboudraa   [fit 40]
+   Title     : Manager, ERP Systems Administration
+   Company   : M1 Group
+   Dept/Level: it / manager
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/kamal-aboudraa/
+   Why       : ERP Systems Admin Manager in IT; evaluates and integrates communication and systems platforms.
+
+97. Mohammad Kerdy   [fit 40]
+   Title     : Aftersales Manager
+   Company   : Cell Phone Shop
+   Dept/Level: sales / manager
+   Location  : Beirut, Beirut Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/mohammad-kerdy/
+   Why       : Aftersales Manager at a phone shop; could use CPaaS for customer follow-up but limited budget/authority
+
+98. Naji AL-Oueini, EMBA   [fit 40]
+   Title     : Clinic Manager | Healthcare Operations | Patient Experience | Revenue Growth | B2B Account Management | International Sales | Business Development
+   Company   : (company unknown)
+   Dept/Level: operations / manager
+   Location  : Beirut Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/naji-al-oueini-emba-8a08a712b/
+   Why       : Clinic/healthcare operations manager with patient experience focus; CPaaS used in appointment reminders and patient comms
+
+99. Nicolas Saliby   [fit 40]
+   Title     : Managing Director | MBA in Management and Strategy
+   Company   : (company unknown)
+   Dept/Level: executive / cxo
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/nicolassaliby/
+   Why       : Managing Director with MBA background could be a decision-maker for CPaaS investment
+
+100. Samah Tinawi   [fit 40]
+   Title     : Managing Director
+   Company   : MENAMOTORS
+   Dept/Level: executive / cxo
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/samahtinawi/
+   Why       : Managing Director of an automotive company; CPaaS useful for customer communication and sales follow-up.
+
+101. Bassem Mohamad   [fit 38]
+   Title     : Technical Director
+   Company   : Lebanese  Football Association
+   Dept/Level: it / director
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/bassem-mohamad-33a13063/
+   Why       : IT Director at a sports association; could deploy CPaaS for fan/member communications but niche use case.
+
+102. Elias Malek   [fit 38]
+   Title     : Senior Account Manager | Driving Regional Market Expansion across the Levant & Gulf | Managing 30+ Key Enterprise Accounts
+   Company   : (company unknown)
+   Dept/Level: sales / manager
+   Location  : Keserwan-Jbeil Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/elias-malek-a8701263/
+   Why       : Senior account manager managing enterprise accounts may influence customer communication tools
+
+103. Mohammad Hwalla   [fit 38]
+   Title     : Managing Director, gaia
+   Company   : (company unknown)
+   Dept/Level: executive / cxo
+   Location  : Beirut Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/mohammad-hwalla-5a361118/
+   Why       : Managing Director (gaia) is senior enough to be a CPaaS decision-maker
+
+104. Nour Anzaoui   [fit 38]
+   Title     : Operations and Sales Supervisor
+   Company   : (company unknown)
+   Dept/Level: operations / manager
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/nour-anzaoui-29aa6816a/
+   Why       : Operations and sales supervisor could influence customer communication tools
+
+105. Olga Asdourian   [fit 38]
+   Title     : Head of Revenue Operations
+   Company   : (company unknown)
+   Dept/Level: operations / director
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/olga-asdourian-231b4746/
+   Why       : Head of Revenue Operations could influence CPaaS for customer communication and CX workflows
+
+106. Rasha Abdo   [fit 38]
+   Title     : Strategy & Business Development Manager
+   Company   : New Horizons Lebanon
+   Dept/Level: sales / manager
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/rasha-abdo-b2323b286/
+   Why       : Strategy & BDM at an IT training company; could influence CPaaS for learner/client communications.
+
+107. Sassine Karam   [fit 38]
+   Title     : Territory Manager - Africa
+   Company   : Mindware
+   Dept/Level: sales / manager
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/sassinekaram/
+   Why       : Territory Manager at an IT distributor; could resell or recommend CPaaS solutions to clients.
+
+108. Toufic Nakhle   [fit 38]
+   Title     : Account Manager Team Lead
+   Company   : KFF UD
+   Dept/Level: sales / manager
+   Location  : Beirut Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/toufic-nakhle-56ba95b8/
+   Why       : Account manager team lead in sales could influence CPaaS tools for team communications
+
+109. Wajih Finianos   [fit 38]
+   Title     : Service LoB - Global Service Offer Technical Chapter Leader
+   Company   : (company unknown)
+   Dept/Level: it / lead
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/wajih-finianos-92035b107/
+   Why       : Technical chapter leader for service offerings could influence CPaaS evaluation
+
+110. Beatrice Habchi Kalache   [fit 35]
+   Title     : Director of Sales
+   Company   : (company unknown)
+   Dept/Level: sales / director
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/beatrice-habchi-kalache-b548466b/
+   Why       : Director of Sales could leverage CPaaS for outbound sales communications and customer engagement
+
+111. Fahad Mailud   [fit 35]
+   Title     : Managing Director
+   Company   : (company unknown)
+   Dept/Level: executive / cxo
+   Location  : Beirut, Beirut Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/fahad-mailud-94627538/
+   Why       : Managing Director at unknown company could be a budget owner but no contextual signal
+
+112. Jacques Moubarak   [fit 35]
+   Title     : Managing Director
+   Company   : MECC
+   Dept/Level: executive / cxo
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/jacques-moubarak-4415b98/
+   Why       : Managing Director at MECC; senior decision-maker who could authorize CPaaS adoption.
+
+113. Kamal Saliba   [fit 35]
+   Title     : Vice Managing Director
+   Company   : Mike Sport
+   Dept/Level: executive / cxo
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/kamal-saliba-221164bb/
+   Why       : Vice MD at a sports retail chain; could champion CPaaS for customer engagement campaigns.
+
+114. Mo S.   [fit 35]
+   Title     : Sales Manager
+   Company   : Loewe Digital
+   Dept/Level: sales / manager
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/mhammadal-sharif/
+   Why       : Sales Manager at a digital company; could influence CPaaS adoption for customer engagement.
+
+115. Khaled Akhal   [fit 33]
+   Title     : Managing Director IVD
+   Company   : (company unknown)
+   Dept/Level: executive / cxo
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/khaled-akhal-57226624/
+   Why       : Managing Director seniority gives budget authority but no vertical signal for CPaaS fit
+
+116. Chady Salim   [fit 32]
+   Title     : Executive Director
+   Company   : (company unknown)
+   Dept/Level: executive / cxo
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/chady-salim-9916105/
+   Why       : Executive Director seniority is relevant but no domain signal for CPaaS
+
+117. Ramy Khalife   [fit 30]
+   Title     : Business Development Manager
+   Company   : Utravel
+   Dept/Level: sales / manager
+   Location  : Mount Lebanon Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/ramy-khalife-a5270a140/
+   Why       : BDM at a travel company could influence CPaaS adoption for traveler notifications and engagement
+
+118. Youssef Maalouf, MBA   [fit 30]
+   Title     : Lead Data Analyst
+   Company   : OMT
+   Dept/Level: data / lead
+   Location  : Mansourieh, Mount Lebanon Governorate, Lebanon
+   LinkedIn  : https://www.linkedin.com/in/ymaalouf/
+   Why       : Lead Data Analyst at OMT; indirect influencer, may analyze CPaaS performance data but not a buyer.
+
+119. Hussein Safiedine   [fit 28]
+   Title     : Project Director
+   Company   : MBTP
+   Dept/Level: operations / director
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/hussein-safiedine-8b467545/
+   Why       : Project Director in operations; may need CPaaS for field/project coordination but indirect fit.
+
+120. Jad Abi Ghanem   [fit 28]
+   Title     : Founder and Director of The Gift Factory | Private Labeling - Corporate and Retail | thegiftfactory.me | smileyalla.com
+   Company   : (company unknown)
+   Dept/Level: executive / founder
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/jad-abi-ghanem/
+   Why       : Founder of a retail/gifting business could use CPaaS for customer notifications and order comms
+
+121. Imad Chaker   [fit 25]
+   Title     : Director
+   Company   : MADA®
+   Dept/Level: executive / director
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/imad-chaker-308b582b/
+   Why       : Executive Director; company context unclear, moderate seniority but low specificity.
+
+122. Simon Laham   [fit 25]
+   Title     : Director
+   Company   : M&S Bright Industry Ltd
+   Dept/Level: executive / director
+   Location  : Lebanon
+   LinkedIn  : https://www.linkedin.com/in/simonlaham1981/
+   Why       : Generic executive Director; company profile unclear, low confidence fit.

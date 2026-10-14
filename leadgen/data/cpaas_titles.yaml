@@ -1,0 +1,86 @@
+# Decision-maker titles worth contacting about a CPaaS offer (SMS / voice / WhatsApp / email APIs,
+# notifications, verification/OTP, contact-center). Used by the Company -> decision-makers scraper as the
+# people-search targets. Edit freely. Individual developers/engineers are intentionally EXCLUDED; technical
+# LEADERS (CTO, VP/Head of Engineering, architects) are kept because they own the integration decision.
+
+titles:
+  # Technical decision-makers (leaders, not individual engineers)
+  - "CTO"
+  - "Chief Technology Officer"
+  - "VP Engineering"
+  - "Head of Engineering"
+  - "Head of Platform"
+  - "Head of Integrations"
+  - "Solutions Architect"
+  - "Technical Director"
+  - "VP Technology"
+  # IT / infrastructure
+  - "CIO"
+  - "Head of IT"
+  - "IT Director"
+  # Product (own the messaging/notification features)
+  - "Chief Product Officer"
+  - "Head of Product"
+  - "VP Product"
+  - "Product Manager"
+  # Customer experience, support, contact center
+  - "Chief Customer Officer"
+  - "Head of Customer Experience"
+  - "VP Customer Experience"
+  - "Head of Customer Success"
+  - "Head of Customer Support"
+  - "Contact Center Manager"
+  - "Call Center Manager"
+  # Marketing / growth / CRM / lifecycle (bulk messaging buyers)
+  - "CMO"
+  - "Head of Marketing"
+  - "VP Marketing"
+  - "Head of Growth"
+  - "Head of Digital"
+  - "Head of CRM"
+  - "Lifecycle Marketing"
+  # Sales / commercial / business development
+  - "Chief Revenue Officer"
+  - "VP Sales"
+  - "Head of Sales"
+  - "Sales Director"
+  - "Head of Business Development"
+  # Communications / messaging / telecom specialists
+  - "Head of Communications"
+  - "Messaging"
+  - "CPaaS"
+  - "Telecom"
+  # Operations and general management (budget authority / notifications owners)
+  - "COO"
+  - "Chief Operating Officer"
+  - "Head of Operations"
+  - "Managing Director"
+  - "Founder"
+  - "CEO"
+
+# Any lead whose title contains one of these is dropped (individual contributors and non-buyers).
+exclude_titles:
+  - "software engineer"
+  - "developer"
+  - "programmer"
+  - "devops"
+  - "sre"
+  - "qa engineer"
+  - "data engineer"
+  - "data scientist"
+  - "intern"
+  - "working student"
+  - "student"
+  - "junior"
+  - "apprentice"
+  - "trainee"
+
+# Pre-grouped persona searches (one LinkedIn people-search each) so a company scrape stays gentle.
+facets:
+  - 'CTO OR "Chief Technology Officer" OR "VP Engineering" OR "Head of Engineering" OR "Technical Director" OR "Solutions Architect"'
+  - 'CIO OR "Head of IT" OR "IT Director" OR "Head of Infrastructure"'
+  - '"Chief Product Officer" OR "Head of Product" OR "VP Product" OR "Product Manager"'
+  - '"Chief Customer Officer" OR "Head of Customer Experience" OR "Customer Success" OR "Customer Support" OR "Contact Center" OR "Call Center"'
+  - 'CMO OR "Head of Marketing" OR "Head of Growth" OR "Head of Digital" OR "Head of CRM" OR "Lifecycle Marketing"'
+  - '"Chief Revenue Officer" OR "VP Sales" OR "Head of Sales" OR "Sales Director" OR "Business Development"'
+  - '"Head of Communications" OR Messaging OR CPaaS OR CEO OR Founder OR "Managing Director" OR COO'

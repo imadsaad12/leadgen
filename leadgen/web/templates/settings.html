@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block title %}Settings · LeadGen{% endblock %}
+{% block heading %}Settings{% endblock %}
+{% block content %}
+<h1 class="mb-4">Settings</h1>
+{% if message %}<div class="note note-ok mb-4">{{ message }}</div>{% endif %}
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+  <div class="space-y-5">
+    <div class="card card-p">
+      <div class="flex items-center justify-between mb-3">
+        <h2>LinkedIn sidecar</h2>
+        <span class="badge dot {% if sidecar and healthy %}badge-done{% elif sidecar %}badge-paused{% else %}badge-stopped{% endif %}">{% if sidecar and healthy %}running{% elif sidecar %}starting{% else %}stopped{% endif %}</span>
+      </div>
+      <div class="muted mb-3" style="font-size:.76rem">{{ settings.mcp_url }}</div>
+      <div class="flex gap-2 mb-3 flex-wrap">
+        <form method="post" action="/settings/server/start"><button class="btn btn-sm btn-primary">Start</button></form>
+        <form method="post" action="/settings/server/stop"><button class="btn btn-sm">Stop</button></form>
+        <button class="btn btn-sm" hx-get="/settings/doctor" hx-target="#doctor">Run doctor</button>
+      </div>
+      <div id="doctor"></div>
+      <details class="mt-3"><summary>server log</summary><pre class="mt-2" style="max-height:16rem">{{ server_log|join('\n') }}</pre></details>
+    </div>
+    <div class="card card-p">
+      <h2 class="mb-1">LinkedIn session</h2>
+      <p class="muted mb-3" style="font-size:.78rem">Use a dedicated account. "Import from browser" copies the session of a browser where you're already logged in; "Log in manually" opens a Chromium window.</p>
+      {% if login_running %}<div class="note note-warn mb-3" style="font-size:.8rem">Login in progress… finish it in the browser window, then reload this page.</div>{% endif %}
+      {% if login_result %}<pre class="mb-3" style="max-height:10rem">exit {{ login_result[0] }}\n{{ login_result[1] }}</pre>{% endif %}
+      <div class="flex gap-2 flex-wrap items-end">
+        <form method="post" action="/settings/login/import" class="flex gap-2 items-end"><label style="margin:0">Browser <select name="browser"><option>chrome</option><option>brave</option><option>edge</option><option>arc</option><option>vivaldi</option><option>chromium</option></select></label><button class="btn btn-sm btn-primary">Import</button></form>
+        <form method="post" action="/settings/login/manual"><button class="btn btn-sm">Log in manually</button></form>
+        <form method="post" action="/settings/server/logout"><button class="btn btn-sm btn-danger">Logout</button></form>
+      </div>
+    </div>
+  </div>
+  <div class="space-y-5">
+    <form method="post" action="/settings" class="card card-p space-y-3">
+      <h2>Defaults for new runs</h2>
+      <div class="grid grid-cols-2 gap-3">
+        <label>Daily page-load budget <input name="daily_budget" type="number" value="{{ values.daily_budget }}"></label>
+        <label>Monthly search cap <input name="monthly_search_cap" type="number" value="{{ values.monthly_search_cap }}"></label>
+        <label>Min delay (s) <input name="min_delay_s" value="{{ values.min_delay_s }}"></label>
+        <label>Max delay (s) <input name="max_delay_s" value="{{ values.max_delay_s }}"></label>
+        <label>Retention (days) <input name="retention_days" type="number" value="{{ values.retention_days }}"></label>
+      </div>
+      <label class="check"><input type="checkbox" name="llm_assist" {{ 'checked' if values.llm_assist }}> LLM assist via the <code>claude</code> CLI (your subscription; no API key)</label>
+      <label class="check"><input type="checkbox" name="autostart_sidecar" {{ 'checked' if values.autostart_sidecar }}> start the LinkedIn sidecar when the app starts</label>
+      {% if not acknowledged %}<label class="check note note-warn" style="display:flex"><input type="checkbox" name="acknowledge" value="1"> I acknowledge the LinkedIn account-risk and data-protection notice.</label>{% else %}<div class="note note-ok" style="font-size:.78rem">Risk notice acknowledged.</div>{% endif %}
+      <button class="btn btn-primary">Save settings</button>
+    </form>
+    <div class="card card-p space-y-3">
+      <h2>Data retention</h2>
+      <form method="post" action="/settings/purge" class="flex gap-2 items-end flex-wrap"><label style="margin:0; flex:1">Delete runs &amp; cache older than (days) <input name="days" type="number" value="{{ values.retention_days }}"></label><button class="btn btn-sm btn-danger" onclick="return confirm('Delete old runs and cache?')">Purge</button></form>
+      <form method="post" action="/settings/forget" class="flex gap-2 items-end flex-wrap"><label style="margin:0; flex:1">Erase a person <input name="profile" placeholder="LinkedIn username or URL"></label><button class="btn btn-sm btn-danger">Forget</button></form>
+    </div>
+  </div>
+</div>
+{% endblock %}

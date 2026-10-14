@@ -1,0 +1,48 @@
+[project]
+name = "leadgen"
+version = "0.1.0"
+description = "Local LinkedIn lead-generation web app: discover companies, enumerate employees, group by job title."
+readme = "README.md"
+requires-python = ">=3.12.4,<3.15"
+license = { text = "MIT" }
+dependencies = [
+    "mcp>=2.2.0,<3",
+    "mcp-server-linkedin",
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.30",
+    "jinja2>=3.1",
+    "python-multipart>=0.0.9",
+    "pydantic>=2.7",
+    "pydantic-settings>=2.3",
+    "pyyaml>=6",
+    "rapidfuzz>=3.9",
+    "pandas>=2.2",
+    "openpyxl>=3.1",
+    "typer>=0.12",
+    "rich>=13.7",
+    "httpx>=0.27",
+]
+
+[project.scripts]
+leadgen = "leadgen.cli:app"
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-asyncio>=0.23", "ruff>=0.5"]
+
+[tool.uv.sources]
+mcp-server-linkedin = { path = "vendor/linkedin-mcp-server", editable = true }
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["leadgen"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py312"

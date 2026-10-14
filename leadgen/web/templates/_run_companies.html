@@ -1,0 +1,14 @@
+<table class="tbl">
+  <thead><tr><th>Company</th><th>Industry</th><th>HQ</th><th>Size</th><th>Status</th><th class="num">People</th><th>Notes</th></tr></thead>
+  <tbody>
+  {% for c in companies %}
+  <tr>
+    <td>{% if c.linkedin_url %}<a href="{{ c.linkedin_url }}" target="_blank" rel="noopener" style="font-weight:600">{{ c.name }}</a>{% else %}<span style="font-weight:600">{{ c.name }}</span>{% endif %}</td>
+    <td class="muted">{{ c.industry or '—' }}</td><td class="muted">{{ c.hq or '—' }}</td><td class="muted">{{ c.size_bucket or '—' }}</td>
+    <td><span class="badge">{{ c.status }}</span></td>
+    <td class="num"><a href="/runs/{{ run_id }}/leads?company={{ c.key }}" style="font-weight:600">{{ counts.get(c.key, 0) }}</a></td>
+    <td class="muted" style="font-size:.76rem">{{ c.filter_reasons|join('; ') }}{% if c.unknown_fields %} <span class="faint">unknown: {{ c.unknown_fields|join(', ') }}</span>{% endif %}</td>
+  </tr>
+  {% else %}<tr><td class="empty" colspan="7">No companies yet.</td></tr>{% endfor %}
+  </tbody>
+</table>

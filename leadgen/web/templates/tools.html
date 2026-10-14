@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% block title %}Tools · LeadGen{% endblock %}
+{% block heading %}Scraper tools{% endblock %}
+{% block content %}
+<h1 class="mb-1">Scraper tools</h1>
+<p class="muted mb-5" style="font-size:.85rem">Focused scrapers, separate from a full LinkedIn run.</p>
+{% if message %}<div class="note note-warn mb-4">{{ message }}</div>{% endif %}
+
+<div class="card card-p mb-5">
+  <div class="section-title"><span class="stat"><span class="ico" style="position:static;width:30px;height:30px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span></span>Local businesses <span class="faint" style="font-weight:400; font-size:.8rem">· OpenStreetMap · phone numbers · no login</span></div>
+  <p class="muted mb-3" style="font-size:.8rem">Find local businesses in a city that send customer messages (clinics, retail, restaurants, banks, real estate…),
+    with their phone and website. Free and no ban risk. Then Claude scores each for CPaaS fit if you set an offer. Coverage is
+    thinner than Google Maps but real across Lebanon and the Gulf.</p>
+  <form method="post" action="/tools/local" class="form-grid">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <label>Country <select name="country">{% for c in countries %}<option value="{{ c }}" {{ 'selected' if c == 'Lebanon' }}>{{ c }}</option>{% endfor %}</select></label>
+      <label>City <span class="faint">(recommended)</span><input name="city" placeholder="Beirut"></label>
+      <label>Max results <input name="max_results" type="number" value="120"></label>
+    </div>
+    <div><span class="field-label">Categories</span>
+      <div class="pills">{% for c in categories %}<label class="pill"><input type="checkbox" name="categories" value="{{ c }}" {{ 'checked' if c in default_categories }}> {{ c }}</label>{% endfor %}</div></div>
+    <div><span class="field-label">Data source</span>
+      <div class="seg">
+        <label><input type="radio" name="backend" value="osm" checked> OpenStreetMap <span class="faint">· free, instant</span></label>
+        <label><input type="radio" name="backend" value="gmaps"> Google Maps <span class="faint">· richer + emails, needs Docker, slower</span></label>
+      </div></div>
+    <label>Offer <span class="faint">(optional — enables the relevance filter)</span>
+      <textarea name="offer" rows="2" placeholder="e.g. SMS & WhatsApp notifications and OTP for businesses that message customers"></textarea></label>
+    <button class="btn btn-primary">Find local businesses</button>
+  </form>
+</div>
+
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+
+  <div class="card card-p">
+    <div class="section-title"><span class="stat"><span class="ico" style="position:static;width:30px;height:30px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 9h6M9 13h6M9 17h3"/></svg></span></span>Company → decision-makers</div>
+    <p class="muted mb-3" style="font-size:.8rem">Reads the company profile, then finds the people worth contacting about CPaaS —
+      technical leaders, IT, product, customer experience/support, marketing/growth, sales/BD, comms and executives.
+      Individual developers and engineers are excluded. Runs in the background (7 targeted searches). Edit the list in
+      <code>leadgen/data/cpaas_titles.yaml</code>.</p>
+    <form method="post" action="/tools/company" class="space-y-3">
+      <label>Company <span class="faint">(LinkedIn slug, URL or name)</span>
+        <input name="company" required placeholder="docker  or  https://www.linkedin.com/company/stripe/"></label>
+      <label>Max people <input name="max_people" type="number" value="40"></label>
+      <label>Offer <span class="faint">(optional — enables the relevance filter)</span>
+        <textarea name="offer" rows="2" placeholder="What you're selling and the ideal buyer"></textarea></label>
+      {% if not acknowledged %}<div class="muted" style="font-size:.76rem; color:var(--amber)">Acknowledge the LinkedIn risk notice on the New run page first.</div>{% endif %}
+      <button class="btn btn-primary btn-block">Scrape company</button>
+    </form>
+  </div>
+
+  <div class="card card-p">
+    <div class="section-title"><span class="stat"><span class="ico" style="position:static;width:30px;height:30px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0116 0"/></svg></span></span>Lead → full profile</div>
+    <p class="muted mb-3" style="font-size:.8rem">Returns one person's experience, education, skills and — when LinkedIn shows it —
+      their contact email and phone. Runs live (one page load); unavailable while a run is in progress.</p>
+    <form method="post" action="/tools/profile" class="space-y-3">
+      <label>Profile <span class="faint">(LinkedIn URL or username)</span>
+        <input name="linkedin" required placeholder="williamhgates  or  https://www.linkedin.com/in/williamhgates/"></label>
+      <label>Sections <input name="sections" value="contact_info,experience,education,skills,certifications"></label>
+      {% if active %}<div class="muted" style="font-size:.76rem; color:var(--amber)">A run is in progress; this will be blocked until it finishes.</div>{% endif %}
+      <button class="btn btn-primary btn-block">Scrape profile</button>
+    </form>
+  </div>
+</div>
+{% endblock %}

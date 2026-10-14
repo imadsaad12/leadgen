@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block title %}{{ run.spec.name }} · LeadGen{% endblock %}
+{% block heading %}<a class="muted" href="/">Runs</a> <span class="faint">/</span> {{ run.spec.name }}{% endblock %}
+{% block content %}
+<div class="flex items-start justify-between gap-4 mb-5 flex-wrap">
+  <div>
+    <h1>{{ run.spec.name }}</h1>
+    <div class="muted" style="font-size:.78rem; margin-top:4px">
+      {{ run.id }} · source {{ run.spec.run.source }} · {{ run.spec.company.industries|join(', ') or 'no industries' }}
+      · {{ run.spec.company.locations|join(', ') or 'any location' }}
+    </div>
+  </div>
+  <div class="flex gap-2 flex-wrap">
+    {% if active %}
+      <form method="post" action="/runs/{{ run.id }}/pause"><button class="btn btn-sm">Pause</button></form>
+      <form method="post" action="/runs/{{ run.id }}/stop"><button class="btn btn-sm btn-danger">Stop</button></form>
+    {% elif run.status in ('paused', 'failed', 'stopped', 'queued') %}
+      <form method="post" action="/runs/{{ run.id }}/resume"><button class="btn btn-sm btn-primary">Resume</button></form>
+      <form method="post" action="/runs/{{ run.id }}/delete" onsubmit="return confirm('Delete this run and its people?')"><button class="btn btn-sm btn-danger">Delete</button></form>
+    {% else %}
+      <form method="post" action="/runs/{{ run.id }}/delete" onsubmit="return confirm('Delete this run and its people?')"><button class="btn btn-sm btn-danger">Delete</button></form>
+    {% endif %}
+    <a href="/runs/new?clone={{ run.id }}" class="btn btn-sm">Clone</a>
+    <a href="/runs/{{ run.id }}/leads" class="btn btn-sm">Leads</a>
+    <a href="/runs/{{ run.id }}/companies" class="btn btn-sm">Companies</a>
+    <a href="/runs/{{ run.id }}/export?format=xlsx" class="btn btn-sm btn-success">XLSX</a>
+    <a href="/runs/{{ run.id }}/export?format=csv" class="btn btn-sm">CSV</a>
+    <a href="/runs/{{ run.id }}/export?format=report" class="btn btn-sm">Report</a>
+  </div>
+</div>
+
+<div class="card card-p mb-5" id="stats" hx-get="/runs/{{ run.id }}/stats" hx-trigger="every 3s" hx-swap="innerHTML">
+  {% include "_run_stats.html" %}
+</div>
+
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+  <div class="lg:col-span-2 card table-wrap" id="companies" hx-get="/runs/{{ run.id }}/companies-table" hx-trigger="every 5s" hx-swap="innerHTML">
+    {% with run_id=run.id %}{% include "_run_companies.html" %}{% endwith %}
+  </div>
+  <div class="card card-p">
+    <div class="flex justify-between items-center mb-2"><h2>Live log</h2><button class="btn btn-sm" onclick="document.getElementById('log').innerHTML=''">clear</button></div>
+    <div id="log" class="console">
+      {% for ev in history %}<div class="log-line log-{{ ev.level }}">{{ ev.ts[11:19] }} {{ ev.msg }}</div>{% endfor %}
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  const log = document.getElementById('log');
+  const lastId = {{ history[-1].id if history else 0 }};
+  const es = new EventSource('/runs/{{ run.id }}/events?after=' + lastId);
+  es.onmessage = (e) => {
+    const ev = JSON.parse(e.data);
+    const div = document.createElement('div');
+    div.className = 'log-line log-' + ev.level;
+    div.textContent = (ev.ts || '').slice(11, 19) + ' ' + ev.msg;
+    log.appendChild(div);
+    log.scrollTop = log.scrollHeight;
+  };
+  es.addEventListener('done', () => { es.close(); setTimeout(() => location.reload(), 1500); });
+  log.scrollTop = log.scrollHeight;
+})();
+</script>
+{% endblock %}

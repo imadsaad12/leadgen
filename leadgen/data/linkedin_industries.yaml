@@ -1,0 +1,542 @@
+# LinkedIn company "Industry" values as shown on company About pages.
+# `name` is the current LinkedIn taxonomy label (2022+); `aliases` carry the
+# classic (pre-2022) label, common shorthand and lowercase search terms.
+# `group` is one of: technology, finance, healthcare, industrial, consumer,
+# services, public, media, energy, real_estate, education, other.
+industries:
+  # ---------------------------------------------------------------- technology
+  - name: "Software Development"
+    aliases: ["computer software", "software", "saas", "software company", "software vendor"]
+    group: "technology"
+  - name: "IT Services and IT Consulting"
+    aliases: ["information technology & services", "information technology and services", "it services", "it consulting", "managed services", "msp"]
+    group: "technology"
+  - name: "Technology, Information and Internet"
+    aliases: ["internet", "tech", "technology", "online platform", "digital", "internet company"]
+    group: "technology"
+  - name: "Computer and Network Security"
+    aliases: ["computer & network security", "cybersecurity", "cyber security", "infosec", "information security"]
+    group: "technology"
+  - name: "Computer Hardware Manufacturing"
+    aliases: ["computer hardware", "hardware", "hardware manufacturer"]
+    group: "technology"
+  - name: "Computer Networking Products"
+    aliases: ["computer networking", "networking", "network equipment"]
+    group: "technology"
+  - name: "Computers and Electronics Manufacturing"
+    aliases: ["consumer electronics", "electronics manufacturing", "electronics"]
+    group: "technology"
+  - name: "Semiconductor Manufacturing"
+    aliases: ["semiconductors", "semiconductor", "chips", "chip design", "fabless"]
+    group: "technology"
+  - name: "Data Infrastructure and Analytics"
+    aliases: ["data analytics", "analytics", "big data", "data", "data platform", "data engineering"]
+    group: "technology"
+  - name: "Information Services"
+    aliases: ["information services", "data provider", "information provider"]
+    group: "technology"
+  - name: "Computer Games"
+    aliases: ["video games", "gaming", "game development", "game studio", "games", "esports"]
+    group: "technology"
+  - name: "Internet Marketplace Platforms"
+    aliases: ["marketplace", "online marketplace", "two-sided marketplace", "platform"]
+    group: "technology"
+  - name: "Internet Publishing"
+    aliases: ["web publishing", "online publishing", "digital publishing"]
+    group: "technology"
+  - name: "Social Networking Platforms"
+    aliases: ["social network", "social media platform", "social app", "community platform"]
+    group: "technology"
+  - name: "Blockchain Services"
+    aliases: ["blockchain", "crypto", "cryptocurrency", "web3", "defi"]
+    group: "technology"
+  - name: "Mobile Computing Software Products"
+    aliases: ["mobile apps", "app development", "mobile software", "mobile app developer"]
+    group: "technology"
+  - name: "IT System Custom Software Development"
+    aliases: ["custom software", "software house", "bespoke software", "software agency", "dev shop"]
+    group: "technology"
+  - name: "IT System Testing and Evaluation"
+    aliases: ["software testing", "qa", "quality assurance", "test automation"]
+    group: "technology"
+  - name: "Robotics Engineering"
+    aliases: ["robotics", "robots", "robot manufacturer", "automation robotics"]
+    group: "technology"
+  - name: "Telecommunications"
+    aliases: ["telecom", "telco", "carrier", "telecoms", "communications provider"]
+    group: "technology"
+  - name: "Wireless Services"
+    aliases: ["wireless", "mobile network operator", "mno", "mobile operator", "mvno"]
+    group: "technology"
+  - name: "Space Research and Technology"
+    aliases: ["space", "spacetech", "space technology", "new space"]
+    group: "technology"
+
+  # ------------------------------------------------------------------- finance
+  - name: "Financial Services"
+    aliases: ["finance", "fintech", "financial", "financial technology", "financial company"]
+    group: "finance"
+  - name: "Banking"
+    aliases: ["bank", "banks", "retail banking", "commercial banking", "neobank"]
+    group: "finance"
+  - name: "Investment Banking"
+    aliases: ["ib", "m&a advisory", "corporate finance", "investment bank"]
+    group: "finance"
+  - name: "Investment Management"
+    aliases: ["asset management", "fund management", "asset manager", "hedge fund", "fund"]
+    group: "finance"
+  - name: "Investment Advice"
+    aliases: ["financial advisor", "wealth management", "financial planning", "wealth manager", "ria"]
+    group: "finance"
+  - name: "Venture Capital and Private Equity Principals"
+    aliases: ["venture capital & private equity", "venture capital", "private equity", "vc", "pe", "investors"]
+    group: "finance"
+  - name: "Capital Markets"
+    aliases: ["securities", "brokerage", "trading", "broker-dealer", "stock broker"]
+    group: "finance"
+  - name: "Insurance"
+    aliases: ["insurer", "insurtech", "insurance company", "reinsurance", "underwriting"]
+    group: "finance"
+  - name: "Insurance Agencies and Brokerages"
+    aliases: ["insurance broker", "insurance agency", "insurance brokerage", "insurance agent"]
+    group: "finance"
+  - name: "Accounting"
+    aliases: ["accountancy", "bookkeeping", "audit", "cpa", "chartered accountants", "tax advisory"]
+    group: "finance"
+  - name: "Credit Intermediation"
+    aliases: ["lending", "loans", "consumer credit", "credit", "lender"]
+    group: "finance"
+  - name: "Loan Brokers"
+    aliases: ["mortgage broker", "loan broker", "mortgage", "mortgage lending"]
+    group: "finance"
+  - name: "International Trade and Development"
+    aliases: ["international trade", "trade finance", "export development", "trade"]
+    group: "finance"
+
+  # ---------------------------------------------------------------- healthcare
+  - name: "Hospitals and Health Care"
+    aliases: ["hospital & health care", "hospital and health care", "healthcare", "health care", "hospital", "health system"]
+    group: "healthcare"
+  - name: "Medical Practices"
+    aliases: ["medical practice", "clinic", "physician practice", "doctors office", "outpatient"]
+    group: "healthcare"
+  - name: "Medical Equipment Manufacturing"
+    aliases: ["medical devices", "medical device", "medtech", "medical equipment", "medical technology"]
+    group: "healthcare"
+  - name: "Pharmaceutical Manufacturing"
+    aliases: ["pharmaceuticals", "pharma", "pharmaceutical", "drug manufacturer", "generics"]
+    group: "healthcare"
+  - name: "Biotechnology Research"
+    aliases: ["biotechnology", "biotech", "life sciences", "biopharma", "genomics"]
+    group: "healthcare"
+  - name: "Medical and Diagnostic Laboratories"
+    aliases: ["diagnostics", "laboratory", "lab", "clinical lab", "diagnostic lab"]
+    group: "healthcare"
+  - name: "Wellness and Fitness Services"
+    aliases: ["health, wellness & fitness", "health wellness and fitness", "wellness", "fitness", "gym", "fitness studio"]
+    group: "healthcare"
+  - name: "Mental Health Care"
+    aliases: ["mental health", "behavioral health", "therapy", "psychology", "counseling"]
+    group: "healthcare"
+  - name: "Dentists"
+    aliases: ["dental", "dentistry", "dental practice", "dental clinic", "orthodontics"]
+    group: "healthcare"
+  - name: "Veterinary Services"
+    aliases: ["veterinary", "vet", "vet clinic", "animal health", "veterinarian"]
+    group: "healthcare"
+  - name: "Nursing Homes and Residential Care Facilities"
+    aliases: ["nursing home", "senior care", "elder care", "assisted living", "care home", "aged care"]
+    group: "healthcare"
+  - name: "Home Health Care Services"
+    aliases: ["home care", "home health", "domiciliary care", "in-home care"]
+    group: "healthcare"
+  - name: "Individual and Family Services"
+    aliases: ["family services", "social work", "community services", "childcare services"]
+    group: "healthcare"
+  - name: "Child Day Care Services"
+    aliases: ["childcare", "daycare", "nursery", "day care", "early childhood"]
+    group: "healthcare"
+
+  # ---------------------------------------------------------------- industrial
+  - name: "Manufacturing"
+    aliases: ["industrial", "factory", "manufacturer", "consumer goods", "cpg", "fmcg"]
+    group: "industrial"
+  - name: "Machinery Manufacturing"
+    aliases: ["machinery", "industrial machinery", "mechanical engineering", "mechanical or industrial engineering", "equipment manufacturer"]
+    group: "industrial"
+  - name: "Automation Machinery Manufacturing"
+    aliases: ["industrial automation", "automation", "factory automation", "plc", "motion control"]
+    group: "industrial"
+  - name: "Motor Vehicle Manufacturing"
+    aliases: ["automotive", "auto", "cars", "oem", "car manufacturer", "ev"]
+    group: "industrial"
+  - name: "Motor Vehicle Parts Manufacturing"
+    aliases: ["auto parts", "automotive supplier", "tier 1 supplier", "automotive components"]
+    group: "industrial"
+  - name: "Aviation and Aerospace Component Manufacturing"
+    aliases: ["aviation & aerospace", "aviation and aerospace", "aerospace", "aerospace manufacturing", "aircraft"]
+    group: "industrial"
+  - name: "Defense and Space Manufacturing"
+    aliases: ["defense & space", "defense and space", "defence", "defense", "military contractor", "defense contractor"]
+    group: "industrial"
+  - name: "Chemical Manufacturing"
+    aliases: ["chemicals", "chemical", "specialty chemicals", "petrochemicals", "chemical company", "rubber"]
+    group: "industrial"
+  - name: "Plastics Manufacturing"
+    aliases: ["plastics", "plastic", "polymers", "injection molding"]
+    group: "industrial"
+  - name: "Paper and Forest Product Manufacturing"
+    aliases: ["paper & forest products", "paper and forest products", "paper", "pulp and paper", "forestry products"]
+    group: "industrial"
+  - name: "Packaging and Containers Manufacturing"
+    aliases: ["packaging & containers", "packaging and containers", "packaging", "containers", "labels"]
+    group: "industrial"
+  - name: "Printing Services"
+    aliases: ["printing", "print", "commercial printing", "print shop", "3d printing"]
+    group: "industrial"
+  - name: "Textile Manufacturing"
+    aliases: ["textiles", "textile", "fabrics", "weaving", "yarn"]
+    group: "industrial"
+  - name: "Apparel Manufacturing"
+    aliases: ["apparel", "garment manufacturing", "clothing manufacturer", "apparel & fashion manufacturing"]
+    group: "industrial"
+  - name: "Glass, Ceramics and Concrete Manufacturing"
+    aliases: ["glass, ceramics & concrete", "glass ceramics and concrete", "building materials", "cement", "concrete", "glass"]
+    group: "industrial"
+  - name: "Construction"
+    aliases: ["building", "contractor", "general contractor", "construction company", "builder", "civil construction"]
+    group: "industrial"
+  - name: "Civil Engineering"
+    aliases: ["infrastructure", "engineering", "structural engineering", "engineering consultancy", "civil"]
+    group: "industrial"
+  - name: "Architecture and Planning"
+    aliases: ["architecture & planning", "architecture and planning", "architecture", "architects", "urban planning"]
+    group: "industrial"
+  - name: "Electrical Equipment Manufacturing"
+    aliases: ["electrical/electronic manufacturing", "electrical & electronic manufacturing", "electrical", "electrical equipment", "switchgear", "electronic components"]
+    group: "industrial"
+  - name: "Furniture and Home Furnishings Manufacturing"
+    aliases: ["furniture", "home furnishings", "furniture manufacturer", "office furniture"]
+    group: "industrial"
+  - name: "Transportation, Logistics, Supply Chain and Storage"
+    aliases: ["logistics & supply chain", "logistics and supply chain", "logistics", "supply chain", "3pl", "transportation"]
+    group: "industrial"
+  - name: "Truck Transportation"
+    aliases: ["trucking", "freight", "haulage", "road freight", "transportation/trucking/railroad", "trucking company"]
+    group: "industrial"
+  - name: "Freight and Package Transportation"
+    aliases: ["package delivery", "parcel", "courier", "package/freight delivery", "freight forwarding", "last mile"]
+    group: "industrial"
+  - name: "Maritime Transportation"
+    aliases: ["maritime", "shipping", "shipping company", "ocean freight", "ports", "marine"]
+    group: "industrial"
+  - name: "Airlines and Aviation"
+    aliases: ["airlines/aviation", "airline", "aviation", "airport", "air cargo", "air transport"]
+    group: "industrial"
+  - name: "Rail Transportation"
+    aliases: ["railroad", "rail", "railway", "rail freight", "train operator"]
+    group: "industrial"
+  - name: "Ground Passenger Transportation"
+    aliases: ["public transit", "bus", "taxi", "ride sharing", "passenger transport", "mobility"]
+    group: "industrial"
+  - name: "Warehousing and Storage"
+    aliases: ["warehousing", "warehouse", "fulfillment", "storage", "fulfilment center"]
+    group: "industrial"
+  - name: "Wholesale"
+    aliases: ["distribution", "distributor", "wholesaler", "wholesale distribution", "trading company", "import export"]
+    group: "industrial"
+  - name: "Mining"
+    aliases: ["mining & metals", "mining and metals", "metals", "mining company", "minerals", "quarrying"]
+    group: "industrial"
+  - name: "Primary Metal Manufacturing"
+    aliases: ["steel", "metal manufacturing", "metal fabrication", "aluminium", "aluminum", "foundry"]
+    group: "industrial"
+  - name: "Farming"
+    aliases: ["agriculture", "agri", "farm", "agribusiness", "agtech", "agritech"]
+    group: "industrial"
+  - name: "Food and Beverage Manufacturing"
+    aliases: ["food production", "food & beverages manufacturing", "food manufacturer", "food processing", "beverages"]
+    group: "industrial"
+
+  # -------------------------------------------------------------------- energy
+  - name: "Oil and Gas"
+    aliases: ["oil & energy", "oil and energy", "oil", "gas", "petroleum", "upstream"]
+    group: "energy"
+  - name: "Renewable Energy Semiconductor Manufacturing"
+    aliases: ["renewables & environment", "renewables and environment", "renewables", "renewable energy", "cleantech", "clean energy"]
+    group: "energy"
+  - name: "Renewable Energy Power Generation"
+    aliases: ["renewable power", "green energy", "renewable generation", "independent power producer", "ipp"]
+    group: "energy"
+  - name: "Services for Renewable Energy"
+    aliases: ["renewable services", "solar installer", "solar epc", "wind services"]
+    group: "energy"
+  - name: "Solar Electric Power Generation"
+    aliases: ["solar", "solar energy", "solar power", "photovoltaic", "pv"]
+    group: "energy"
+  - name: "Wind Electric Power Generation"
+    aliases: ["wind", "wind energy", "wind power", "offshore wind", "onshore wind"]
+    group: "energy"
+  - name: "Nuclear Electric Power Generation"
+    aliases: ["nuclear", "nuclear energy", "nuclear power"]
+    group: "energy"
+  - name: "Utilities"
+    aliases: ["utility", "power", "electricity", "energy", "utility company", "power company"]
+    group: "energy"
+  - name: "Electric Power Transmission, Control, and Distribution"
+    aliases: ["power transmission", "grid", "electricity distribution", "dso", "tso", "grid operator"]
+    group: "energy"
+  - name: "Water, Waste, Steam, and Air Conditioning Services"
+    aliases: ["water", "waste", "water utility", "water treatment", "district heating", "hvac services"]
+    group: "energy"
+  - name: "Environmental Services"
+    aliases: ["environmental", "waste management", "recycling", "remediation", "environmental consulting", "circular economy"]
+    group: "energy"
+
+  # --------------------------------------------------------------- real_estate
+  - name: "Real Estate"
+    aliases: ["property", "realty", "proptech", "real estate company", "property developer", "developer"]
+    group: "real_estate"
+  - name: "Leasing Real Estate"
+    aliases: ["leasing", "landlord", "property leasing", "rental property", "property management"]
+    group: "real_estate"
+  - name: "Leasing Non-residential Real Estate"
+    aliases: ["commercial real estate", "cre", "office leasing", "commercial property", "industrial property"]
+    group: "real_estate"
+  - name: "Real Estate Agents and Brokers"
+    aliases: ["realtor", "estate agent", "real estate agent", "real estate broker", "real estate agency"]
+    group: "real_estate"
+  - name: "Housing and Community Development"
+    aliases: ["housing", "affordable housing", "community development", "housing association"]
+    group: "real_estate"
+
+  # ------------------------------------------------------------------ consumer
+  - name: "Retail"
+    aliases: ["retailer", "shop", "store", "retail chain", "stores", "brick and mortar"]
+    group: "consumer"
+  - name: "Online and Mail Order Retail"
+    aliases: ["ecommerce", "e-commerce", "online retail", "online store", "d2c", "dtc"]
+    group: "consumer"
+  - name: "Retail Apparel and Fashion"
+    aliases: ["apparel & fashion", "apparel and fashion", "fashion", "clothing", "fashion brand", "footwear"]
+    group: "consumer"
+  - name: "Retail Groceries"
+    aliases: ["supermarket", "grocery", "grocer", "supermarkets", "grocery chain"]
+    group: "consumer"
+  - name: "Retail Luxury Goods and Jewelry"
+    aliases: ["luxury goods & jewelry", "luxury goods and jewelry", "luxury", "jewelry", "jewellery", "watches"]
+    group: "consumer"
+  - name: "Retail Motor Vehicles"
+    aliases: ["car dealership", "car dealer", "auto dealer", "dealership", "used cars"]
+    group: "consumer"
+  - name: "Personal Care Product Manufacturing"
+    aliases: ["cosmetics", "beauty", "skincare", "personal care", "beauty brand", "fragrance"]
+    group: "consumer"
+  - name: "Sporting Goods Manufacturing"
+    aliases: ["sporting goods", "sports equipment", "sportswear", "athletic apparel", "outdoor gear"]
+    group: "consumer"
+  - name: "Food and Beverage Services"
+    aliases: ["food & beverages", "food and beverages", "f&b", "catering", "food service", "foodservice"]
+    group: "consumer"
+  - name: "Restaurants"
+    aliases: ["restaurant", "dining", "qsr", "fast food", "cafe", "restaurant group"]
+    group: "consumer"
+  - name: "Wine and Spirits"
+    aliases: ["wine & spirits", "wine", "spirits", "winery", "distillery", "alcohol"]
+    group: "consumer"
+  - name: "Hospitality"
+    aliases: ["hotels", "hotel", "resorts", "hotel group", "accommodation", "lodging"]
+    group: "consumer"
+  - name: "Travel Arrangements"
+    aliases: ["leisure, travel & tourism", "leisure travel and tourism", "travel", "tourism", "travel agency", "tour operator"]
+    group: "consumer"
+  - name: "Consumer Services"
+    aliases: ["consumer", "consumer service", "b2c services", "personal services"]
+    group: "consumer"
+  - name: "Spectator Sports"
+    aliases: ["sports", "sports club", "sports team", "professional sports", "football club", "league"]
+    group: "consumer"
+  - name: "Recreational Facilities"
+    aliases: ["recreation", "recreational facilities & services", "leisure facilities", "theme park", "amusement"]
+    group: "consumer"
+  - name: "Gambling Facilities and Casinos"
+    aliases: ["gambling & casinos", "gambling and casinos", "gambling", "casino", "igaming", "betting"]
+    group: "consumer"
+  - name: "Pet Services"
+    aliases: ["pets", "pet care", "pet grooming", "pet boarding", "pet industry"]
+    group: "consumer"
+
+  # ------------------------------------------------------------------ services
+  - name: "Business Consulting and Services"
+    aliases: ["management consulting", "consulting", "consultancy", "business consulting", "advisory", "consulting firm"]
+    group: "services"
+  - name: "Advertising Services"
+    aliases: ["marketing & advertising", "marketing and advertising", "marketing", "advertising", "ad agency", "marketing agency"]
+    group: "services"
+  - name: "Marketing Services"
+    aliases: ["digital marketing", "marketing services", "growth marketing", "performance marketing", "seo agency"]
+    group: "services"
+  - name: "Public Relations and Communications Services"
+    aliases: ["public relations and communications", "public relations & communications", "pr", "communications", "pr agency", "comms"]
+    group: "services"
+  - name: "Market Research"
+    aliases: ["market research", "insights", "consumer insights", "research agency", "survey"]
+    group: "services"
+  - name: "Staffing and Recruiting"
+    aliases: ["staffing & recruiting", "staffing and recruiting", "recruitment", "recruiting", "headhunting", "staffing agency"]
+    group: "services"
+  - name: "Human Resources Services"
+    aliases: ["human resources", "hr", "hr services", "peo", "payroll", "hr consulting"]
+    group: "services"
+  - name: "Legal Services"
+    aliases: ["legal", "legaltech", "legal tech", "law", "legal advice", "legal firm"]
+    group: "services"
+  - name: "Law Practice"
+    aliases: ["law practice", "law firm", "attorneys", "solicitors", "lawyers", "barristers"]
+    group: "services"
+  - name: "Design Services"
+    aliases: ["design", "design agency", "design studio", "ux design", "product design", "creative agency"]
+    group: "services"
+  - name: "Interior Design"
+    aliases: ["interior design", "interiors", "interior architecture", "fit-out"]
+    group: "services"
+  - name: "Events Services"
+    aliases: ["events", "event management", "event planning", "conferences", "exhibitions", "event agency"]
+    group: "services"
+  - name: "Outsourcing and Offshoring Consulting"
+    aliases: ["outsourcing/offshoring", "outsourcing", "bpo", "offshoring", "call center", "contact center"]
+    group: "services"
+  - name: "Translation and Localization"
+    aliases: ["translation", "localization", "localisation", "language services", "interpreting", "lsp"]
+    group: "services"
+  - name: "Security and Investigations"
+    aliases: ["security services", "security guard", "investigations", "private security", "manned guarding", "security company"]
+    group: "services"
+  - name: "Facilities Services"
+    aliases: ["facility management", "facilities management", "facilities", "janitorial", "cleaning", "fm"]
+    group: "services"
+  - name: "Research Services"
+    aliases: ["research", "r&d", "contract research", "cro", "scientific research"]
+    group: "services"
+  - name: "Executive Offices"
+    aliases: ["holding company", "holding", "group", "conglomerate", "executive office"]
+    group: "services"
+  - name: "Fundraising"
+    aliases: ["fundraising", "fundraiser", "donor management", "capital raising"]
+    group: "services"
+  - name: "Non-profit Organizations"
+    aliases: ["non-profit organization management", "nonprofit organization management", "nonprofit", "non-profit", "ngo", "charity"]
+    group: "services"
+  - name: "Civic and Social Organizations"
+    aliases: ["civic & social organization", "civic and social organization", "association", "trade association", "membership organization", "club"]
+    group: "services"
+  - name: "Religious Institutions"
+    aliases: ["church", "religious", "faith-based", "ministry", "mosque"]
+    group: "services"
+  - name: "Think Tanks"
+    aliases: ["think tank", "policy institute", "research institute", "policy research"]
+    group: "services"
+  - name: "Political Organizations"
+    aliases: ["political organization", "political party", "campaign", "advocacy"]
+    group: "services"
+  - name: "International Affairs"
+    aliases: ["international affairs", "diplomacy", "foreign affairs", "international organization", "intergovernmental"]
+    group: "services"
+
+  # -------------------------------------------------------------------- public
+  - name: "Government Administration"
+    aliases: ["government", "public sector", "municipality", "public administration", "city council", "ministry"]
+    group: "public"
+  - name: "Government Relations Services"
+    aliases: ["government relations", "lobbying", "public affairs", "lobbyist"]
+    group: "public"
+  - name: "Public Policy Offices"
+    aliases: ["public policy", "policy", "policy office", "regulatory affairs"]
+    group: "public"
+  - name: "Law Enforcement"
+    aliases: ["police", "law enforcement", "policing", "sheriff"]
+    group: "public"
+  - name: "Public Safety"
+    aliases: ["fire department", "emergency services", "emergency management", "fire and rescue", "civil protection"]
+    group: "public"
+  - name: "Armed Forces"
+    aliases: ["military", "army", "navy", "air force", "defence forces"]
+    group: "public"
+  - name: "Judiciary"
+    aliases: ["courts", "court", "judicial", "tribunal"]
+    group: "public"
+  - name: "Economic Programs"
+    aliases: ["economic development", "economic development agency", "investment promotion", "development agency"]
+    group: "public"
+
+  # ----------------------------------------------------------------- education
+  - name: "Education Administration Programs"
+    aliases: ["education management", "education", "education administration", "school district", "education group"]
+    group: "education"
+  - name: "Higher Education"
+    aliases: ["university", "college", "universities", "academia", "business school"]
+    group: "education"
+  - name: "Primary and Secondary Education"
+    aliases: ["primary/secondary education", "primary and secondary", "k-12", "school", "schools", "international school"]
+    group: "education"
+  - name: "E-Learning Providers"
+    aliases: ["e-learning", "elearning", "edtech", "online learning", "online courses", "learning platform"]
+    group: "education"
+  - name: "Professional Training and Coaching"
+    aliases: ["professional training & coaching", "professional training and coaching", "training", "coaching", "corporate training", "l&d"]
+    group: "education"
+  - name: "Technical and Vocational Training"
+    aliases: ["vocational training", "trade school", "vocational", "apprenticeships", "technical training", "bootcamp"]
+    group: "education"
+  - name: "Language Schools"
+    aliases: ["language school", "language learning", "english school", "language courses"]
+    group: "education"
+  - name: "Museums, Historical Sites, and Zoos"
+    aliases: ["museums & institutions", "museums and institutions", "museum", "gallery", "zoo", "heritage"]
+    group: "education"
+
+  # --------------------------------------------------------------------- media
+  - name: "Entertainment Providers"
+    aliases: ["entertainment", "entertainment company", "live entertainment", "showbiz"]
+    group: "media"
+  - name: "Media Production"
+    aliases: ["media production", "media", "media company", "content production", "production company"]
+    group: "media"
+  - name: "Online Audio and Video Media"
+    aliases: ["online media", "streaming", "podcast", "digital media", "video platform", "creator economy"]
+    group: "media"
+  - name: "Broadcast Media Production and Distribution"
+    aliases: ["broadcast media", "broadcasting", "tv", "television", "radio", "broadcaster"]
+    group: "media"
+  - name: "Newspaper Publishing"
+    aliases: ["newspapers", "newspaper", "news", "news media", "journalism"]
+    group: "media"
+  - name: "Book and Periodical Publishing"
+    aliases: ["publishing", "book publishing", "magazines", "periodicals", "publisher"]
+    group: "media"
+  - name: "Movies, Videos, and Sound"
+    aliases: ["motion pictures & film", "motion pictures and film", "film", "video production", "movies", "film production"]
+    group: "media"
+  - name: "Animation and Post-production"
+    aliases: ["animation", "post-production", "vfx", "visual effects", "motion graphics"]
+    group: "media"
+  - name: "Musicians"
+    aliases: ["music", "music industry", "record label", "music production", "artist management"]
+    group: "media"
+  - name: "Performing Arts"
+    aliases: ["theatre", "theater", "performing arts", "dance", "opera"]
+    group: "media"
+  - name: "Artists and Writers"
+    aliases: ["fine art", "arts & crafts", "arts and crafts", "artists", "creative"]
+    group: "media"
+
+  # --------------------------------------------------------------------- other
+  - name: "Alternative Dispute Resolution"
+    aliases: ["arbitration", "mediation", "dispute resolution", "adr"]
+    group: "other"
+  - name: "Industry Associations"
+    aliases: ["industry association", "trade body", "professional association", "chamber of commerce"]
+    group: "other"
+  - name: "Nanotechnology Research"
+    aliases: ["nanotechnology", "nanotech", "materials science", "advanced materials"]
+    group: "other"

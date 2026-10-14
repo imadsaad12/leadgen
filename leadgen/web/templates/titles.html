@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}Titles · LeadGen{% endblock %}
+{% block heading %}Titles{% endblock %}
+{% block content %}
+<div class="flex items-center justify-between mb-4 flex-wrap gap-3">
+  <h1>Unclassified titles</h1>
+  <form method="get"><select name="run_id" onchange="this.form.submit()"><option value="">all runs</option>{% for r in runs %}<option value="{{ r.id }}" {{ 'selected' if r.id == run_id }}>{{ r.spec.name }}</option>{% endfor %}</select></form>
+</div>
+{% if message %}<div class="note note-ok mb-4">{{ message }}</div>{% endif %}
+<div class="flex gap-2 mb-4 items-center flex-wrap">
+  <form method="post" action="/titles/llm"><input type="hidden" name="run_id" value="{{ run_id }}"><button class="btn btn-sm btn-primary" {{ '' if llm_on else 'disabled' }}>Classify with Claude</button></form>
+  <form method="post" action="/titles/reclassify"><input type="hidden" name="run_id" value="{{ run_id }}"><button class="btn btn-sm">Re-apply rules &amp; overrides</button></form>
+  <span class="chip">title cache: {{ cache_stats }}</span>
+</div>
+<p class="muted mb-3" style="font-size:.78rem">Assignments are saved to <code>leadgen/titles/overrides.yaml</code> and the title cache, and applied to every person with that title in all runs.</p>
+<div class="card table-wrap">
+<table class="tbl">
+  <thead><tr><th>Raw title</th><th class="num">People</th><th>Department</th><th>Seniority</th><th>Canonical (optional)</th><th></th></tr></thead>
+  <tbody>
+  {% for u in unclassified %}
+  <tr>
+    <form method="post" action="/titles/assign">
+    <input type="hidden" name="raw_title" value="{{ u.raw_title }}"><input type="hidden" name="run_id" value="{{ run_id }}">
+    <td style="font-weight:550">{{ u.raw_title }}</td>
+    <td class="num">{{ u.n }}</td>
+    <td><select name="department">{% for d in departments %}<option value="{{ d.value }}">{{ department_label(d) }}</option>{% endfor %}<option value="other">Other</option></select></td>
+    <td><select name="seniority">{% for s in seniorities %}<option value="{{ s.value }}" {{ 'selected' if u.suggestion and u.suggestion.seniority == s }}>{{ s.value }}</option>{% endfor %}</select></td>
+    <td><input name="canonical" placeholder="{{ u.suggestion.canonical_title if u.suggestion else '' }}"></td>
+    <td><button class="btn btn-sm btn-primary">Save</button></td>
+    </form>
+  </tr>
+  {% else %}<tr><td class="empty" colspan="6">Nothing to classify — every title has a department.</td></tr>{% endfor %}
+  </tbody>
+</table>
+</div>
+{% endblock %}

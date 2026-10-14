@@ -1,0 +1,64 @@
+# Example spec: find decision-makers to pitch a CPaaS / communications solution to.
+# Goal is to reach buyers, not to list every employee, so broad_sweep is off and the cap is small.
+# Run: uv run leadgen run specs/example.yaml --source fake   (demo)   or   uv run leadgen run specs/example.yaml  (LinkedIn)
+name: cpaas-buyers-dach
+offer: >-
+  A CPaaS platform: programmatic SMS, voice and WhatsApp APIs for high-volume customer notifications and verification. Ideal buyers own engineering, product, customer experience or digital/messaging.
+company:
+  industries: [fintech, e-commerce, saas, logistics, insurtech]   # industries that buy CPaaS (SMS/voice/chat APIs)
+  keywords: []
+  exclude_keywords: []
+  locations: [Germany, Austria, Switzerland]                       # HQ countries
+  employee_size: ["51-200", "201-500", "501-1,000", "1,001-5,000"] # big enough to have a comms budget
+  founded_year: {min: null, max: null}
+  company_types: []
+  discover_via_jobs: false
+  seed_companies: []
+  exclude_companies: []
+  max_companies: 15
+  max_company_queries: 8
+  max_search_pages_per_query: 2
+people:
+  # The people who choose or influence a CPaaS purchase.
+  titles:
+    - "VP Engineering"
+    - "Head of Engineering"
+    - "CTO"
+    - "Chief Technology Officer"
+    - "Head of Product"
+    - "VP Product"
+    - "Chief Product Officer"
+    - "Head of Customer Experience"
+    - "VP Customer Experience"
+    - "Head of Customer Success"
+    - "Head of Growth"
+    - "VP Marketing"
+    - "Chief Marketing Officer"
+    - "Head of Digital"
+    - "Chief Digital Officer"
+    - "CIO"
+    - "Head of IT"
+    - "Head of Communications"
+  exclude_titles: [intern, student, assistant, working student]
+  departments: []                         # titles above already target the right roles
+  seniorities: [director, vp, cxo, founder]  # decision-maker levels; used to flag matched leads
+  locations: []
+  keywords: []
+  network: []
+  include_anonymized: false
+  max_per_company: 25
+  max_pages_per_facet: 3
+  broad_sweep: false                      # do NOT enumerate everyone; only the titles above
+  enrich: {enabled: false, max_per_company: 5}
+run:
+  source: linkedin
+  strategy: people_first   # find people in a country working in the domain, then derive their companies
+  daily_budget: 100
+  monthly_search_cap: 250
+  min_delay_s: 8
+  max_delay_s: 20
+  break_every: 25
+  break_min_s: 120
+  break_max_s: 300
+  run_hours: null
+  llm_assist: null

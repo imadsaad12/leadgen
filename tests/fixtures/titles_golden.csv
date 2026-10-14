@@ -1,0 +1,413 @@
+raw_title,department,seniority
+Senior Software Engineer at Acme,engineering,senior
+Software Engineer,engineering,mid
+Sr. SWE @ Stripe,engineering,senior
+Jr Backend Developer,engineering,entry
+Backend Developer (Python),engineering,mid
+Staff Engineer | Distributed Systems,engineering,lead
+Principal Software Engineer,engineering,lead
+Lead Frontend Engineer (React/TypeScript),engineering,lead
+Full-Stack Developer 🚀 | he/him,engineering,mid
+Engineering Manager,engineering,manager
+Senior Engineering Manager at Shopify,engineering,manager
+Director of Engineering,engineering,director
+VP Engineering,engineering,vp
+"Vice President, Engineering",engineering,vp
+CTO,engineering,cxo
+Chief Technology Officer & Co-Founder,engineering,founder
+Co-Founder & CTO,engineering,founder
+Werkstudent Softwareentwicklung,engineering,intern
+Software Engineer Intern,engineering,intern
+Praktikant Softwareentwicklung (m/w/d),engineering,intern
+Senior Softwareentwickler,engineering,senior
+Softwareentwicklerin bei SAP,engineering,mid
+Développeur Full Stack Senior,engineering,senior
+Ingénieur Logiciel chez Doctolib,engineering,mid
+Desarrollador Backend Senior,engineering,senior
+Ingeniero de Software,engineering,mid
+Desenvolvedor de Software Sênior,engineering,senior
+Sviluppatore Software,engineering,mid
+Software Ontwikkelaar,engineering,mid
+Muhandis Barmajiyat (Software Engineer),engineering,mid
+DevOps Engineer,engineering,mid
+Junior DevOps Engineer,engineering,entry
+Site Reliability Engineer II,engineering,mid
+Senior SRE,engineering,senior
+iOS Developer,engineering,mid
+Android Engineer | ex-Spotify,engineering,mid
+Embedded Software Engineer,engineering,mid
+QA Engineer,engineering,mid
+Test Automation Engineer,engineering,mid
+Solutions Architect,engineering,lead
+Head of Engineering | Speaker,engineering,director
+Software Development Engineer II at Amazon,engineering,mid
+Mobile Engineer (Flutter),engineering,mid
+Engineering Lead 🛠️,engineering,lead
+Platform Engineer,engineering,mid
+Technical Lead - Payments,engineering,lead
+Data Scientist,data,mid
+Senior Data Scientist | PhD,data,senior
+Staff Data Scientist,data,lead
+Data Engineer,data,mid
+Senior Data Engineer at Netflix,data,senior
+Data Analyst,data,mid
+Junior Data Analyst,data,entry
+Machine Learning Engineer,data,mid
+ML Engineer | NLP,data,mid
+Senior ML Engineer,data,senior
+Lead Data Scientist,data,lead
+Head of Data,data,director
+Director of Data Science,data,director
+VP Data & Analytics,data,vp
+Chief Data Officer,data,cxo
+Analytics Engineer,data,mid
+BI Analyst,data,mid
+Business Intelligence Developer,data,mid
+AI Engineer,data,mid
+"Research Scientist, NLP",data,mid
+Applied Scientist at Amazon,data,mid
+Data Science Intern,data,intern
+Data Scientist Werkstudent,data,intern
+Analista de Datos,data,mid
+Data Science Manager,data,manager
+Product Manager,product,manager
+Senior Product Manager,product,manager
+Group Product Manager,product,manager
+Product Owner,product,manager
+Associate Product Manager,product,manager
+Technical Product Manager at Atlassian,product,manager
+Head of Product,product,director
+Director of Product Management,product,director
+VP Product,product,vp
+Chief Product Officer,product,cxo
+CPO & Co-Founder,product,founder
+Product Lead,product,lead
+Product Analyst,product,mid
+Product Marketing Manager,marketing,manager
+Product Designer,design,mid
+Senior Product Designer at Figma,design,senior
+UX Designer,design,mid
+UX/UI Designer 🎨,design,mid
+UX Researcher,design,mid
+Lead Designer,design,lead
+Head of Design,design,director
+Creative Director,design,director
+Art Director,design,director
+Graphic Designer,design,mid
+Design Intern,design,intern
+Brand Designer | she/her,design,mid
+Visual Designer,design,mid
+Design Manager,design,manager
+Account Executive,sales,mid
+"Account Executive, Enterprise",sales,mid
+Senior AE at Salesforce,sales,senior
+Enterprise AE | Quota Crusher 💪,sales,mid
+SDR,sales,mid
+Sales Development Representative,sales,mid
+BDR at HubSpot,sales,mid
+Business Development Manager,sales,manager
+Account Manager,sales,manager
+Senior Account Manager,sales,manager
+Key Account Manager,sales,manager
+Sales Manager,sales,manager
+Regional Sales Manager - DACH,sales,manager
+Sales Director,sales,director
+Head of Sales,sales,director
+VP of Sales,sales,vp
+SVP Growth & Partnerships,sales,vp
+Chief Revenue Officer,sales,cxo
+CRO at Gong,sales,cxo
+Chief Commercial Officer,sales,cxo
+Sales Engineer,sales,mid
+Solutions Engineer,sales,mid
+Pre-Sales Consultant,sales,mid
+Head of Partnerships,sales,director
+Partnerships Manager,sales,manager
+Vertriebsleiter,sales,director
+Vertriebsmitarbeiter,sales,mid
+Key Account Managerin bei Siemens,sales,manager
+Responsable Commercial,sales,manager
+Directeur Commercial,sales,director
+Ingénieur Commercial,sales,mid
+Ejecutivo de Ventas,sales,mid
+Gerente de Ventas,sales,manager
+Gerente Comercial,sales,manager
+Sales Intern,sales,intern
+Inside Sales Representative,sales,mid
+Territory Manager,sales,manager
+Sales Operations Analyst,sales,mid
+Channel Sales Manager,sales,manager
+Mudir Mabiaat (Sales Manager),sales,manager
+Marketing Specialist,marketing,mid
+Marketing Manager,marketing,manager
+Senior Marketing Manager at Canva,marketing,manager
+Head of Marketing | ex-Google,marketing,director
+Head of Growth,marketing,director
+Growth Marketing Manager,marketing,manager
+Director of Marketing,marketing,director
+VP Marketing,marketing,vp
+Chief Marketing Officer,marketing,cxo
+CMO | Speaker | Author,marketing,cxo
+Content Marketing Manager,marketing,manager
+Content Writer,marketing,mid
+Copywriter,marketing,mid
+SEO Specialist,marketing,mid
+Performance Marketing Manager,marketing,manager
+Social Media Manager,marketing,manager
+Brand Manager,marketing,manager
+Demand Generation Manager,marketing,manager
+Communications Manager,marketing,manager
+PR Manager,marketing,manager
+Marketing Intern,marketing,intern
+Werkstudent Marketing,marketing,intern
+Marketing Coordinator,marketing,mid
+Digital Marketing Lead,marketing,lead
+Marketingleiter,marketing,director
+Responsable Marketing,marketing,manager
+Gerente de Marketing,marketing,manager
+Community Manager,marketing,manager
+Event Manager,marketing,manager
+Customer Success Manager,customer_success,manager
+CSM at Intercom,customer_success,manager
+Senior Customer Success Manager,customer_success,manager
+Head of Customer Success,customer_success,director
+Director of Customer Success,customer_success,director
+VP Customer Success,customer_success,vp
+Client Partner,customer_success,mid
+Customer Success Lead,customer_success,lead
+Onboarding Specialist,customer_success,mid
+Implementation Manager,customer_success,manager
+Customer Experience Manager,customer_success,manager
+Account Management Associate,customer_success,entry
+Renewals Manager,customer_success,manager
+Customer Success Intern,customer_success,intern
+Customer Support Specialist,support,mid
+Technical Support Engineer,support,mid
+Support Engineer at Zendesk,support,mid
+Customer Service Representative,support,mid
+Head of Support,support,director
+Support Team Lead,support,manager
+Technical Account Manager,support,manager
+Help Desk Analyst,support,mid
+Customer Care Agent,support,mid
+Kundenservice Mitarbeiter,support,mid
+Support Manager,support,manager
+Operations Manager,operations,manager
+Head of Operations,operations,director
+"Director, Operations",operations,director
+COO,operations,cxo
+Chief Operating Officer & Co-Founder,operations,founder
+VP Operations,operations,vp
+Scrum Master,operations,mid
+Project Manager,operations,manager
+Senior Project Manager (PMP),operations,manager
+Program Manager at Microsoft,operations,manager
+Supply Chain Manager,operations,manager
+Logistics Coordinator,operations,mid
+Procurement Specialist,operations,mid
+Chief of Staff to the CEO,operations,cxo
+Business Analyst,operations,mid
+Operations Associate,operations,entry
+Operations Intern,operations,intern
+Projektleiter,operations,manager
+Chef de Projet Digital,operations,manager
+Agile Coach,operations,mid
+Delivery Manager,operations,manager
+Strategy & Operations Manager,operations,manager
+Business Operations Lead,operations,lead
+Gerente de Operaciones,operations,manager
+Responsable Logistique,operations,manager
+Plant Manager,operations,manager
+Financial Controller,finance,mid
+Finance Manager,finance,manager
+CFO,finance,cxo
+Chief Financial Officer at Klarna,finance,cxo
+VP Finance,finance,vp
+"Director, Finance",finance,director
+Head of Finance,finance,director
+Senior Accountant,finance,senior
+Accountant,finance,mid
+Junior Accountant,finance,entry
+FP&A Manager,finance,manager
+FP&A Analyst,finance,mid
+Financial Analyst,finance,mid
+Treasury Manager,finance,manager
+Tax Manager,finance,manager
+Internal Auditor,finance,mid
+Buchhalter,finance,mid
+Leiter Finanzen,finance,director
+Contador,finance,mid
+Finance Intern,finance,intern
+Credit Analyst,finance,mid
+Investor Relations Manager,finance,manager
+Muhasib (Accountant),finance,mid
+Fractional CFO,finance,cxo
+HR Manager,hr,manager
+HRBP,hr,mid
+HR Business Partner,hr,mid
+Senior HRBP,hr,senior
+Recruiter,hr,mid
+Senior Technical Recruiter,hr,senior
+Talent Acquisition Partner,hr,mid
+Talent Acquisition Manager,hr,manager
+Head of People,hr,director
+Head of People & Culture,hr,director
+VP People,hr,vp
+Chief People Officer,hr,cxo
+CHRO,hr,cxo
+People Operations Manager,hr,manager
+HR Generalist,hr,mid
+HR Intern,hr,intern
+Werkstudent HR,hr,intern
+Personalreferentin,hr,mid
+Personalleiter,hr,director
+Responsable Ressources Humaines,hr,manager
+Gerente de Recursos Humanos,hr,manager
+L&D Manager,hr,manager
+Compensation & Benefits Specialist,hr,mid
+Director of People,hr,director
+Talent Sourcer,hr,mid
+Mudir Mawarid Bashariya (HR Manager),hr,manager
+Legal Counsel,legal,mid
+General Counsel,legal,cxo
+Senior Legal Counsel,legal,senior
+Chief Legal Officer,legal,cxo
+Head of Legal,legal,director
+Paralegal,legal,mid
+Compliance Manager,legal,manager
+Compliance Officer,legal,mid
+Data Protection Officer,legal,mid
+Contracts Manager,legal,manager
+Rechtsanwalt,legal,mid
+Juriste d'entreprise,legal,mid
+Abogado,legal,mid
+Legal Intern,legal,intern
+Associate Attorney,legal,entry
+VP Legal,legal,vp
+IT Support Specialist,it,mid
+IT Manager,it,manager
+Head of IT,it,director
+CIO,it,cxo
+CISO,it,cxo
+Chief Information Security Officer,it,cxo
+System Administrator,it,mid
+Sysadmin 🐧,it,mid
+Network Engineer,it,mid
+Security Analyst,it,mid
+Cybersecurity Engineer,it,mid
+IT Director,it,director
+Salesforce Administrator,it,mid
+SAP Consultant,it,mid
+IT Project Manager,it,manager
+Penetration Tester,it,mid
+Database Administrator,it,mid
+IT Intern,it,intern
+Systemadministrator,it,mid
+Cloud Architect,it,lead
+Infrastructure Manager,it,manager
+Information Security Manager,it,manager
+CEO,executive,cxo
+CEO & Co-Founder,executive,founder
+Founder,executive,founder
+Co-Founder,executive,founder
+Founder & CEO at Stealth Startup,executive,founder
+Managing Director,executive,cxo
+MD at Goldman Sachs,executive,cxo
+General Manager,executive,director
+"GM, EMEA",executive,director
+President,executive,cxo
+Partner,executive,cxo
+Managing Partner,executive,cxo
+Partner at Deloitte,executive,cxo
+Partner | Technology Consulting,executive,cxo
+Gründer & Geschäftsführer,executive,founder
+Geschäftsführer,executive,cxo
+Geschäftsführerin bei Bosch,executive,cxo
+Directeur Général,executive,cxo
+Président-Directeur Général,executive,cxo
+Fondateur & CEO,executive,founder
+Fundador,executive,founder
+Director General,executive,cxo
+Amministratore Delegato,executive,cxo
+Oprichter & CEO,executive,founder
+Algemeen Directeur,executive,cxo
+Chief Executive Officer | Board Member,executive,cxo
+Chairman of the Board,executive,cxo
+Executive Director,executive,cxo
+Chief Strategy Officer,executive,cxo
+Owner,executive,founder
+Entrepreneur | Investor | Speaker,executive,founder
+Mudir Tanfidhi (CEO),executive,cxo
+Postdoctoral Researcher,research,mid
+Lecturer in Computer Science,research,mid
+Clinical Research Associate,research,entry
+Senior Scientist | Biology,research,senior
+Lab Manager,research,manager
+Research Assistant,research,entry
+Physician,research,mid
+Registered Nurse,research,mid
+Pharmacist,research,mid
+Medical Director,research,director
+Biologist,research,mid
+Economist,research,mid
+Wissenschaftlicher Mitarbeiter,research,mid
+Chercheur,research,mid
+Investigador,research,mid
+Clinical Trial Manager,research,manager
+Head of Research,research,director
+Chief Scientific Officer,research,cxo
+Research Intern,research,intern
+Management Consultant,consulting,mid
+Senior Consultant at McKinsey,consulting,senior
+Associate Consultant,consulting,entry
+Principal Consultant,consulting,lead
+Consultant,consulting,mid
+Strategy Consultant | ex-BCG,consulting,mid
+Freelance Consultant,consulting,mid
+Independent Consultant,consulting,mid
+Unternehmensberater,consulting,mid
+Senior Berater,consulting,senior
+Consultant Senior chez Capgemini,consulting,senior
+Consultor de Negocios,consulting,mid
+Engagement Manager at Bain,consulting,manager
+Business Advisor,consulting,mid
+Executive Coach,consulting,mid
+Consulting Intern,consulting,intern
+"Senior Manager, Advisory | KPMG",consulting,manager
+Executive Assistant to the CEO,admin,entry
+Executive Assistant,admin,entry
+Office Manager,admin,manager
+Administrative Assistant,admin,entry
+Receptionist,admin,mid
+Personal Assistant to the Managing Director,admin,entry
+Team Assistant,admin,entry
+Office Coordinator,admin,mid
+Front Desk Coordinator,admin,mid
+Assistenz der Geschäftsführung,admin,entry
+Assistante de Direction,admin,entry
+Office Administrator,admin,mid
+Data Entry Clerk,admin,mid
+Virtual Assistant,admin,entry
+Teacher,other,mid
+Real Estate Agent,other,mid
+Truck Driver,other,mid
+Flight Attendant,other,mid
+Electrician,other,mid
+Chef de Cuisine,other,mid
+Dreamer,unclassified,mid
+Human,unclassified,mid
+Open to opportunities,unclassified,mid
+--,unclassified,mid
+Professional,unclassified,mid
+Mom of 3 | Coffee lover ☕,unclassified,mid
+Looking for new challenges,unclassified,mid
+Hustler,unclassified,mid
+Working,unclassified,mid
+Available,unclassified,mid
+Jack of all trades,unclassified,mid
+Visionary,unclassified,mid
+Retired,unclassified,mid
+Enthusiast 🚀,unclassified,mid
+Making things happen,unclassified,mid
+N/A,unclassified,mid
+Student at TU Munich,unclassified,intern

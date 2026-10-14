@@ -1,0 +1,25 @@
+# python / uv
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+# app data
+out/
+*.db
+*.db-wal
+*.db-shm
+.env
+# vendored server runtime artefacts
+vendor/linkedin-mcp-server/.venv/
+vendor/linkedin-mcp-server/.git/
+# os / editors
+.DS_Store
+.idea/
+.vscode/
+
+# never commit captured browser traffic (contains live session tokens)
+*.har
